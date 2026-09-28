@@ -1,0 +1,778 @@
+{
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\about\\CreativeAgencyAbout.jsx": {
+    "mtime": 1689683236000,
+    "hash": "66188ef0fe4acb19c08f8ab9391f22dc"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\about\\DesignStudioAbout.jsx": {
+    "mtime": 1689683244000,
+    "hash": "bc023378d050120ea5c5aa07e6760a25"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\about\\DigitalAgencyAbout.jsx": {
+    "mtime": 1689683250000,
+    "hash": "90a86fd801bbc22da9b9321bd6125955"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\about\\DigitalMarketingAbout.jsx": {
+    "mtime": 1689683256000,
+    "hash": "4e082a6004234446aa2e32baa8da9447"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\about\\ModernAgencyAbout.jsx": {
+    "mtime": 1687407412000,
+    "hash": "2b821b0342f552093243b15c7fc65180"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\award\\CreativeAgencyAward.jsx": {
+    "mtime": 1689742028000,
+    "hash": "05fe416eb38032075f6f9392c001113b"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\award\\DesignStudioAward.jsx": {
+    "mtime": 1689742288000,
+    "hash": "4d6a77b82a0b9bddfd033b021b472691"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\benefit\\CareerBenefit.jsx": {
+    "mtime": 1687407412000,
+    "hash": "84bf522a2f0d424601856d00ee70165a"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\benifit\\CareerBenifit.jsx": {
+    "mtime": 1687407412000,
+    "hash": "6c12d566582354c6725fc527aa8fe979"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\blog\\Blog1.jsx": {
+    "mtime": 1689742302000,
+    "hash": "f938dc832eee47bd7294a1e6fead6330"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\blog\\BlogDetails1.jsx": {
+    "mtime": 1689742330000,
+    "hash": "8e68dbab3e82c0340fa8a2f68b13d8f4"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\blog\\BlogElementV2.jsx": {
+    "mtime": 1689742334000,
+    "hash": "cba78f8752b8d4b8fa2209c825d7fe8d"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\blog\\BlogRelated.jsx": {
+    "mtime": 1689742338000,
+    "hash": "f36c70577929a475d1e465a295c6560f"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\blog\\CreativeAgencyBlog.jsx": {
+    "mtime": 1689742340000,
+    "hash": "77df861edc39c3d3df7fa9ce8ff91c39"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\blog\\DesignStudioBlog.jsx": {
+    "mtime": 1689742344000,
+    "hash": "3e37eec55f1325b4159f473ddf37e01c"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\blog\\DigitalAgencyBlog.jsx": {
+    "mtime": 1689742348000,
+    "hash": "1a16509c7c15372ba57b4d5c29d975b0"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\blog\\DigitalMarketingBlog.jsx": {
+    "mtime": 1689742350000,
+    "hash": "b0df7bf37c8625f622bbc67d758c8448"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\blog\\StartupAgencyBlog.jsx": {
+    "mtime": 1689742354000,
+    "hash": "3556475015df19b0774f40727a51f4bb"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\brand\\CreativeAgencyBrand.jsx": {
+    "mtime": 1689742358000,
+    "hash": "4211c703f99f97853239f9847d429ced"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\brand\\DigitalAgencyBrand.jsx": {
+    "mtime": 1689742360000,
+    "hash": "744870fd5d09ba4ad9cfcf518c93ec2f"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\brand\\DigitalMarketingBrand.jsx": {
+    "mtime": 1689742364000,
+    "hash": "b42be9a0c1ad2af72dcd296d694c88c1"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\brand\\ModernAgencyBrand.jsx": {
+    "mtime": 1689742366000,
+    "hash": "78c9799964c7d417975d225b45c456a9"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\brand\\ServiceBrand.jsx": {
+    "mtime": 1689742368000,
+    "hash": "39bc2a3a382d798730394270652525a4"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\brand\\StartupAgencyBrand.jsx": {
+    "mtime": 1689742372000,
+    "hash": "3e9e619bfa93b7a300ebb5c5c244b47f"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\canvas\\Canvas.jsx": {
+    "mtime": 1689762612000,
+    "hash": "8da053e5a87befbb8eb8d78b8d4e003e"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\career\\Career1.jsx": {
+    "mtime": 1687407412000,
+    "hash": "00d08a155cfa731c6b043af83040a1db"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\category\\Category1.jsx": {
+    "mtime": 1689742384000,
+    "hash": "013b5edfd0a282955161000c3a4a76dc"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\common\\CommonAnimation.jsx": {
+    "mtime": 1689742392000,
+    "hash": "15361c3b4a3176e7042c96342cee56a8"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\common\\CursorAnimation.jsx": {
+    "mtime": 1689583182000,
+    "hash": "632e3adc31d9e78d4137e7594e1baed1"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\common\\layout\\RootLayout.jsx": {
+    "mtime": 1689583138000,
+    "hash": "ae8799ba382664d8f8b28bf3a9b3c7c6"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\common\\PortfolioSwiperDestop.jsx": {
+    "mtime": 1689761832000,
+    "hash": "9ac8b09407245a31964ef8f4faa46cfa"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\common\\PortfolioSwiperMobile.jsx": {
+    "mtime": 1689596658000,
+    "hash": "a1729fd96fc447076de305e1dc011f3e"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\common\\ScrollSmootherComponents.jsx": {
+    "mtime": 1691407442000,
+    "hash": "2a9a2c7289106f82a958a30bd3a19337"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\common\\ScrollTop.jsx": {
+    "mtime": 1689742406000,
+    "hash": "9e6745145184290d0e8e7be7d24ca6ed"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\common\\Switcher.jsx": {
+    "mtime": 1689583084000,
+    "hash": "f217365295a84bf5ca4a84d6b14d4fb3"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\contact\\Contact1.jsx": {
+    "mtime": 1689742412000,
+    "hash": "4de04d986dcd592c0feeac0c6a75f0d1"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\counter\\AboutCounter.jsx": {
+    "mtime": 1689742420000,
+    "hash": "e1607116c71fbc0e1515723df5bd117f"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\counter\\DigitalAgencyCounter.jsx": {
+    "mtime": 1689742422000,
+    "hash": "c53af7f0638a08b36027a4385dc0b40c"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\counter\\TeamCounter.jsx": {
+    "mtime": 1689742424000,
+    "hash": "a25642b3858e41e32ab2544a277bb6df"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\cta\\CreativeAgencyCTA.jsx": {
+    "mtime": 1687407412000,
+    "hash": "a65e44d8f5a3e5fc0965f28cfb62d1c5"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\cta\\DesignStudioCTA.jsx": {
+    "mtime": 1687407412000,
+    "hash": "856a5b5ab3292ea43fafee95a2c280fc"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\cta\\DigitalAgencyCTA.jsx": {
+    "mtime": 1687407412000,
+    "hash": "5b50e04e6367f2ee359781f47275384d"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\cta\\FaqCTA.jsx": {
+    "mtime": 1687407412000,
+    "hash": "1ef88899317d0d03beb5ac0a041126fb"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\cta\\PortfolioV2CTA.jsx": {
+    "mtime": 1687407412000,
+    "hash": "dc645dd51c5dcee70b2ebdbdc8a5c175"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\cta\\StartupAgencyCTA.jsx": {
+    "mtime": 1687407412000,
+    "hash": "28e17d2144a2cf3715b985f42ff8275e"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\development\\ServiceDetailsDevelopment.jsx": {
+    "mtime": 1689681596000,
+    "hash": "d486b25d59a92b6d7a38f88fbae9c9f7"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\error\\Error1.jsx": {
+    "mtime": 1687407412000,
+    "hash": "17654a6f67c0ffa06ac1d6b0b6a037d8"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\faq\\Faq1.jsx": {
+    "mtime": 1689756944000,
+    "hash": "13f6103f9d4bfc76f72af3bd4c409805"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\faq\\ServiceDetailsFaq.jsx": {
+    "mtime": 1687407412000,
+    "hash": "b60df1afb82ac56ff98db5c7bd35263b"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\faq\\StartupAgencyFaq.jsx": {
+    "mtime": 1687407412000,
+    "hash": "3482ce306c48e2865f15a21a83e61918"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\feature\\DesignStudioFeature.jsx": {
+    "mtime": 1687407412000,
+    "hash": "226e78a688381fd796f2d2efab1fce6f"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\feature\\StartupAgencyFeature.jsx": {
+    "mtime": 1687407412000,
+    "hash": "93aee7e13c4c6381c8e20f351dfbf714"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\footer\\Footer1.jsx": {
+    "mtime": 1689761712000,
+    "hash": "46f7616db4ecabbeac2e4c17c95fda8d"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\footer\\Footer2.jsx": {
+    "mtime": 1689761830000,
+    "hash": "3fcdd57a613b09f049ee673c486e4916"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\footer\\Footer3.jsx": {
+    "mtime": 1689422594000,
+    "hash": "cd63ccc677c1b0fe637a759a07a6998b"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\footer\\Footer4.jsx": {
+    "mtime": 1689761828000,
+    "hash": "8f64e00a43faf3feb36aa167c70da51e"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\footer\\Footer5.jsx": {
+    "mtime": 1689761826000,
+    "hash": "4e327b9d33e6575eb4b98525badfee68"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\gallery\\CareerGallery.jsx": {
+    "mtime": 1687407412000,
+    "hash": "df42ebedea6d282849ef023a4ca66532"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\header\\Header1.jsx": {
+    "mtime": 1689582868000,
+    "hash": "936405f491b6fa7de8bfb430b063dec9"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\header\\Header2.jsx": {
+    "mtime": 1689742498000,
+    "hash": "f9e8163ad06d5cfcc4c8740c494840e0"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\header\\Header3.jsx": {
+    "mtime": 1689578046000,
+    "hash": "da0ddae4effc813c3414ab02d05af42a"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\header\\Header4.jsx": {
+    "mtime": 1689582864000,
+    "hash": "efd4492081bf620e251a550fb9d34dde"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\header\\Header5.jsx": {
+    "mtime": 1689578536000,
+    "hash": "3e754832ef0885519d1cf8ab8eddd38e"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\hero\\AboutHero.jsx": {
+    "mtime": 1689742522000,
+    "hash": "40a46f5ef2c85eddadc0664c7d4c9425"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\hero\\CareerHero.jsx": {
+    "mtime": 1689756884000,
+    "hash": "6e3b6d27e4f0ebc35a4c303f2910de88"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\hero\\CreativeAgencyHero.jsx": {
+    "mtime": 1689742530000,
+    "hash": "da5e33d42eb70ca47f293afe544bdef6"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\hero\\DesignStudioHero.jsx": {
+    "mtime": 1689742532000,
+    "hash": "db81748fce26eff2508def9c66acb82c"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\hero\\DigitalAgencyHero.jsx": {
+    "mtime": 1689742536000,
+    "hash": "5fce551c4ce37711418cca7599b3370c"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\hero\\DigitalMarketingHero.jsx": {
+    "mtime": 1689587984000,
+    "hash": "a66d7d200702f7c7a5f256af63cce195"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\hero\\ModernAgencyHero.jsx": {
+    "mtime": 1689500162000,
+    "hash": "fc171fd280983fdec80295b17fb72641"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\hero\\ServiceHero.jsx": {
+    "mtime": 1689742546000,
+    "hash": "cee13027a660485414f662136855c6d3"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\hero\\ServiceV6Hero.jsx": {
+    "mtime": 1687407412000,
+    "hash": "9159d5e24b52bff26febeab653b79873"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\hero\\ShowcaseParallaxHero.jsx": {
+    "mtime": 1687407412000,
+    "hash": "5d72f5ec73a2ac6eed4cb2487683c023"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\hero\\StartupAgencyHero.jsx": {
+    "mtime": 1689742558000,
+    "hash": "d389cc398db542f84036e5b155854fe9"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\job\\JobDetails1.jsx": {
+    "mtime": 1689671318000,
+    "hash": "6fc554ebda107b96308293268da77d5f"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\job\\JobDetailsModal1.jsx": {
+    "mtime": 1689673470000,
+    "hash": "a26f7fab13a5013a4715cb74c77fd1ff"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\job\\JobDetailsModal2.jsx": {
+    "mtime": 1689673552000,
+    "hash": "d51da14a188c7d6377ed198e89551dfe"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\logo\\DesignStudioLogo.jsx": {
+    "mtime": 1687407412000,
+    "hash": "127fae0a311e1b78d03feac3e01823ce"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\logo\\LogoItem.jsx": {
+    "mtime": 1689579102000,
+    "hash": "087f0b9b6f359ae4f8b93a16daa57809"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\nav\\NavItem.jsx": {
+    "mtime": 1689761826000,
+    "hash": "c2db67179f10fe5958ee3892b242bcba"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\portfolio\\CreativeAgencyPortfolio.jsx": {
+    "mtime": 1687407412000,
+    "hash": "140f4c23259fc83c43c617a7860e172f"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\portfolio\\DesignStudioProtfolio.jsx": {
+    "mtime": 1687407412000,
+    "hash": "66ccc6b85f0741b339a40b845865baa0"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\portfolio\\DigitalAgencyPortfolio.jsx": {
+    "mtime": 1687407412000,
+    "hash": "232eba572fe00af1c43b001d5506ae3c"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\portfolio\\DigitalMarketingProtfolio.jsx": {
+    "mtime": 1687407412000,
+    "hash": "621214f347512e0631270894169b14ce"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\portfolio\\ModernAgencyPortfolio.jsx": {
+    "mtime": 1689590794000,
+    "hash": "3617927d0dfbee50a350d3c229515237"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\portfolio\\Portfolio1.jsx": {
+    "mtime": 1689742616000,
+    "hash": "63e6bb871bc20137538fe14cb9cb2cbf"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\portfolio\\PortfolioDetails1.jsx": {
+    "mtime": 1689742626000,
+    "hash": "ca2e058b4e52baea25b464f37b332a90"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\portfolio\\PortfolioElementV2.jsx": {
+    "mtime": 1687407412000,
+    "hash": "facb76680750d7fc364f581263fec3fe"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\portfolio\\PortfolioElementV4.jsx": {
+    "mtime": 1689742634000,
+    "hash": "2c7b2fcbc139a7c30cad4590527ec7d8"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\portfolio\\PortfolioElementV5.jsx": {
+    "mtime": 1689742636000,
+    "hash": "624b97681989d1407d175c0fb4b6a002"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\portfolio\\PortfolioPage.jsx": {
+    "mtime": 1689596690000,
+    "hash": "887fe9977234548d6eed355d1df817d4"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\portfolio\\StartupAgencyPortfolio.jsx": {
+    "mtime": 1687407412000,
+    "hash": "af69e2e400a90fe25916e9a113d9d6f0"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\preloader\\Preloader.jsx": {
+    "mtime": 1689742648000,
+    "hash": "7297479bfb630aa7c91a1256c336bbf5"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\price\\DigitalMarketingPrice.jsx": {
+    "mtime": 1687407412000,
+    "hash": "883bac619d3f4e34294d74da7f72d3b5"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\roll\\DesignStudioRoll.jsx": {
+    "mtime": 1689490702000,
+    "hash": "8518aaf1c87d0242532fa8ddbd4fffb7"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\roll\\DigitalAgencyRoll.jsx": {
+    "mtime": 1687407412000,
+    "hash": "c1dc3c7602f89ad594af5147101e59fc"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\service\\CreativeAgencyService.jsx": {
+    "mtime": 1687407412000,
+    "hash": "d4495581d58a3393cecf920e066bfdf1"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\service\\DesignStudioService.jsx": {
+    "mtime": 1687407412000,
+    "hash": "716bebe75fa96e70c8dec517eeb624c1"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\service\\DigitalAgencyService.jsx": {
+    "mtime": 1689680280000,
+    "hash": "8cc03af6687615938e3c5994a25fac6e"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\service\\DigitalMarketingService.jsx": {
+    "mtime": 1689598902000,
+    "hash": "e3f2bda4d4db20ead86b97d41696ee54"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\service\\Service1.jsx": {
+    "mtime": 1689742690000,
+    "hash": "f9929d41f1327e2e8e0f49c6666f01ca"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\service\\ServiceDetailsService.jsx": {
+    "mtime": 1687407412000,
+    "hash": "6b02774a92362be66be1ff0382b4a05a"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\service\\ServiceElementV2.jsx": {
+    "mtime": 1689680340000,
+    "hash": "83165520b3f5b42a0f4abf60b8e8f90a"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\service\\ServiceElementV3.jsx": {
+    "mtime": 1687407412000,
+    "hash": "8fa7c914da0b738dabcf0e99b1a66ee6"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\service\\ServiceElementV5.jsx": {
+    "mtime": 1689742708000,
+    "hash": "a6547e420a22b115c617e28e01b0fbe1"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\service\\StartupAgencyService.jsx": {
+    "mtime": 1687407412000,
+    "hash": "dfc238b4b2adce58a6a60b41400c9511"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\singleImage\\ModernAgencySingleImage.jsx": {
+    "mtime": 1689669586000,
+    "hash": "1b19a4d4d45ce9a2c196a36d1cd862ba"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\solution\\StartupAgencySolution.jsx": {
+    "mtime": 1687407412000,
+    "hash": "a580d253a40dbcdfcbdbe94495fb7eac"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\story\\AboutStory.jsx": {
+    "mtime": 1687407412000,
+    "hash": "3e3472044a7d2bc21abc4086906f4597"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\team\\AboutTeam.jsx": {
+    "mtime": 1687407412000,
+    "hash": "81884b8098fee97cb684e9eac4f7dd41"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\team\\CreativeAgencyTeam.jsx": {
+    "mtime": 1689661312000,
+    "hash": "7b590a476b3e869d84986ec760f25c22"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\team\\Team1.jsx": {
+    "mtime": 1689501840000,
+    "hash": "c55c8129e2e3969055da77992ff51d00"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\team\\TeamDetails1.jsx": {
+    "mtime": 1689742766000,
+    "hash": "2dfc3136e97c3118be95006809b0762c"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\testimonial\\AboutTestimonial.jsx": {
+    "mtime": 1687407412000,
+    "hash": "83e6e2c8dd48a10d8fa28df08f7bacd3"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\testimonial\\DigitalAgencyTestimonial.jsx": {
+    "mtime": 1689662942000,
+    "hash": "87463df98e80999cdf448b85ba84a60d"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\testimonial\\DigitalMarketingTestimonial.jsx": {
+    "mtime": 1689742776000,
+    "hash": "fafcdb98094130809ce16102f7cfff3a"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\testimonial\\StartupAgencyTestimonial.jsx": {
+    "mtime": 1687407412000,
+    "hash": "97902b8e84123565b25f49563cae56aa"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\work\\ModernAgencyWork.jsx": {
+    "mtime": 1689685312000,
+    "hash": "946bd2aa4087b99422513a608a58c3b0"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\work\\ModernAgencyWork2.jsx": {
+    "mtime": 1687407412000,
+    "hash": "af84c222e27f497dd55139997da82aaf"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\workflow\\DigitalAgencyWorkflow.jsx": {
+    "mtime": 1687407412000,
+    "hash": "c95ca2498aeeaecf8604583aafb90c90"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\workflow\\DigitalMarketingWorkflow.jsx": {
+    "mtime": 1689660004000,
+    "hash": "47fe1e512ee398998c232af6aa3160fb"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\workflow\\ServiceDetailsWorkflow.jsx": {
+    "mtime": 1687407412000,
+    "hash": "5a0c0be645d72d9a791aefa62deb8a84"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\components\\workflow\\StartupAgencyWorkflow.jsx": {
+    "mtime": 1687407412000,
+    "hash": "52772c3743b5250062c9660a6bd741dc"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\lib\\utils\\animationCharCome.js": {
+    "mtime": 1689501178000,
+    "hash": "1434d7b6d23a7aa8e3d5cf7abc3a20f5"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\lib\\utils\\animationWordCome.js": {
+    "mtime": 1689508658000,
+    "hash": "c14f04973b43021a1720459b0e42747d"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\about-dark.jsx": {
+    "mtime": 1689742822000,
+    "hash": "472bb5e6c04f1af1d499e08da4216716"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\about.jsx": {
+    "mtime": 1689418102000,
+    "hash": "01bcb95be6381832cd3d9ba5c83b72b4"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\api\\hello.js": {
+    "mtime": 1687407412000,
+    "hash": "a8ee75b9a75799bf2a11f59d35b6e06f"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\blog-dark.jsx": {
+    "mtime": 1689502034000,
+    "hash": "c62ed19a2f49f3ba4ce42470c36997cd"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\blog-details-dark.jsx": {
+    "mtime": 1689509042000,
+    "hash": "fc0628902c6369a126eb94d483c61695"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\blog-details.jsx": {
+    "mtime": 1689509070000,
+    "hash": "8e40491f9b25fd43a5edc82729033e4b"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\blog-v2-dark.jsx": {
+    "mtime": 1689502050000,
+    "hash": "f8d00ca36dc79fdaf4c4f2b00d88236b"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\blog-v2.jsx": {
+    "mtime": 1689502062000,
+    "hash": "6f33ed7766a180b9b102bc770b542677"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\blog.jsx": {
+    "mtime": 1689502072000,
+    "hash": "20244bdaef675b13dc4ece4552e19bb5"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\career-dark.jsx": {
+    "mtime": 1689423664000,
+    "hash": "92801c973fe3fea7ec6a0d8ac85e0f7d"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\career.jsx": {
+    "mtime": 1689423860000,
+    "hash": "b03f9b88a215d5ed989943c413829b17"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\category-dark.jsx": {
+    "mtime": 1689502088000,
+    "hash": "6e9a7d12dbe1722c9fbd928b8490780d"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\category.jsx": {
+    "mtime": 1689502102000,
+    "hash": "b8ae20cac87c324c8669643905dd0f87"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\contact-dark.jsx": {
+    "mtime": 1689509058000,
+    "hash": "35e4aa403d5f503623460aeba3337972"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\contact.jsx": {
+    "mtime": 1689509080000,
+    "hash": "18c10292659bcee0a1badfdc67a3172a"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\creative-agency-dark.jsx": {
+    "mtime": 1689424272000,
+    "hash": "c05226e0b664d5e3656fc6a73e101e42"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\creative-agency.jsx": {
+    "mtime": 1689424314000,
+    "hash": "f36f4327517e6b71d9771a7b1b9cd12d"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\design-studio-dark.jsx": {
+    "mtime": 1689424418000,
+    "hash": "e51d863f6a376d49f7aa7dc4e83970bc"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\design-studio.jsx": {
+    "mtime": 1689424482000,
+    "hash": "bdaa2c5e23b2d7a934c0a70a28ba9e38"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\digital-agency-dark.jsx": {
+    "mtime": 1689756760000,
+    "hash": "6fab0703f97deaec3822653f75d704c1"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\digital-agency.jsx": {
+    "mtime": 1689662466000,
+    "hash": "e71f88110d2a80a1eb2d00fd83da4498"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\digital-marketing-dark.jsx": {
+    "mtime": 1689742904000,
+    "hash": "28eea6d6185b49d59675f82e220fe271"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\digital-marketing.jsx": {
+    "mtime": 1689420578000,
+    "hash": "c34366474f043ca82d49c24111b9dde8"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\error-dark.jsx": {
+    "mtime": 1689424938000,
+    "hash": "72806d4aa5bf83f5efc83c5fcddb5967"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\error.jsx": {
+    "mtime": 1689424978000,
+    "hash": "1aa7eb25c40df187c4cd526d898befeb"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\faq-dark.jsx": {
+    "mtime": 1689502166000,
+    "hash": "3918ed4bd49a027dc40fdd495989b050"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\faq.jsx": {
+    "mtime": 1689742922000,
+    "hash": "0be344043e547581e2b652afa0c69bce"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\index.js": {
+    "mtime": 1687407412000,
+    "hash": "a023e7e946a8af88ec14e4a8c4ade1ee"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\job-details-dark.jsx": {
+    "mtime": 1689425506000,
+    "hash": "5838650fb2a60bab13bc2e0d611ca9c4"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\job-details.jsx": {
+    "mtime": 1689425554000,
+    "hash": "acc59c3ca41f6f39cc250af0d2dfbfbe"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\modern-agency-dark.jsx": {
+    "mtime": 1689425776000,
+    "hash": "9bc084bb79c2db844dd7cc41945c4362"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\modern-agency.jsx": {
+    "mtime": 1689425802000,
+    "hash": "16178629eb29ea0415aee58cd65d7b9b"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\personal-portfolio-dark.jsx": {
+    "mtime": 1689425932000,
+    "hash": "c3dd9e56f644206fbecae3abe5557ef7"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\personal-portfolio.jsx": {
+    "mtime": 1689425966000,
+    "hash": "15562c3ff4db0346b4da812e7479dc5a"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\portfolio-dark.jsx": {
+    "mtime": 1689502198000,
+    "hash": "316d7a813de58362b77e3a5964db30a3"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\portfolio-details-dark.jsx": {
+    "mtime": 1689502214000,
+    "hash": "295534a2142c96af3d6de647c6b8c922"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\portfolio-details.jsx": {
+    "mtime": 1689502224000,
+    "hash": "4f7a224adc7f4de8fb12bf8380f9e6f0"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\portfolio-v2-dark.jsx": {
+    "mtime": 1689742954000,
+    "hash": "65f9d5c19b33c38b65acae63b1cff05b"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\portfolio-v2.jsx": {
+    "mtime": 1689742958000,
+    "hash": "ec17fa73e95ac40b8b172a0b6e60995a"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\portfolio-v3-dark.jsx": {
+    "mtime": 1689502354000,
+    "hash": "4c9afe22108e77833301ccf8a3310477"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\portfolio-v3.jsx": {
+    "mtime": 1689742964000,
+    "hash": "96761c9e8757dd9816a4157ac67fcc9a"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\portfolio-v4-dark.jsx": {
+    "mtime": 1689502382000,
+    "hash": "0894e44b2a465ea175cd283cd9d63c3e"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\portfolio-v4.jsx": {
+    "mtime": 1689502392000,
+    "hash": "ec7eafd4c9bf06e4edfe7686e2c3fc0c"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\portfolio-v5-dark.jsx": {
+    "mtime": 1689502404000,
+    "hash": "98b41b35e664a498a96b587a6f017df5"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\portfolio-v5.jsx": {
+    "mtime": 1689502414000,
+    "hash": "e5d928e0e7dd476c7698d9a574a1c8e5"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\portfolio.jsx": {
+    "mtime": 1689502432000,
+    "hash": "5cb4b9fd0c2cc665e0602438a4dadcab"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\service-dark.jsx": {
+    "mtime": 1689498756000,
+    "hash": "ed7973d3c38d6c9d64fe7303dc017475"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\service-details-dark.jsx": {
+    "mtime": 1689502870000,
+    "hash": "60485f2c5491b9f1f9fe5b2a6985e9d7"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\service-details.jsx": {
+    "mtime": 1689743026000,
+    "hash": "29cd0476f2b602a6b101bfa3f73c799a"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\service-v2-dark.jsx": {
+    "mtime": 1689502890000,
+    "hash": "b2661635b3bcad8fa038e317df356531"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\service-v2.jsx": {
+    "mtime": 1689679912000,
+    "hash": "81e0e33e37c8a90b592067acf39056c1"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\service-v3-dark.jsx": {
+    "mtime": 1689502906000,
+    "hash": "76fe7e551d4c9db990faf6621d677f58"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\service-v3.jsx": {
+    "mtime": 1689502916000,
+    "hash": "734132b06654eb813a2e467f7cbc7f5a"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\service-v4-dark.jsx": {
+    "mtime": 1689502926000,
+    "hash": "b4e4a58c108edac4268756fc972fc0a2"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\service-v4.jsx": {
+    "mtime": 1689502934000,
+    "hash": "a760e01600895afd3ec792c83d187da6"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\service-v5-dark.jsx": {
+    "mtime": 1689498790000,
+    "hash": "dd484f57cd3b4650cf8992ac3b7186b9"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\service-v5.jsx": {
+    "mtime": 1689498776000,
+    "hash": "4a4fa33027b71bb3c050b59834227530"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\service-v6-dark.jsx": {
+    "mtime": 1689484888000,
+    "hash": "8a6431c02cb04efcf36a2bbac5f6f491"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\service-v6.jsx": {
+    "mtime": 1689484926000,
+    "hash": "f2e08b54afe649e94a7344eb6b6cfd69"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\service.jsx": {
+    "mtime": 1689498730000,
+    "hash": "1b153901c6438703a9e989d90ec8aba7"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\startup-agency-dark.jsx": {
+    "mtime": 1689485148000,
+    "hash": "3651fbe183e266ae4374425d8212455e"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\startup-agency.jsx": {
+    "mtime": 1689485282000,
+    "hash": "c46c069a923264abb1afa78790d07c04"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\team-dark.jsx": {
+    "mtime": 1689485592000,
+    "hash": "1704fead4fea56abc2bc635a6c4c3880"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\team-details-dark.jsx": {
+    "mtime": 1689485926000,
+    "hash": "40a98dd69b2b859f517edfbae39babb2"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\team-details.jsx": {
+    "mtime": 1689486220000,
+    "hash": "be339f4f6381e4ccea7887227034fbc3"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\team.jsx": {
+    "mtime": 1689485640000,
+    "hash": "ac2d036395b28abe61ec9d6752f8cc58"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\_app.js": {
+    "mtime": 1689496904000,
+    "hash": "89ec1044f7807640ca156c2deaeb3523"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\pages\\_document.js": {
+    "mtime": 1689764784000,
+    "hash": "355c8d6a50303e72c02cd1ef4e26a3e7"
+  },
+  "D:\\AI App-Website\\Regularhub Private Limited\\MainFile\\src\\plugins\\index.js": {
+    "mtime": 1689743120000,
+    "hash": "ff7a842539a0d1ffd0ed7c06858ae452"
+  }
+}

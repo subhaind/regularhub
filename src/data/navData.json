@@ -1,0 +1,79 @@
+{
+  "nav": [
+    {
+      "nav_name": "HOME",
+      "link": "/digital-marketing",
+      "type": "",
+      "full_width": false,
+      "sub_nav": []
+    },
+    {
+      "nav_name": "Services",
+      "link": "/service",
+      "type": "dropdown",
+      "sub_nav": [
+        {
+          "nav_name": "Healthcare, Wellness & Pet Care ",
+          "link": "/services/healthcare-wellness-pet-care"
+        },
+        {
+          "nav_name": "Food, Hospitality & Travel ",
+          "link": "/services/the-food-hospitality-travel-growth-engine"
+        },
+        {
+          "nav_name": "Education, Creative & Entertainment",
+          "link": "/services/the-education-creative-entertainment-growth-engine"
+        },
+        {
+          "nav_name": "Retail & E-Commerce",
+          "link": "/services/the-retail-e-commerce-growth-engine"
+        },
+          {
+          "nav_name": "B2B, Industrial, Legal & Hyper-Local Distribution",
+          "link": "/services/b2b-industrial-legal-hyper-local-distribution"
+        },
+        {
+          "nav_name": "Local Services & Real Estate",
+          "link": "/services/the-local-services-real-estate-growth-engine"
+        },
+        {
+          "nav_name": "Events & Entertainment",
+          "link": "/services/the-events-entertainment-growth-engine"
+        },
+        {
+          "nav_name": "HR Management Software",
+          "link": "/services/hr-management-software"
+        },
+        {
+          "nav_name": "Laundry Management Software",
+          "link": "/services/laundry-management-software"
+        },
+        {
+          "nav_name": "Cloud Billing Software",
+          "link": "/services/cloud-billing-software"
+        },
+        {
+          "nav_name": "Restaurant Management Software",
+          "link": "/services/restaurant-management-software"
+        },
+        {
+          "nav_name": "Retail Billing Software",
+          "link": "/services/retail-billing-software"
+        }
+        
+        ]
+    },
+    {
+      "nav_name": "About",
+      "link": "/about",
+      "type": "",
+      "sub_nav": []
+    },
+    {
+      "nav_name": "Contact",
+      "link": "/contact",
+      "type": "",
+      "sub_nav": []
+    }
+  ]
+}

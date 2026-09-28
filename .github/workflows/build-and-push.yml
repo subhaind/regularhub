@@ -1,0 +1,48 @@
+name: Build and Push Production Assets
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build Next.js project
+        run: npm run build
+
+      - name: Push compiled assets to production-build branch
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Create a new directory for the production build
+          mkdir prod_deploy
+          
+          # Copy necessary files to run the Next.js app
+          cp -r .next prod_deploy/
+          cp -r public prod_deploy/
+          cp package.json prod_deploy/
+          cp package-lock.json prod_deploy/
+          cp next.config.js prod_deploy/
+          
+          cd prod_deploy
+          git init
+          git checkout -b production-build
+          git add .
+          git commit -m "Deploy production build"
+          git push -f https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/imhehee/regularhub_website.git production-build
