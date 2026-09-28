@@ -5,6 +5,10 @@ on:
     branches:
       - dev
 
+# Grant GITHUB_TOKEN write access to push branches
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -29,20 +33,23 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
+
           # Create a new directory for the production build
           mkdir prod_deploy
-          
+
           # Copy necessary files to run the Next.js app
           cp -r .next prod_deploy/
           cp -r public prod_deploy/
           cp package.json prod_deploy/
           cp package-lock.json prod_deploy/
           cp next.config.js prod_deploy/
-          
+
           cd prod_deploy
+
+          # Init repo, set remote with token, force-push as orphan branch
           git init
+          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/imhehee/regularhub_website.git
           git checkout -b production-build
           git add .
-          git commit -m "Deploy production build"
-          git push -f https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/imhehee/regularhub_website.git production-build
+          git commit -m "Deploy production build from dev @ ${{ github.sha }}"
+          git push -f origin production-build
