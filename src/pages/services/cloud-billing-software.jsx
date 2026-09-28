@@ -102,7 +102,7 @@ const CloudBillingSoftware = () => {
       </Head>
       <main>
         <RootLayout header="header1" footer="footer1">
-          <ServiceElementV3 introText={introText} sectionTitle={sectionTitle} serviceItems={serviceItems} btnLink="\services\cloude-billing-software_details" />
+          <ServiceElementV3 introText={introText} sectionTitle={sectionTitle} serviceItems={serviceItems} btnLink="/services/cloude-billing-software_details" />
           <ServiceBrand />
           <DigitalAgencyCTA />
         </RootLayout>

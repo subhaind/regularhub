@@ -83,7 +83,7 @@ const ServiceDetail = () => {
       </Head>
       <main>
         <RootLayout header="header1" footer="footer1">
-          <ServiceElementV3 introText={introText} sectionTitle={sectionTitle} serviceItems={serviceItems} btnLink="\services\retail-commerce_details" />
+          <ServiceElementV3 introText={introText} sectionTitle={sectionTitle} serviceItems={serviceItems} btnLink="/services/retail-commerce_details" />
           <ServiceBrand />
           <DigitalAgencyCTA />
         </RootLayout>

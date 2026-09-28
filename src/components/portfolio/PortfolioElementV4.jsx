@@ -1,9 +1,9 @@
 import { Navigation, Pagination, Autoplay, EffectFade } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Portfilio31 from "../../../public/assets/imgs/portfolio/3/1.jpg";
-import Portfilio32 from "../../../public/assets/imgs/portfolio/3/2.jpg";
-import Portfilio33 from "../../../public/assets/imgs/portfolio/3/3.jpg";
-import Portfilio34 from "../../../public/assets/imgs/portfolio/3/4.jpg";
+const Portfilio31 = "/assets/imgs/portfolio/5/1.jpg";
+const Portfilio32 = "/assets/imgs/portfolio/5/2.jpg";
+const Portfilio33 = "/assets/imgs/portfolio/5/3.jpg";
+const Portfilio34 = "/assets/imgs/portfolio/5/4.jpg";
 import Image from "next/image";
 
 // Import Swiper styles

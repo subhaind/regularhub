@@ -126,7 +126,7 @@ const RetailBillingSoftware = () => {
       </Head>
       <main>
         <RootLayout header="header1" footer="footer1">
-          <ServiceElementV3 introText={introText} sectionTitle={sectionTitle} serviceItems={serviceItems} btnLink="\services\retail-billing-software_details" />
+          <ServiceElementV3 introText={introText} sectionTitle={sectionTitle} serviceItems={serviceItems} btnLink="/services/retail-billing-software_details" />
           <ServiceBrand />
           <DigitalAgencyCTA />
         </RootLayout>
