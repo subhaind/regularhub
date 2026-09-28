@@ -26,30 +26,24 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
-      - name: Build Next.js project
+      - name: Build Next.js static export
         run: npm run build
+        # next.config.js has output:'export' so this generates the /out folder
 
-      - name: Push compiled assets to production-build branch
+      - name: Push static export to production-build branch
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Create a new directory for the production build
-          mkdir prod_deploy
+          cd out
 
-          # Copy necessary files to run the Next.js app
-          cp -r .next prod_deploy/
-          cp -r public prod_deploy/
-          cp package.json prod_deploy/
-          cp package-lock.json prod_deploy/
-          cp next.config.js prod_deploy/
-
-          cd prod_deploy
+          # Add a .nojekyll so GitHub/Hostinger doesn't ignore _next assets
+          touch .nojekyll
 
           # Init repo, set remote with token, force-push as orphan branch
           git init
           git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/imhehee/regularhub_website.git
           git checkout -b production-build
           git add .
-          git commit -m "Deploy production build from dev @ ${{ github.sha }}"
+          git commit -m "Deploy static export from dev @ ${{ github.sha }}"
           git push -f origin production-build
