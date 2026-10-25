@@ -632,3 +632,63 @@
 .header__nav-2 ul li a:hover {
   color: var(--primary) !important;
 }
+
+/* Services menu — grouped by line of business, built from src/data/services/catalog.js.
+   Hover uses ink + underline: the theme's lime hover is unreadable on white. */
+.main-dropdown.multi-column.services-menu {
+  grid-template-columns: repeat(3, minmax(210px, 1fr));
+  min-width: 780px;
+  gap: 4px 32px;
+  padding: 28px 32px 18px;
+}
+
+.main-dropdown.multi-column.services-menu > li {
+  display: block;
+  padding: 0;
+}
+
+.services-menu__title {
+  display: block;
+  padding: 0 0 10px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid #eee;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6b6b6b;
+}
+
+.main-dropdown.services-menu .services-menu__col ul {
+  position: static;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.main-dropdown.multi-column.services-menu .services-menu__col li {
+  display: block;
+  padding: 0;
+}
+
+.main-dropdown.multi-column.services-menu li a {
+  display: block;
+  padding: 7px 0;
+  font-size: 15px;
+  line-height: 1.35;
+  color: #0f0f0f;
+}
+
+.main-dropdown.multi-column.services-menu li a:hover {
+  color: #0f0f0f;
+  letter-spacing: 0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.main-dropdown.multi-column.services-menu .services-menu__all {
+  grid-column: 1 / -1;
+  margin-top: 10px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+}

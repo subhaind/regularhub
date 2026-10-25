@@ -6,20 +6,11 @@ import logoWhite2 from "../../../public/assets/imgs/logo/site-logo-white-2.png";
 import Shape11 from "../../../public/assets/imgs/shape/11.png";
 import Shape12 from "../../../public/assets/imgs/shape/12.png";
 import Image from "next/image";
+import { serviceNavGroups } from "@/data/services/catalog";
 
 const services = [
-  { nav_name: "Healthcare, Wellness & Pet Care ", link: "/services/healthcare-wellness-pet-care" },
-  { nav_name: "Food, Hospitality & Travel ", link: "/services/the-food-hospitality-travel-growth-engine" },
-  { nav_name: "Education, Creative & Entertainment", link: "/services/the-education-creative-entertainment-growth-engine" },
-  { nav_name: "Retail & E-Commerce", link: "/services/the-retail-e-commerce-growth-engine" },
-  { nav_name: "B2B, Industrial, Legal & Hyper-Local Distribution", link: "/services/b2b-industrial-legal-hyper-local-distribution" },
-  { nav_name: "Local Services & Real Estate", link: "/services/the-local-services-real-estate-growth-engine" },
-  { nav_name: "Events & Entertainment", link: "/services/the-events-entertainment-growth-engine" },
-  { nav_name: "HR Management Software", link: "/services/hr-management-software" },
-  { nav_name: "Laundry Management Software", link: "/services/laundry-management-software" },
-  { nav_name: "Cloud Billing Software", link: "/services/cloud-billing-software" },
-  { nav_name: "Restaurant Management Software", link: "/services/restaurant-management-software" },
-  { nav_name: "Retail Billing Software", link: "/services/retail-billing-software" }
+  { nav_name: "All services", link: "/services" },
+  ...serviceNavGroups().flatMap((group) => group.items),
 ];
 
 const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
@@ -136,7 +127,7 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
                   </li>
                   <li>
                     <div className="header_title">
-                      <Link href="/service">Services</Link>
+                      <Link href="/services">Services</Link>
                       <div className="accordian-btn">
                         {accordion === 1 ? (
                           <a onClick={() => openData(0)}>-</a>
