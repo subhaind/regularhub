@@ -375,36 +375,32 @@ const service = {
     "models": [
       {
         "title": "Project-based",
-        "body": "a defined-scope engagement (an audit, a penetration test, a cleanup) with a clear start and end."
+        "body": "A defined-scope engagement (an audit, a penetration test, a cleanup) with a clear start and end."
       },
       {
         "title": "Monthly retainer",
-        "body": "ongoing monitoring, management, or advisory work billed on a recurring basis; most reputation and SOC-style services fall here."
+        "body": "Ongoing monitoring, management, or advisory work billed on a recurring basis; most reputation and SOC-style services fall here."
       },
       {
         "title": "On-call incident response retainer",
-        "body": "a standing agreement guaranteeing priority response time (often contractual, e.g., a 1-hour or 4-hour SLA) if a breach or reputational crisis occurs, without paying for full-time coverage in the meantime."
+        "body": "A standing agreement guaranteeing priority response time (often contractual, e.g., a 1-hour or 4-hour SLA) if a breach or reputational crisis occurs, without paying for full-time coverage in the meantime."
       },
       {
         "title": "Tiered packages",
-        "body": "individual and company services are commonly bundled into tiers (e.g., Essential / Professional / Enterprise) scaled by monitoring frequency, response time, and scope of coverage."
+        "body": "Individual and company services are commonly bundled into tiers (e.g., Essential / Professional / Enterprise) scaled by monitoring frequency, response time, and scope of coverage."
       },
       {
         "title": "Fractional / advisory",
-        "body": "ongoing strategic guidance (vCISO, personal brand advisory) without operational day-to-day work."
-      },
-      {
-        "title": "Most clients start with an audit or assessment in the relevant domain",
-        "body": "reputation, security, or both — before committing to an ongoing engagement model."
+        "body": "Ongoing strategic guidance (vCISO, personal brand advisory) without operational day-to-day work."
       }
     ],
-    "note": ""
+    "note": "Most clients start with an audit or assessment in the relevant domain — reputation, security, or both — before committing to an ongoing engagement model."
   },
   "faqs": [],
   "closing": {
     "heading": "Start with a confidential assessment",
     "body": [
-      ""
+      "Most clients start with an audit or assessment in the relevant domain — reputation, security, or both — before committing to an ongoing engagement model."
     ]
   },
   "related": [

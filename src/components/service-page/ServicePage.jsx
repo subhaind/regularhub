@@ -421,11 +421,11 @@ const ServicePage = ({ service }) => {
                   <h2 className={s.h2OnDark} id="closing-title">
                     {service.closing.heading}
                   </h2>
-                  {service.closing.body.map((para) => (
+                  {service.closing.body.filter(Boolean).map((para) => (
                     <p key={para}>{para}</p>
                   ))}
                   <CtaPair slug={slug} category={category} onDark secondary={!!category.secondaryCta.intent} />
-                  {service.closing.body.length === 0 && <p className={s.assuranceOnDark}>{category.assurance}</p>}
+                  {service.closing.body.filter(Boolean).length === 0 && <p className={s.assuranceOnDark}>{category.assurance}</p>}
                 </div>
               </div>
             </section>

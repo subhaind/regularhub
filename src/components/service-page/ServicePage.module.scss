@@ -248,6 +248,8 @@
   margin-bottom: 20px;
 
   a {
+    display: inline-block;
+    padding: 4px 0; // WCAG 2.2 target size (24px)
     color: var(--sp-muted);
     text-decoration: underline;
     text-underline-offset: 3px;
@@ -289,6 +291,8 @@
   }
 
   a {
+    display: inline-block;
+    padding: 4px 0; // WCAG 2.2 target size (24px)
     color: var(--sp-ink);
     border-bottom: 1px solid var(--sp-line);
 
@@ -391,6 +395,8 @@
   display: grid;
   gap: 16px;
   grid-template-columns: minmax(0, 1fr);
+  // Disclosure grid: an opened item must not stretch its closed neighbour.
+  align-items: start;
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
