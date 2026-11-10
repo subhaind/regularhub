@@ -138,7 +138,7 @@ const BlogDetails1 = () => {
                 <p className="sub-title-anim">
                   tags: <Link href="/blog">design</Link>,{" "}
                   <Link href="/blog">figma</Link>,
-                  <Link href="/tag">update</Link>
+                  <Link href="/blog">update</Link>
                 </p>
               </div>
             </div>

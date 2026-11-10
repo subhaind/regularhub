@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "@/plugins";
-import $ from "jquery";
 import Link from "next/link";
 import Portfilio61 from "../../../public/assets/imgs/portfolio/6/1.jpg";
 import Portfilio62 from "../../../public/assets/imgs/portfolio/6/2.jpg";
@@ -31,16 +30,17 @@ const Portfolio1 = () => {
         PortfolioTotal.current.innerHTML = totalPortfolioItems;
       }
 
-      $(document).on("scroll", function () {
-        $(".portfolio__item-6").each(function () {
-          if (
-            $(this).position().top <= $(document).scrollTop() &&
-            $(this).position().top + $(this).outerHeight() >
-              $(document).scrollTop()
-          ) {
-            var item_num = $(this).data("portfitem");
-            $(".portfolio__current").html(item_num);
-            $(this).addClass("active").siblings().removeClass("active");
+      window.addEventListener("scroll", function () {
+        const scrollTop = window.scrollY;
+        document.querySelectorAll(".portfolio__item-6").forEach((item) => {
+          if (item.offsetTop <= scrollTop && item.offsetTop + item.offsetHeight > scrollTop) {
+            document.querySelectorAll(".portfolio__current").forEach((c) => {
+              c.innerHTML = item.dataset.portfitem;
+            });
+            item.classList.add("active");
+            [...item.parentElement.children].forEach((sib) => {
+              if (sib !== item) sib.classList.remove("active");
+            });
           }
         });
       });

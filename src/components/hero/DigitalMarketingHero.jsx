@@ -125,7 +125,7 @@ const DigitalMarketingHero = () => {
               </div>
               <div className="video">
                 <video
-                  src="assets/video/hero-3.mp4"
+                  src="/assets/video/hero-3.mp4"
                   loop
                   muted
                   autoPlay

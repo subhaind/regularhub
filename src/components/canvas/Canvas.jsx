@@ -106,10 +106,12 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
             <div className="offcanvas__logo">
               <Link href="/">
                 <Image
-                  priority
-                  style={{ width: "auto", height: "auto" }}
+                  className="offcanvas-logo"
                   src={logoWhite2}
-                  alt="Offcanvas Logo"
+                  alt="Regularhub"
+                  width={944}
+                  height={264}
+                  sizes="180px"
                 />
               </Link>
             </div>

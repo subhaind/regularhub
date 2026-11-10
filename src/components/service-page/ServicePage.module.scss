@@ -1355,7 +1355,7 @@
 
 .stickyCta {
   position: fixed;
-  z-index: 100000;
+  z-index: 9998; // below the full-screen menu (9999) so the open menu covers it
   left: 0;
   right: 0;
   bottom: 0;

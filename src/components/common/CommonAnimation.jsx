@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import $ from "jquery";
 import { Power2, gsap } from "gsap";
 import {
   ScrollTrigger,
@@ -11,24 +10,20 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
 const CommonAnimation = ({ children }) => {
   useEffect(() => {
     if (typeof window !== "undefined") {
-      $(".btn-hover").on("mouseenter", function (e) {
-        var x = e.pageX - $(this).offset().left;
-        var y = e.pageY - $(this).offset().top;
-
-        $(this).find("span").css({
-          top: y,
-          left: x,
+      // Ripple origin for .btn-hover: move the inner <span> to the pointer position.
+      const moveRipple = (e) => {
+        const el = e.currentTarget;
+        const rect = el.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        el.querySelectorAll("span").forEach((span) => {
+          span.style.top = `${y}px`;
+          span.style.left = `${x}px`;
         });
-      });
-
-      $(".btn-hover").on("mouseout", function (e) {
-        var x = e.pageX - $(this).offset().left;
-        var y = e.pageY - $(this).offset().top;
-
-        $(this).find("span").css({
-          top: y,
-          left: x,
-        });
+      };
+      document.querySelectorAll(".btn-hover").forEach((btn) => {
+        btn.addEventListener("mouseenter", moveRipple);
+        btn.addEventListener("mouseout", moveRipple);
       });
 
       // Common Animation

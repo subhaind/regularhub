@@ -773,3 +773,13 @@ form button[type="submit"]:disabled {
   outline: 3px solid #c9f31d;
   outline-offset: 3px;
 }
+
+/* Menu logo: bounded like the footer logo (the PNG is 944×264, so unbounded it
+   stretched the menu grid and clipped the navigation links). */
+.offcanvas__logo .offcanvas-logo {
+  display: block;
+  height: 36px;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
+}
