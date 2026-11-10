@@ -37,3 +37,6 @@ src/.graphify/
 __pycache__/
 .DS_Store
 .claude/
+
+# local admin dev store
+.data/

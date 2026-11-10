@@ -7,9 +7,11 @@ import { PurgeCSS } from "purgecss";
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
-const OUT = "out";
+// Static export -> ./out ; server build (needed for /admin) -> ./.next
+import { existsSync } from "node:fs";
+const OUT = existsSync("out") ? "out" : ".next";
 // webpack emits CSS to static/css, Turbopack to static/chunks — search the whole static dir.
-const cssDir = path.join(OUT, "_next", "static");
+const cssDir = OUT === "out" ? path.join(OUT, "_next", "static") : path.join(OUT, "static");
 
 const walk = async (dir, exts, acc = []) => {
   for (const e of await readdir(dir, { withFileTypes: true })) {
