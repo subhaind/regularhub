@@ -11,6 +11,7 @@ import {
   serviceHref,
 } from "@/data/services/catalog";
 import { AnchorLink, SectionHead } from "./shared";
+import LeadForm from "./LeadForm";
 import s from "./ServicePage.module.scss";
 
 // Industry → the growth engine that fills the pipeline + the software that runs the floor.
@@ -25,7 +26,12 @@ const matrix = [
   { industry: "Events, venues & media", engine: "the-events-entertainment-growth-engine", software: ["id-card-making-software"] },
 ];
 
-const hubCta = { href: "/contact?intent=consultation", label: "Talk to an expert" };
+const hubFormCategory = {
+  primaryCta: { label: "Talk to an expert", intent: "consultation" },
+  assurance: "No hard sell. A specific recommendation for your business.",
+};
+
+const hubCta = { label: "Talk to an expert" };
 
 const ServicesHub = () => {
   const url = `${SITE_URL}/services/`;
@@ -56,9 +62,9 @@ const ServicesHub = () => {
                   <AnchorLink id="find" className={s.btnPrimary}>
                     Find the right system <i className="fa-solid fa-arrow-down" aria-hidden="true"></i>
                   </AnchorLink>
-                  <Link href={hubCta.href} className={s.btnSecondary}>
+                  <AnchorLink id="enquire" className={s.btnSecondary}>
                     {hubCta.label}
-                  </Link>
+                  </AnchorLink>
                 </div>
                 <nav aria-label="Service lines" className={s.jumpNav}>
                   <span>Jump to:</span>
@@ -142,17 +148,20 @@ const ServicesHub = () => {
 
             <section className={s.sectionDark} aria-labelledby="hub-closing">
               <div className={s.container}>
-                <div className={s.closing}>
-                  <span className={s.eyebrowOnDark}>Not sure where to start?</span>
-                  <h2 className={s.h2OnDark} id="hub-closing">
-                    Tell us where revenue is leaking. We’ll tell you which system fixes it.
-                  </h2>
-                  <p>One focused conversation about your business — and a specific recommendation before you commit to anything.</p>
-                  <div className={s.btnRow}>
-                    <Link href={hubCta.href} className={s.btnPrimaryOnDark}>
-                      {hubCta.label} <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                    </Link>
+                <div className={s.closingGrid}>
+                  <div className={s.closing}>
+                    <span className={s.eyebrowOnDark}>Not sure where to start?</span>
+                    <h2 className={s.h2OnDark} id="hub-closing">
+                      Tell us where revenue is leaking. We’ll tell you which system fixes it.
+                    </h2>
+                    <p>One focused conversation about your business — and a specific recommendation before you commit to anything.</p>
                   </div>
+                  <LeadForm
+                    category={hubFormCategory}
+                    intent="consultation"
+                    heading="Talk to an expert"
+                    lead="Two minutes now saves a generic sales call later."
+                  />
                 </div>
               </div>
             </section>

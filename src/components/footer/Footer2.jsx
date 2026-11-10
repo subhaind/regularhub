@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { NewsletterForm } from "@/components/common/ThemeForms";
 import ArrowBlack from "../../../public/assets/imgs/icon/arrow-black.png";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
@@ -67,21 +68,7 @@ export default function Footer2() {
               </div>
               <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                 <div className="footer__subscribe-2">
-                  <form action="#">
-                    <input
-                      type="text"
-                      name="email"
-                      placeholder="Enter your email"
-                    />
-                    <button type="submit" className="submit">
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        src={ArrowBlack}
-                        alt="Arrow Icon"
-                      />
-                    </button>
-                  </form>
+                  <NewsletterForm />
                 </div>
               </div>
             </div>

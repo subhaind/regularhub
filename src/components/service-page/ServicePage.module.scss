@@ -1164,12 +1164,265 @@
   gap: 4px 14px;
 }
 
+// ── Closing: pitch + inline enquiry form ───────────────────
+.closingGrid {
+  display: grid;
+  gap: 40px;
+  align-items: start;
+
+  @media (min-width: 992px) {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 520px);
+    gap: 64px;
+  }
+}
+
+.formCard {
+  background: #fff;
+  color: var(--sp-body);
+  border-radius: var(--sp-radius);
+  padding: clamp(22px, 3.5vw, 36px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  scroll-margin-top: 110px;
+  font-size: 16px;
+}
+
+.formTitle {
+  margin: 0 0 6px;
+  font-size: clamp(22px, 2.4vw, 28px);
+  line-height: 1.2;
+  color: var(--sp-ink);
+}
+
+.formLead {
+  margin: 0 0 18px;
+  color: var(--sp-muted);
+  font-size: 15px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.formGrid {
+  display: grid;
+  gap: 14px;
+
+  @media (min-width: 576px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--sp-ink);
+
+    span {
+      color: var(--sp-leak);
+    }
+  }
+
+  // 16px stops iOS zooming into the field; 48px keeps a comfortable touch target.
+  input,
+  textarea {
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 14px;
+    font: inherit;
+    font-size: 16px;
+    color: var(--sp-ink);
+    background: #fff;
+    border: 1px solid #b9b9b3;
+    border-radius: 10px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+
+    &:hover {
+      border-color: var(--sp-ink);
+    }
+
+    &:focus-visible {
+      outline: none;
+      border-color: var(--sp-ink);
+      box-shadow: 0 0 0 3px var(--sp-accent), 0 0 0 4px var(--sp-ink);
+    }
+
+    // Only flag a field once the visitor has typed in it and left it wrong.
+    &:user-invalid {
+      border-color: var(--sp-leak);
+      background: var(--sp-leak-bg);
+    }
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 96px;
+  }
+}
+
+.fieldWide {
+  grid-column: 1 / -1;
+}
+
+.form .btnPrimary {
+  width: 100%;
+
+  &:disabled {
+    cursor: progress;
+    opacity: 0.75;
+  }
+}
+
+.formNote {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--sp-muted);
+
+  a {
+    color: var(--sp-ink);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid rgba(15, 15, 15, 0.25);
+  border-top-color: var(--sp-ink);
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.formSuccess {
+  text-align: center;
+  padding: 12px 0;
+
+  h3 {
+    margin: 14px 0 8px;
+    color: var(--sp-ink);
+    font-size: 24px;
+  }
+
+  p {
+    margin: 0 0 10px;
+  }
+}
+
+.formSuccessIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--sp-accent);
+  color: var(--sp-ink);
+  font-size: 22px;
+}
+
+// ── Reading progress + sticky CTA (portalled to <body>, so tokens are literal) ──
+.progress {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: 3px;
+  z-index: 100001;
+  pointer-events: none;
+}
+
+.progressBar {
+  display: block;
+  height: 100%;
+  background: #c9f31d;
+  box-shadow: 0 0 0 1px #0f0f0f;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.stickyCta {
+  position: fixed;
+  z-index: 100000;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+  background: rgba(255, 255, 255, 0.96);
+  border-top: 1px solid #e4e4e0;
+  transform: translateY(calc(100% + 48px));
+  visibility: hidden; // also removes it from the tab order while off-screen
+  transition: transform 0.3s ease, visibility 0s linear 0.3s;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 50px;
+    border-radius: 999px;
+    background: #c9f31d;
+    border: 1px solid #c9f31d;
+    color: #0f0f0f;
+    font-size: 16px;
+    font-weight: 500;
+
+    &:hover {
+      background: #0f0f0f;
+      color: #fff;
+    }
+
+    &:focus-visible {
+      outline: 3px solid #0f0f0f;
+      outline-offset: 3px;
+    }
+  }
+
+  // Desktop: a compact pill bottom-left instead of a full-width bar.
+  @media (min-width: 992px) {
+    right: auto;
+    left: 24px;
+    bottom: 24px;
+    padding: 0;
+    background: none;
+    border: 0;
+
+    a {
+      padding: 0 26px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.stickyCtaShow {
+  transform: translateY(0);
+  visibility: visible;
+  transition-delay: 0s;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .btn,
   .btn i,
   .relatedCard,
+  .stickyCta,
   .textLink i,
   .disclosure summary::after {
     transition: none;
+  }
+
+  .spinner {
+    animation-duration: 2s;
   }
 }

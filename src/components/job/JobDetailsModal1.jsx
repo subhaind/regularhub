@@ -1,12 +1,21 @@
 import { Modal } from "react-bootstrap";
 import LogoBlack from "../../../public/assets/imgs/logo/logo-black.png";
 import Image from "next/image";
+import { useRef } from "react";
 
-const JobDetailsModal1 = ({ modal1, setModal1, setModal2 }) => {
+const JobDetailsModal1 = ({ modal1, setModal1, setModal2, answersRef }) => {
+  const formRef = useRef(null);
   const applyClose = () => {
     setModal1(false);
   };
+  // Step 1 only collects answers; they are held in memory and sent with step 2.
   const applyTrigger = () => {
+    const form = formRef.current;
+    if (form && !form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+    if (form && answersRef) answersRef.current = Object.fromEntries(new FormData(form).entries());
     setModal2(true);
   };
   return (
@@ -38,7 +47,7 @@ const JobDetailsModal1 = ({ modal1, setModal1, setModal2 }) => {
             <p>Full time</p>
           </div>
           <div className="form-apply">
-            <form action="#">
+            <form ref={formRef} onSubmit={(e) => e.preventDefault()}>
               <div className="input-apply">
                 <p>
                   Why you decided to apply here and why should we select you? *

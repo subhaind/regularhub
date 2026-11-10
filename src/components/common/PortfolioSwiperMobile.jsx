@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { QuoteForm } from "@/components/common/ThemeForms";
 import { useState } from "react";
 import { Navigation, Thumbs, FreeMode } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -434,57 +435,7 @@ const PortfolioSwiperMobile = ({ portfolioSection, portfolioHeroImg }) => {
                     </div>
                     <div className="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
                       <div className="contact__form">
-                        <form action="#">
-                          <div className="row g-3">
-                            <div className="col-xxl-6 col-xl-6 col-12">
-                              <input
-                                type="text"
-                                name="name"
-                                placeholder="Name *"
-                              />
-                            </div>
-                            <div className="col-xxl-6 col-xl-6 col-12">
-                              <input
-                                type="email"
-                                name="email"
-                                placeholder="Email *"
-                              />
-                            </div>
-                          </div>
-                          <div className="row g-3">
-                            <div className="col-xxl-6 col-xl-6 col-12">
-                              <input
-                                type="tel"
-                                name="phone"
-                                placeholder="Phone"
-                              />
-                            </div>
-                            <div className="col-xxl-6 col-xl-6 col-12">
-                              <input
-                                type="text"
-                                name="subject"
-                                placeholder="Subject *"
-                              />
-                            </div>
-                          </div>
-                          <div className="row g-3">
-                            <div className="col-12">
-                              <textarea
-                                name="message"
-                                placeholder="Messages *"
-                              ></textarea>
-                            </div>
-                          </div>
-                          <div className="row g-3">
-                            <div className="col-12">
-                              <div className="pc-btn">
-                                <button className="wc-btn-dark">
-                                  Send Me Quotes
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </form>
+                        <QuoteForm />
                       </div>
                     </div>
                   </div>

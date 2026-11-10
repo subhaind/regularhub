@@ -3,13 +3,15 @@ import Link from "next/link";
 import RootLayout from "@/components/common/layout/RootLayout";
 import {
   SITE_URL,
-  categories,
   ctaHref,
+  categories,
   getOffering,
   serviceHref,
 } from "@/data/services/catalog";
 import SegmentExplorer from "./SegmentExplorer";
 import { AnchorLink, CtaPair, JsonLd, SectionHead } from "./shared";
+import LeadForm from "./LeadForm";
+import ServiceChrome from "./ServiceChrome";
 import s from "./ServicePage.module.scss";
 
 // One template for every offering. Section order follows the buying sequence:
@@ -83,9 +85,10 @@ const ServicePage = ({ service }) => {
       </Head>
       <main>
         <RootLayout header="header1" footer="footer1">
+          <ServiceChrome label={category.primaryCta.label} />
           <article className={s.page}>
             {/* ── Hero: promise, proof, one primary action ── */}
-            <header className={s.hero}>
+            <header className={s.hero} id="service-hero">
               <div className={s.container}>
                 <div className={s.heroGrid}>
                   <div>
@@ -295,9 +298,9 @@ const ServicePage = ({ service }) => {
                     <h2>{category.midCta.heading}</h2>
                     <p>{category.midCta.body}</p>
                   </div>
-                  <Link href={ctaHref(slug, category.primaryCta.intent)} className={s.btnInk}>
+                  <AnchorLink id="enquire" className={s.btnInk}>
                     {category.primaryCta.label} <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                  </Link>
+                  </AnchorLink>
                 </div>
               </div>
             </section>
@@ -413,19 +416,28 @@ const ServicePage = ({ service }) => {
               </section>
             )}
 
-            {/* ── Final CTA ── */}
+            {/* ── Final CTA: pitch + the enquiry form, on the page the visitor is already reading ── */}
             <section className={s.sectionDark} aria-labelledby="closing-title">
               <div className={s.container}>
-                <div className={s.closing}>
-                  <span className={s.eyebrowOnDark}>Next step</span>
-                  <h2 className={s.h2OnDark} id="closing-title">
-                    {service.closing.heading}
-                  </h2>
-                  {service.closing.body.filter(Boolean).map((para) => (
-                    <p key={para}>{para}</p>
-                  ))}
-                  <CtaPair slug={slug} category={category} onDark secondary={!!category.secondaryCta.intent} />
-                  {service.closing.body.filter(Boolean).length === 0 && <p className={s.assuranceOnDark}>{category.assurance}</p>}
+                <div className={s.closingGrid}>
+                  <div className={s.closing}>
+                    <span className={s.eyebrowOnDark}>Next step</span>
+                    <h2 className={s.h2OnDark} id="closing-title">
+                      {service.closing.heading}
+                    </h2>
+                    {service.closing.body.filter(Boolean).map((para) => (
+                      <p key={para}>{para}</p>
+                    ))}
+                    {category.secondaryCta.intent && (
+                      <div className={s.btnRow}>
+                        <Link href={ctaHref(slug, category.secondaryCta.intent)} className={s.btnSecondaryOnDark}>
+                          {category.secondaryCta.label}
+                        </Link>
+                      </div>
+                    )}
+                    <p className={s.assuranceOnDark}>{category.assurance}</p>
+                  </div>
+                  <LeadForm service={service} category={category} lead={category.midCta.body} />
                 </div>
               </div>
             </section>

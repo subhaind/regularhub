@@ -28,6 +28,9 @@ jobs:
 
       - name: Build Next.js static export
         run: npm run build
+        env:
+          # Google Apps Script web-app URL for all site forms (see google-apps-script/README.md)
+          NEXT_PUBLIC_GAS_URL: ${{ secrets.NEXT_PUBLIC_GAS_URL }}
         # next.config.js has output:'export' so this generates the /out folder
 
       - name: Push static export to production-build branch

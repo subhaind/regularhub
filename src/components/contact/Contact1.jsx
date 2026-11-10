@@ -3,8 +3,9 @@ import animationWordCome from "@/lib/utils/animationWordCome";
 import { getOffering } from "@/data/services/catalog";
 import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
+import { CONTACT_EMAIL, useLeadForm } from "@/lib/leadForm";
+import { FormStatus, Honeypot } from "@/components/common/FormParts";
 
-const CONTACT_EMAIL = "hello@regularhub.in";
 
 // Every service-page CTA links here with ?service=&intent=(&segment=) so the
 // enquiry arrives labelled with what the visitor asked for.
@@ -27,7 +28,6 @@ const Contact1 = () => {
   const wordAnim = useRef();
   const router = useRouter();
   const [subject, setSubject] = useState("");
-  const [sent, setSent] = useState(false);
 
   useEffect(() => {
     animationCharCome(charAnim.current);
@@ -38,23 +38,20 @@ const Contact1 = () => {
     if (router.isReady) setSubject(buildSubject(router.query));
   }, [router.isReady, router.query]);
 
-  // The site is a static export with no form backend, so the enquiry is handed to
-  // the visitor's email client, fully pre-filled, instead of posting to a missing script.
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    const body = [
-      `Name: ${data.get("name")}`,
-      `Email: ${data.get("email")}`,
-      `Phone: ${data.get("phone") || "-"}`,
-      "",
-      data.get("message"),
-    ].join("\n");
-    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
-      data.get("subject")
-    )}&body=${encodeURIComponent(body)}`;
-    setSent(true);
-  };
+  // Posts to the Google Apps Script web app (sheet + email alert). If the script URL
+  // is not configured, the enquiry is handed to the visitor's email client instead.
+  const { status, error, handleSubmit, sending } = useLeadForm("contact", {
+    getExtra: () => ({
+      service: router.query.service ? String(router.query.service) : "",
+      intent: router.query.intent ? String(router.query.intent) : "",
+      segment: router.query.segment ? String(router.query.segment) : "",
+    }),
+    mailtoFallback: (d) =>
+      `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(d.subject || "Enquiry")}&body=${encodeURIComponent(
+        [`Name: ${d.name}`, `Email: ${d.email}`, `Phone: ${d.phone || "-"}`, "", d.message].join("\n")
+      )}`,
+    onSuccess: () => setSubject(buildSubject({})),
+  });
 
   return (
     <>
@@ -106,7 +103,8 @@ const Contact1 = () => {
             </div>
             <div className="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
               <div className="contact__form">
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} aria-busy={sending}>
+                  <Honeypot />
                   <div className="row g-3">
                     <div className="col-xxl-6 col-xl-6 col-12">
                       <label htmlFor="contact-name" className="visually-hidden">Name</label>
@@ -149,18 +147,15 @@ const Contact1 = () => {
                   <div className="row g-3">
                     <div className="col-12">
                       <div className="btn_wrapper">
-                        <button type="submit" className="wc-btn-primary btn-hover btn-item">
-                          <span></span> Send <br />
-                          enquiry <i className="fa-solid fa-arrow-right"></i>
+                        <button type="submit" className="wc-btn-primary btn-hover btn-item" disabled={sending}>
+                          <span></span> {sending ? "Sending…" : <>Send <br />enquiry</>} <i className="fa-solid fa-arrow-right"></i>
                         </button>
                       </div>
-                      {sent && (
-                        <p role="status" style={{ marginTop: 16 }}>
-                          Your email app should now be open with your enquiry
-                          filled in — just press send. If nothing opened, email us
-                          at <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
-                        </p>
-                      )}
+                      <FormStatus
+                        status={status}
+                        error={error}
+                        success="Thank you — your enquiry is in. We'll reply within one business day."
+                      />
                     </div>
                   </div>
                 </form>

@@ -28,9 +28,10 @@ export const CtaPair = ({ slug, category, onDark = false, secondary = true }) =>
   const { primaryCta, secondaryCta } = category;
   return (
     <div className={s.btnRow}>
-      <Link href={ctaHref(slug, primaryCta.intent)} className={primaryClass}>
+      {/* Primary action jumps to the on-page enquiry form: no page change, context kept. */}
+      <AnchorLink id="enquire" className={primaryClass}>
         {primaryCta.label} <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
-      </Link>
+      </AnchorLink>
       {secondary && secondaryCta.intent && (
         <Link href={ctaHref(slug, secondaryCta.intent)} className={secondaryClass}>
           {secondaryCta.label}

@@ -1,8 +1,13 @@
 import { Modal } from "react-bootstrap";
 import LogoBlack from "../../../public/assets/imgs/logo/logo-black.png";
 import Image from "next/image";
+import { FormStatus, Honeypot } from "@/components/common/FormParts";
+import { useLeadForm } from "@/lib/leadForm";
 
-const JobDetailsModal2 = ({ modal2, setModal1, setModal2 }) => {
+const JobDetailsModal2 = ({ modal2, setModal1, setModal2, answersRef }) => {
+  const { status, error, handleSubmit, sending } = useLeadForm("job-application", {
+    getExtra: () => ({ role: "Frontend Developer", ...(answersRef ? answersRef.current : {}) }),
+  });
   const backForm = () => {
     setModal2(false);
   };
@@ -40,7 +45,8 @@ const JobDetailsModal2 = ({ modal2, setModal1, setModal2 }) => {
             <p>Full time</p>
           </div>
           <div className="form-apply">
-            <form action="#">
+            <form id="job-apply-form" onSubmit={handleSubmit} aria-busy={sending}>
+              <Honeypot />
               <div className="input-apply-2">
                 <p>Name *</p>
                 <input type="text" name="name" required />
@@ -55,8 +61,10 @@ const JobDetailsModal2 = ({ modal2, setModal1, setModal2 }) => {
               </div>
               <div className="input-apply-2">
                 <p>Upload CV *</p>
-                <input type="file" name="cv" />
+                <input type="file" name="cv" accept=".pdf,.doc,.docx" required />
+                <small>PDF or Word, up to 2 MB.</small>
               </div>
+              <FormStatus status={status} error={error} success="Application received — thank you! We'll be in touch." />
             </form>
           </div>
           <div className="form-btn-2">
@@ -68,11 +76,12 @@ const JobDetailsModal2 = ({ modal2, setModal1, setModal2 }) => {
               <span></span> back <i className="fa-solid fa-arrow-right"></i>
             </button>
             <button
-              onClick={applyClose}
               type="submit"
+              form="job-apply-form"
               className="wc-btn-primary btn-hover"
+              disabled={sending || status === "success"}
             >
-              <span></span> Submit <i className="fa-solid fa-arrow-right"></i>
+              <span></span> {sending ? "Sending…" : "Submit"} <i className="fa-solid fa-arrow-right"></i>
             </button>
           </div>
         </div>
