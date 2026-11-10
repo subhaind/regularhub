@@ -100,7 +100,7 @@ const DigitalMarketingPrice = () => {
                     <Accordion.Body>
                       <div>
                         <p>
-                          Custom growth strategy development tailored to each business's unique position, resources, and market conditions to achieve sustainable, profitable growth over the short and long term.
+                          Custom growth strategy development tailored to each business&apos;s unique position, resources, and market conditions to achieve sustainable, profitable growth over the short and long term.
                         </p>
                       </div>
                     </Accordion.Body>

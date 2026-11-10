@@ -47,6 +47,7 @@ export default function Header1({ navData }) {
   const openCanvas = () => {
     ofCanvasArea.current.style.opacity = "1";
     ofCanvasArea.current.style.visibility = "visible";
+    ofCanvasArea.current.setAttribute("aria-hidden", "false");
   };
 
   const openSearch = () => {

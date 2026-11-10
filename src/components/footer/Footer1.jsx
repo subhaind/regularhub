@@ -129,13 +129,15 @@ export default function Footer1() {
           <div className="footer__top-wrapper-3">
             <div className="footer__logo-3 pt-120">
               <Image
-                priority
-                style={{ width: "auto", height: "auto" }}
+                className="footer-logo"
                 src={SiteLogoWhite}
-                alt="Footer Logo"
+                alt="Regularhub"
+                width={944}
+                height={264}
+                sizes="180px"
               />
               <p>
-                our dream project isn't just a goal; it's the future foundation of your business. We combine strategic insight, agile execution, and relentless commitment to reignite stalled initiatives, expand market reach, and drive compounding success every step of the way.
+                our dream project isn&apos;t just a goal; it&apos;s the future foundation of your business. We combine strategic insight, agile execution, and relentless commitment to reignite stalled initiatives, expand market reach, and drive compounding success every step of the way.
               </p>
             </div>
             <div className="footer__social-3">

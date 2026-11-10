@@ -252,7 +252,7 @@ const DigitalMarketingService = () => {
                   </h3>
                   <div className="service__content-3">
                     <p>
-                      Custom growth strategy development tailored to each business's
+                      Custom growth strategy development tailored to each business&apos;s
                       unique position, resources, and market conditions to achieve
                       sustainable, profitable growth over the short and long term.
                     </p>

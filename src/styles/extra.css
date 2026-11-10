@@ -727,3 +727,49 @@ form button[type="submit"]:disabled {
   cursor: progress;
   opacity: 0.7;
 }
+
+/* Footer logo: the PNG is 944×264, so it must be bounded or it renders at full size. */
+.footer__logo-3 .footer-logo {
+  display: block;
+  height: 32px;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .footer__logo-3 .footer-logo {
+    height: 40px;
+  }
+}
+
+/* Menu close button — the full-screen menu had no visible way to dismiss it. */
+.offcanvas__close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.offcanvas__close-btn:hover {
+  background: #c9f31d;
+  border-color: #c9f31d;
+  color: #0f0f0f;
+}
+
+.offcanvas__close-btn:focus-visible {
+  outline: 3px solid #c9f31d;
+  outline-offset: 3px;
+}

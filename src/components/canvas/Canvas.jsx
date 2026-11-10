@@ -53,21 +53,58 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
   };
   
   const closeCanvas = () => {
+    if (!ofCanvasArea.current) return;
     ofCanvasArea.current.style.opacity = "0";
     ofCanvasArea.current.style.visibility = "hidden";
+    ofCanvasArea.current.setAttribute("aria-hidden", "true");
     if (bladeMode) {
       let header_bg = bladeMode;
       header_bg.style.setProperty("mix-blend-mode", "exclusion");
     }
   };
+
+  const isOpen = () => ofCanvasArea.current && ofCanvasArea.current.style.visibility === "visible";
+
+  // Escape closes the menu.
+  useEffect(() => {
+    const onKeyDown = (event) => {
+      if (event.key === "Escape" && isOpen()) closeCanvas();
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // One delegated handler for the whole panel:
+  //  • any real link (<a href>) closes the menu before navigating, so it never stays
+  //    open over the next page;
+  //  • a click on empty backdrop space (anything that is not a link, button or menu
+  //    row) dismisses it.
+  const onPanelClick = (event) => {
+    if (event.target.closest("a[href]")) return closeCanvas();
+    if (!event.target.closest("a, button, li, p, h3, nav")) closeCanvas();
+  };
   
   return (
     <>
-      <div className="offcanvas__area" ref={ofCanvasArea}>
+      <div
+        className="offcanvas__area"
+        ref={ofCanvasArea}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Site menu"
+        aria-hidden="true"
+        onClick={onPanelClick}
+      >
+        <button type="button" className="offcanvas__close-btn" aria-label="Close menu" onClick={closeCanvas}>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" aria-hidden="true">
+            <path d="M5 5l14 14M19 5L5 19" />
+          </svg>
+        </button>
         <div className="offcanvas__body">
           <div className="offcanvas__left">
             <div className="offcanvas__logo">
-              <Link href="/digital-marketing">
+              <Link href="/">
                 <Image
                   priority
                   style={{ width: "auto", height: "auto" }}
@@ -122,7 +159,7 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
                 <ul className="menu-anim title" ref={headerTitle}>
                   <li>
                     <div className="header_title">
-                      <Link href="/digital-marketing">Home</Link>
+                      <Link href="/">Home</Link>
                     </div>
                   </li>
                   <li>

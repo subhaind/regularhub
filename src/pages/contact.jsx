@@ -11,7 +11,6 @@ const Contact = () => {
           name="description"
           content="Book a free growth audit, a live software demo or a confidential security assessment with Regularhub."
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
         <RootLayout header="header1" footer="footer1">

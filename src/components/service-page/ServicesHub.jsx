@@ -42,13 +42,14 @@ const ServicesHub = () => {
   return (
     <>
       <Head>
-        <title>{`${title} | Regularhub`}</title>
+        <title key="title">{`${title} | Regularhub`}</title>
         <meta name="description" content={description} />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href={url} />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        <meta property="og:url" content={url} />
+        <link key="canonical" rel="canonical" href={url} />
+        <meta key="og:title" property="og:title" content={title} />
+        <meta key="og:description" property="og:description" content={description} />
+        <meta key="og:url" property="og:url" content={url} />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
       </Head>
       <main>
         <RootLayout header="header1" footer="footer1">

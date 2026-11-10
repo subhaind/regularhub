@@ -73,14 +73,14 @@ const ServicePage = ({ service }) => {
   return (
     <>
       <Head>
-        <title>{`${service.meta.title} | Regularhub`}</title>
+        <title key="title">{`${service.meta.title} | Regularhub`}</title>
         <meta name="description" content={service.meta.description} />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href={url} />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={service.meta.title} />
-        <meta property="og:description" content={service.meta.description} />
-        <meta property="og:url" content={url} />
+        <link key="canonical" rel="canonical" href={url} />
+        <meta key="og:title" property="og:title" content={service.meta.title} />
+        <meta key="og:description" property="og:description" content={service.meta.description} />
+        <meta key="og:url" property="og:url" content={url} />
+        <meta name="twitter:title" content={service.meta.title} />
+        <meta name="twitter:description" content={service.meta.description} />
         <JsonLd data={structuredData} />
       </Head>
       <main>

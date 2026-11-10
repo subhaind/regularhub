@@ -274,7 +274,7 @@ const DigitalMarketingWorkflow = () => {
                       Ready to accelerate your business growth?
                     </p>
                     <h2 className="cta__title-2">
-                      Let's strategize your path to success together!
+                      Let&apos;s strategize your path to success together!
                     </h2>
                     <div className="btn_wrapper">
                       <Link

@@ -18,10 +18,10 @@ const ServiceRedirect = ({ to }) => {
   return (
     <>
       <Head>
-        <title>Redirecting… | Regularhub</title>
+        <title key="title">Redirecting… | Regularhub</title>
         <meta httpEquiv="refresh" content={`0; url=${target}`} />
         <meta name="robots" content="noindex, follow" />
-        <link rel="canonical" href={`${SITE_URL}${target}`} />
+        <link key="canonical" rel="canonical" href={`${SITE_URL}${target}`} />
       </Head>
       <main style={{ padding: "160px 16px", textAlign: "center" }}>
         <p>

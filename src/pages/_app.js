@@ -4,9 +4,15 @@ import "@/styles/extra.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
+import SiteSeo from "@/components/common/SiteSeo";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <SiteSeo />
+      <Component {...pageProps} />
+    </>
+  );
 }
