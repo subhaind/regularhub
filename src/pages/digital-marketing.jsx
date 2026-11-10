@@ -1,36 +1,6 @@
-import Head from "next/head";
-import RootLayout from "@/components/common/layout/RootLayout";
-import DigitalMarketingHero from "@/components/hero/DigitalMarketingHero";
-import DigitalMarketingBrand from "@/components/brand/DigitalMarketingBrand";
-import DigitalMarketingAbout from "@/components/about/DigitalMarketingAbout";
-import DigitalMarketingService from "@/components/service/DigitalMarketingService";
-import DigitalMarketingProtfolio from "@/components/portfolio/DigitalMarketingProtfolio";
-import DigitalMarketingTestimonial from "@/components/testimonial/DigitalMarketingTestimonial";
-import DigitalMarketingWorkflow from "@/components/workflow/DigitalMarketingWorkflow";
-import DigitalMarketingPrice from "@/components/price/DigitalMarketingPrice";
-import DigitalMarketingBlog from "@/components/blog/DigitalMarketingBlog";
+import ServiceRedirect from "@/components/service-page/ServiceRedirect";
 
-export default function DigitalMarketing() {
-  return (
-    <div>
-      <Head>
-        <title>Strategic Growth Advisors - Over 7 Years of Industry Expertise</title>
-        <meta name="description" content="Strategic Growth Advisors company with over 7 years in this industry. Providing strategic consulting and growth solutions." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
-      <main>
-        <RootLayout header="header1" footer="footer1">
-          <DigitalMarketingHero />
-          <DigitalMarketingBrand />
-          <DigitalMarketingAbout />
-          <DigitalMarketingService />
-          <DigitalMarketingProtfolio />
-          <DigitalMarketingTestimonial />
-          <DigitalMarketingWorkflow />
-          <DigitalMarketingPrice />
-          <DigitalMarketingBlog />
-        </RootLayout>
-      </main>
-    </div>
-  );
+// The homepage now lives at "/". Kept so old links and search results still resolve.
+export default function Page() {
+  return <ServiceRedirect to="/" />;
 }

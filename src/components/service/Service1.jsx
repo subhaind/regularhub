@@ -97,34 +97,34 @@ const Service1 = () => {
                 <div className="left-content">
                   <ul className="service__list-6">
                     <li>
-                      <a href="/services/healthcare-wellness-pet-care">
+                      <Link href="/services/healthcare-wellness-pet-care">
                         Healthcare, Wellness & Pet Care <br />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/services/retail-billing-software">
+                      <Link href="/services/retail-billing-software">
                         Retail Billing Software <br />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/services/b2b-industrial-legal-hyper-local-distribution">
+                      <Link href="/services/b2b-industrial-legal-hyper-local-distribution">
                         B2B, Industrial, Legal & Hyper-Local Distribution <br />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/services/hr-management-software">
+                      <Link href="/services/hr-management-software">
                         HR Management Software <br />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/services/restaurant-management-software">
+                      <Link href="/services/restaurant-management-software">
                         Restaurant Management Software <br />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/services/retail-e-commerce">
+                      <Link href="/services/the-retail-e-commerce-growth-engine">
                         Retail & E-Commerce <br />
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -447,7 +447,7 @@ const Service1 = () => {
                         </ul>
                         <div className="btn_wrapper">
                           <Link
-                            href="/services/retail-e-commerce"
+                            href="/services/the-retail-e-commerce-growth-engine"
                             className="wc-btn-secondary btn-item btn-hover"
                           >
                             <span></span>Get free

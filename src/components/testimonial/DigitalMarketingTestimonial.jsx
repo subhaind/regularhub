@@ -161,7 +161,7 @@ const DigitalMarketingTestimonial = () => {
                     <SwiperSlide>
                       <div className="testimonial__slide-3">
                         <p>
-                          Thanks to Strategic Growth Advisors, we've seen
+                          Thanks to Strategic Growth Advisors, we&apos;ve seen
               measurable improvement in our key performance indicators and
               overall business growth. Their expertise is unmatched in the industry.
                         </p>

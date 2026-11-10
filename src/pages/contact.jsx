@@ -6,9 +6,11 @@ const Contact = () => {
   return (
     <>
       <Head>
-        <title>Contact</title>
-        <meta name="description" content="Contact Description" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Contact | Regularhub</title>
+        <meta
+          name="description"
+          content="Book a free growth audit, a live software demo or a confidential security assessment with Regularhub."
+        />
       </Head>
       <main>
         <RootLayout header="header1" footer="footer1">

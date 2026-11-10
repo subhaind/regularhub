@@ -1,4 +1,5 @@
 import { FreeMode, Navigation } from "swiper/modules";
+import LazyVideo from "@/components/common/LazyVideo";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -17,9 +18,7 @@ const AboutTestimonial = () => {
           <div className="row g-0">
             <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
               <div className="testimonial__video">
-                <video autoPlay muted loop>
-                  <source src="assets/video/testimonial.mp4" type="video/mp4" />
-                </video>
+                <LazyVideo src="/assets/video/testimonial.mp4" loop />
               </div>
             </div>
 

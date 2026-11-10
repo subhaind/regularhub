@@ -58,7 +58,7 @@ const AboutHero = () => {
             <div className="col-xxl-12">
               <div className="hero__about-video">
                 <video loop muted autoPlay playsInline>
-                  <source src="assets/video/video.mp4" type="video/mp4" />
+                  <source src="/assets/video/video.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>

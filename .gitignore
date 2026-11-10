@@ -30,3 +30,13 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# tooling output
+.graphify/
+src/.graphify/
+__pycache__/
+.DS_Store
+.claude/
+
+# local admin dev store
+.data/

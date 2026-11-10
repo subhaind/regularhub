@@ -7,9 +7,8 @@ const Faq = () => {
   return (
     <>
       <Head>
-        <title>Faq</title>
-        <meta name="description" content="Faq Description" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>FAQs | Regularhub</title>
+        <meta name="description" content="Answers to common questions about working with Regularhub: our services, how projects run, pricing and support." />
       </Head>
       <main>
         <RootLayout header="header3" footer="footer3">

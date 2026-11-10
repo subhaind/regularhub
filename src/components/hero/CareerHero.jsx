@@ -44,7 +44,7 @@ const CareerHero = () => {
               <div className="col-xxl-12">
                 <div className="career__top-img">
                   <video autoPlay muted loop>
-                    <source src="assets/video/video.mp4" type="video/mp4" />
+                    <source src="/assets/video/video.mp4" type="video/mp4" />
                   </video>
                 </div>
               </div>

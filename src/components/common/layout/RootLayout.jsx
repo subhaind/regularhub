@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import allNavData from "../../../data/navData.json";
+import { withServiceNav } from "@/data/services/catalog";
 import Preloader from "@/components/preloader/Preloader";
 import CommonAnimation from "../CommonAnimation";
 import ScrollSmootherComponents from "../ScrollSmootherComponents";
@@ -64,7 +65,7 @@ export default function RootLayout({
   const cursor1 = useRef();
   const cursor2 = useRef();
   useEffect(() => {
-    setNavData(allNavData);
+    setNavData(withServiceNav(allNavData));
     if (typeof window !== "undefined") {
       if (mode == "dark") {
         document.querySelector("body").classList.add("dark");

@@ -63,6 +63,29 @@ export default function NavItem({ nav, navStyle = "" }) {
                   </ul>
                 </li>
               );
+            } else if (el.type === "dropdown" && el.groups) {
+              return (
+                <li key={i}>
+                  <Link href={el.link}>{el.nav_name}</Link>
+                  <ul className="main-dropdown multi-column services-menu">
+                    {el.groups.map((group) => (
+                      <li key={group.title} className="services-menu__col">
+                        <span className="services-menu__title">{group.title}</span>
+                        <ul>
+                          {group.items.map((item) => (
+                            <li key={item.link}>
+                              <Link href={item.link}>{item.nav_name}</Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </li>
+                    ))}
+                    <li className="services-menu__all">
+                      <Link href={el.link}>View all services →</Link>
+                    </li>
+                  </ul>
+                </li>
+              );
             } else if (el.type === "dropdown") {
               // Check if this is the Services dropdown for multi-column layout
               const isServicesDropdown = el.nav_name === "Services";

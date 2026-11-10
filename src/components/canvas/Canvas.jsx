@@ -6,20 +6,11 @@ import logoWhite2 from "../../../public/assets/imgs/logo/site-logo-white-2.png";
 import Shape11 from "../../../public/assets/imgs/shape/11.png";
 import Shape12 from "../../../public/assets/imgs/shape/12.png";
 import Image from "next/image";
+import { serviceNavGroups } from "@/data/services/catalog";
 
 const services = [
-  { nav_name: "Healthcare, Wellness & Pet Care ", link: "/services/healthcare-wellness-pet-care" },
-  { nav_name: "Food, Hospitality & Travel ", link: "/services/the-food-hospitality-travel-growth-engine" },
-  { nav_name: "Education, Creative & Entertainment", link: "/services/the-education-creative-entertainment-growth-engine" },
-  { nav_name: "Retail & E-Commerce", link: "/services/the-retail-e-commerce-growth-engine" },
-  { nav_name: "B2B, Industrial, Legal & Hyper-Local Distribution", link: "/services/b2b-industrial-legal-hyper-local-distribution" },
-  { nav_name: "Local Services & Real Estate", link: "/services/the-local-services-real-estate-growth-engine" },
-  { nav_name: "Events & Entertainment", link: "/services/the-events-entertainment-growth-engine" },
-  { nav_name: "HR Management Software", link: "/services/hr-management-software" },
-  { nav_name: "Laundry Management Software", link: "/services/laundry-management-software" },
-  { nav_name: "Cloud Billing Software", link: "/services/cloud-billing-software" },
-  { nav_name: "Restaurant Management Software", link: "/services/restaurant-management-software" },
-  { nav_name: "Retail Billing Software", link: "/services/retail-billing-software" }
+  { nav_name: "All services", link: "/services" },
+  ...serviceNavGroups().flatMap((group) => group.items),
 ];
 
 const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
@@ -62,26 +53,65 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
   };
   
   const closeCanvas = () => {
+    if (!ofCanvasArea.current) return;
     ofCanvasArea.current.style.opacity = "0";
     ofCanvasArea.current.style.visibility = "hidden";
+    ofCanvasArea.current.setAttribute("aria-hidden", "true");
     if (bladeMode) {
       let header_bg = bladeMode;
       header_bg.style.setProperty("mix-blend-mode", "exclusion");
     }
   };
+
+  const isOpen = () => ofCanvasArea.current && ofCanvasArea.current.style.visibility === "visible";
+
+  // Escape closes the menu.
+  useEffect(() => {
+    const onKeyDown = (event) => {
+      if (event.key === "Escape" && isOpen()) closeCanvas();
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // One delegated handler for the whole panel:
+  //  • any real link (<a href>) closes the menu before navigating, so it never stays
+  //    open over the next page;
+  //  • a click on empty backdrop space (anything that is not a link, button or menu
+  //    row) dismisses it.
+  const onPanelClick = (event) => {
+    if (event.target.closest("a[href]")) return closeCanvas();
+    if (!event.target.closest("a, button, li, p, h3, nav")) closeCanvas();
+  };
   
   return (
     <>
-      <div className="offcanvas__area" ref={ofCanvasArea}>
+      <div
+        className="offcanvas__area"
+        ref={ofCanvasArea}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Site menu"
+        aria-hidden="true"
+        onClick={onPanelClick}
+      >
+        <button type="button" className="offcanvas__close-btn" aria-label="Close menu" onClick={closeCanvas}>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" aria-hidden="true">
+            <path d="M5 5l14 14M19 5L5 19" />
+          </svg>
+        </button>
         <div className="offcanvas__body">
           <div className="offcanvas__left">
             <div className="offcanvas__logo">
-              <Link href="/digital-marketing">
+              <Link href="/">
                 <Image
-                  priority
-                  style={{ width: "auto", height: "auto" }}
+                  className="offcanvas-logo"
                   src={logoWhite2}
-                  alt="Offcanvas Logo"
+                  alt="Regularhub"
+                  width={944}
+                  height={264}
+                  sizes="180px"
                 />
               </Link>
             </div>
@@ -131,12 +161,12 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
                 <ul className="menu-anim title" ref={headerTitle}>
                   <li>
                     <div className="header_title">
-                      <Link href="/digital-marketing">Home</Link>
+                      <Link href="/">Home</Link>
                     </div>
                   </li>
                   <li>
                     <div className="header_title">
-                      <Link href="/service">Services</Link>
+                      <Link href="/services">Services</Link>
                       <div className="accordian-btn">
                         {accordion === 1 ? (
                           <a onClick={() => openData(0)}>-</a>

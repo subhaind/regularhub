@@ -12,9 +12,8 @@ const About = () => {
   return (
     <div>
       <Head>
-        <title>About</title>
-        <meta name="description" content="About Description" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>About Regularhub | Growth Engines, Software & Security</title>
+        <meta name="description" content="Regularhub Private Limited, Kolkata: the team that engineers growth systems, operations software and brand security for growing businesses." />
       </Head>
       <main>
         <RootLayout header="header1" footer="footer1">

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "@/plugins";
 import JobDetailsModal1 from "./JobDetailsModal1";
@@ -9,6 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 const JobDetails1 = () => {
   const [modal1, setModal1] = useState(false);
   const [modal2, setModal2] = useState(false);
+  const answersRef = useRef({}); // step-1 answers, submitted together with step 2
   useEffect(() => {
     if (typeof window !== "undefined") {
       let device_width = window.innerWidth;
@@ -240,10 +241,12 @@ const JobDetails1 = () => {
           modal1={modal1}
           setModal1={setModal1}
           setModal2={setModal2}
+          answersRef={answersRef}
         />
         <JobDetailsModal2
           setModal1={setModal1}
           modal2={modal2}
+          answersRef={answersRef}
           setModal2={setModal2}
         />
       </div>
