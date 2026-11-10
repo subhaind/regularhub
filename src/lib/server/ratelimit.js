@@ -3,37 +3,31 @@ import { store } from "./store";
 import { HttpError } from "./http";
 
 const WINDOW_MS = 15 * 60 * 1000;
-const LIMITS = { account: 5, ip: 20 }; // failures per window before lockout
-const LOCK_MS = 15 * 60 * 1000;
+// attempts (successful or not) allowed per window, per key
+const LIMITS = { ip: 20, account: 5, email: 10 };
 const h = (s) => createHash("sha256").update(s).digest("hex").slice(0, 32);
 
 const keysFor = (ip, email) => [
   { key: "ip:" + h(ip), max: LIMITS.ip },
   { key: "acct:" + h(ip + "|" + email), max: LIMITS.account },
+  { key: "email:" + h(email), max: LIMITS.email }, // survives IP rotation
 ];
 
-export async function assertNotLocked(ip, email) {
-  for (const { key } of keysFor(ip, email)) {
-    const a = await store.getAttempt(key);
-    if (a?.lockedUntil && new Date(a.lockedUntil).getTime() > Date.now()) {
-      throw new HttpError(429, "Too many attempts. Try again later.", {
-        retryAfter: Math.ceil((new Date(a.lockedUntil).getTime() - Date.now()) / 1000),
-      });
-    }
-  }
-}
-
-export async function recordFailure(ip, email) {
-  const now = Date.now();
+/**
+ * Atomically counts this attempt BEFORE the password is checked (no read-modify-write race,
+ * and over-limit requests never reach the expensive scrypt step).
+ */
+export async function checkLoginAttempt(ip, email) {
+  let retry = 0;
   for (const { key, max } of keysFor(ip, email)) {
-    let a = await store.getAttempt(key);
-    if (!a || now - new Date(a.firstAt).getTime() > WINDOW_MS) a = { count: 0, firstAt: new Date(now).toISOString(), lockedUntil: null };
-    a.count += 1;
-    if (a.count >= max) a.lockedUntil = new Date(now + LOCK_MS).toISOString();
-    await store.putAttempt(key, a);
+    const { count, firstAt } = await store.bumpAttempt(key, WINDOW_MS);
+    if (count > max) retry = Math.max(retry, Math.ceil((new Date(firstAt).getTime() + WINDOW_MS - Date.now()) / 1000));
   }
+  if (retry > 0) throw new HttpError(429, "Too many attempts. Try again later.", { retryAfter: Math.max(retry, 1) });
 }
 
 export async function clearFailures(ip, email) {
-  await store.delAttempt(keysFor(ip, email)[1].key);
+  const [, acct, em] = keysFor(ip, email);
+  await store.delAttempt(acct.key);
+  await store.delAttempt(em.key);
 }

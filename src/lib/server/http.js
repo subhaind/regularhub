@@ -9,8 +9,10 @@ export class HttpError extends Error {
   }
 }
 
+// Only trust headers the platform sets itself: x-vercel-forwarded-for is overwritten by Vercel's edge,
+// whereas x-forwarded-for / x-real-ip can be supplied by the client and would defeat rate limiting.
 export const clientIp = (req) =>
-  (req.headers["x-real-ip"] || String(req.headers["x-forwarded-for"] || "").split(",")[0] || req.socket?.remoteAddress || "unknown").toString().trim();
+  String(req.headers["x-vercel-forwarded-for"] || req.socket?.remoteAddress || "unknown").split(",")[0].trim();
 
 export const serializeCookie = (value, maxAgeSec) =>
   `${COOKIE_NAME}=${value}; Path=/; HttpOnly; SameSite=Strict; Max-Age=${maxAgeSec}${isProd ? "; Secure" : ""}`;

@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build && node scripts/purge-css.mjs",
     "start": "next start",
-    "lint": "eslint src --ext .js,.jsx"
+    "lint": "eslint src --ext .js,.jsx",
+    "test": "node --test tests/*.test.mjs"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",

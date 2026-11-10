@@ -65,8 +65,15 @@ const fileStore = {
     db.sessions = db.sessions.filter((s) => s.sid !== sid);
     save(db);
   },
-  async getAttempt(key) { return load().attempts[key] || null; },
-  async putAttempt(key, a) { const db = load(); db.attempts[key] = a; save(db); },
+  async bumpAttempt(key, windowMs) {
+    const db = load();
+    let a = db.attempts[key];
+    if (!a || Date.now() - new Date(a.firstAt).getTime() > windowMs) a = { count: 0, firstAt: new Date().toISOString() };
+    a.count += 1;
+    db.attempts[key] = a;
+    save(db);
+    return a;
+  },
   async delAttempt(key) { const db = load(); delete db.attempts[key]; save(db); },
   async addAudit(e) { const db = load(); db.audit.push(e); db.audit = db.audit.slice(-1000); save(db); },
 };
@@ -84,8 +91,8 @@ function pgStore() {
   if (!g.__rhPool) {
     // eslint-disable-next-line @next/next/no-assign-module-variable
     const { Pool } = require("pg");
-    g.__rhPool = new Pool({ connectionString: process.env.DATABASE_URL, max: 5 });
-    g.__rhReady = g.__rhPool.query(`
+    g.__rhPool = new Pool({ connectionString: process.env.DATABASE_URL, max: 5, idleTimeoutMillis: 10000, connectionTimeoutMillis: 5000 });
+    g.__rhSchema = `
       CREATE TABLE IF NOT EXISTS posts (
         id uuid PRIMARY KEY, title text NOT NULL, slug text NOT NULL UNIQUE, excerpt text NOT NULL DEFAULT '',
         content text NOT NULL DEFAULT '', cover_image text NOT NULL DEFAULT '', tags text[] NOT NULL DEFAULT '{}',
@@ -95,9 +102,15 @@ function pgStore() {
       CREATE TABLE IF NOT EXISTS admin_sessions (sid text PRIMARY KEY, email text NOT NULL, expires_at timestamptz NOT NULL, ip text, ua text);
       CREATE TABLE IF NOT EXISTS login_attempts (key text PRIMARY KEY, count int NOT NULL, first_at timestamptz NOT NULL, locked_until timestamptz);
       CREATE TABLE IF NOT EXISTS audit_log (id bigserial PRIMARY KEY, at timestamptz NOT NULL, actor text, action text, target text, ip text);
-    `);
+    `;
   }
-  const q = async (text, params) => { await g.__rhReady; return g.__rhPool.query(text, params); };
+  // Schema init is retried if it ever fails (a rejected promise must not poison a warm instance).
+  // For stricter setups, run this DDL out-of-band with a privileged role and give the app DML-only rights.
+  const q = async (text, params) => {
+    if (!g.__rhReady) g.__rhReady = g.__rhPool.query(g.__rhSchema).catch((e) => { g.__rhReady = null; throw e; });
+    await g.__rhReady;
+    return g.__rhPool.query(text, params);
+  };
   const dupe = (e) => { if (e.code === "23505") throw conflict(); throw e; };
 
   return {
@@ -137,19 +150,24 @@ function pgStore() {
       return r && { sid: r.sid, email: r.email, expiresAt: iso(r.expires_at) };
     },
     async deleteSession(sid) { await q("DELETE FROM admin_sessions WHERE sid = $1", [sid]); },
-    async getAttempt(key) {
-      const r = (await q("SELECT * FROM login_attempts WHERE key = $1", [key])).rows[0];
-      return r && { count: r.count, firstAt: iso(r.first_at), lockedUntil: iso(r.locked_until) };
-    },
-    async putAttempt(key, a) {
-      await q(
-        `INSERT INTO login_attempts (key,count,first_at,locked_until) VALUES ($1,$2,$3,$4)
-         ON CONFLICT (key) DO UPDATE SET count = $2, first_at = $3, locked_until = $4`,
-        [key, a.count, a.firstAt, a.lockedUntil]
+    async bumpAttempt(key, windowMs) {
+      await q("DELETE FROM login_attempts WHERE first_at < now() - interval '1 hour'");
+      const secs = windowMs / 1000;
+      const r = await q(
+        `INSERT INTO login_attempts (key,count,first_at) VALUES ($1,1,now())
+         ON CONFLICT (key) DO UPDATE SET
+           count = CASE WHEN login_attempts.first_at < now() - make_interval(secs => $2::double precision) THEN 1 ELSE login_attempts.count + 1 END,
+           first_at = CASE WHEN login_attempts.first_at < now() - make_interval(secs => $2::double precision) THEN now() ELSE login_attempts.first_at END
+         RETURNING count, first_at`,
+        [key, secs]
       );
+      return { count: r.rows[0].count, firstAt: iso(r.rows[0].first_at) };
     },
     async delAttempt(key) { await q("DELETE FROM login_attempts WHERE key = $1", [key]); },
-    async addAudit(e) { await q("INSERT INTO audit_log (at,actor,action,target,ip) VALUES ($1,$2,$3,$4,$5)", [e.at, e.actor, e.action, e.target, e.ip]); },
+    async addAudit(e) {
+      if (Math.random() < 0.02) await q("DELETE FROM audit_log WHERE at < now() - interval '90 days'");
+      await q("INSERT INTO audit_log (at,actor,action,target,ip) VALUES ($1,$2,$3,$4,$5)", [e.at, e.actor, e.action, e.target, e.ip]);
+    },
   };
 }
 
