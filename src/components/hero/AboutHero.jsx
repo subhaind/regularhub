@@ -35,8 +35,8 @@ const AboutHero = () => {
                   </div>
                   <div className="hero__about-text title-anim">
                     <p>
-                      Growth engines, operations software and brand security from one
-                      Kolkata team, so the funnel, the billing counter and the safeguards
+                      Since 2019: growth engines, operations software and brand security
+                      from one Kolkata team, so the funnel, the billing counter and the safeguards
                       behind them never fall between two vendors.
                     </p>
                   </div>

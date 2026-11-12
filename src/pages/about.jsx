@@ -1,11 +1,9 @@
-import DigitalAgencyBrand from "@/components/brand/DigitalAgencyBrand";
 import RootLayout from "@/components/common/layout/RootLayout";
 import AboutCounter from "@/components/counter/AboutCounter";
 import DigitalAgencyCTA from "@/components/cta/DigitalAgencyCTA";
 import AboutHero from "@/components/hero/AboutHero";
 import AboutStory from "@/components/story/AboutStory";
 import AboutHowWeWork from "@/components/about/AboutHowWeWork";
-import AboutTestimonial from "@/components/testimonial/AboutTestimonial";
 import Head from "next/head";
 
 const About = () => {
@@ -21,8 +19,8 @@ const About = () => {
           <AboutStory />
           <AboutCounter />
           <AboutHowWeWork />
-          <DigitalAgencyBrand />
-          <AboutTestimonial />
+          {/* Client logo strip (DigitalAgencyBrand) returns once the real logos replace the theme placeholders. */}
+          {/* Testimonials (AboutTestimonial) return once the real client quotes are in. */}
           <DigitalAgencyCTA />
         </RootLayout>
       </main>

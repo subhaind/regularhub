@@ -1,6 +1,5 @@
 import RootLayout from "@/components/common/layout/RootLayout";
 import DigitalMarketingHero from "@/components/hero/DigitalMarketingHero";
-import DigitalMarketingBrand from "@/components/brand/DigitalMarketingBrand";
 import DigitalMarketingAbout from "@/components/about/DigitalMarketingAbout";
 import DigitalMarketingService from "@/components/service/DigitalMarketingService";
 import DigitalMarketingProtfolio from "@/components/portfolio/DigitalMarketingProtfolio";
@@ -15,7 +14,7 @@ export default function Home() {
       <main>
         <RootLayout header="header1" footer="footer1">
           <DigitalMarketingHero />
-          <DigitalMarketingBrand />
+          {/* Client logo strip (DigitalMarketingBrand) returns once the real logos replace the theme placeholders. */}
           <DigitalMarketingAbout />
           <DigitalMarketingService />
           <DigitalMarketingProtfolio />
