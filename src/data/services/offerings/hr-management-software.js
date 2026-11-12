@@ -27,7 +27,7 @@ const service = {
     ]
   },
   "problem": {
-    "heading": "The Problem Growing Teams Face",
+    "heading": "Payroll errors and missed filings aren’t people problems. They’re spreadsheet problems.",
     "body": [
       "When you have 10 employees, HR fits on a spreadsheet. At 30, the spreadsheet breaks. At 100, it becomes a liability — missed compliances, payroll errors, grievances without records, and managers drowning in approval requests that should take 30 seconds each.",
       "The bigger problem: HR data that lives in disconnected tools — attendance in one app, leave in email threads, payroll in Excel, documents in a shared drive — creates errors that cost money and disputes that cost morale.",
@@ -200,16 +200,17 @@ const service = {
     }
   ],
   "closing": {
-    "heading": "Ready to Run HR Like It Should Be Run?",
+    "heading": "Run your next payroll on a system built for it.",
     "body": [
-      "No credit card required. Full-feature access for 14 days. Onboarding support and data migration assistance included."
+      "No credit card required. Full-feature access for 14 days, and no lock-in."
     ]
   },
   "related": [
     "id-card-making-software",
     "cloud-billing-software",
     "b2b-industrial-legal-hyper-local-distribution"
-  ]
+  ],
+  "dpdp": true
 };
 
 export default service;

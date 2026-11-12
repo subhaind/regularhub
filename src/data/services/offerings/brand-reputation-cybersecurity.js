@@ -6,7 +6,7 @@ const service = {
   "name": "Brand Reputation & Cybersecurity",
   "meta": {
     "title": "Brand Reputation Management & Cybersecurity Services",
-    "description": "Online reputation management, SERM, crisis communications, penetration testing, SOC monitoring, vCISO and integrated breach response for individuals and companies."
+    "description": "Online reputation management, crisis communications, penetration testing, SOC monitoring, vCISO and breach response for individuals and companies."
   },
   "hero": {
     "headline": "Reputation and security are one risk. We run them as one practice.",
@@ -61,8 +61,8 @@ const service = {
               "body": "Development of a clear, consistent narrative and positioning for the client — who they are, what they're known for, and how that should read across every platform and touchpoint. This becomes the foundation everything else (content, media, social presence) is built against, so growth compounds instead of scattering in different directions."
             },
             {
-              "title": "Social Media Profile Management & Optimization",
-              "body": "Hands-on management or optimization of the client's professional presence — primarily LinkedIn, but also Instagram, X, and TikTok depending on the industry — covering bio and positioning, content calendars, engagement strategy, and a review of privacy and security settings."
+              "title": "Social Media Profile Management & Optimisation",
+              "body": "Hands-on management or optimisation of the client's professional presence — primarily LinkedIn, but also Instagram, X and YouTube depending on the industry — covering bio and positioning, content calendars, engagement strategy, and a review of privacy and security settings."
             },
             {
               "title": "Crisis Response for Individuals",
@@ -74,7 +74,7 @@ const service = {
             },
             {
               "title": "Review Management",
-              "body": "For client-facing professionals (physicians, agents, consultants, contractors), ongoing monitoring and response strategy for Google, Yelp, Healthgrades, Avvo, and other industry-specific review platforms, plus ethical review-generation campaigns to build a stronger, more representative rating over time."
+              "body": "For client-facing professionals (physicians, agents, consultants, contractors), ongoing monitoring and response strategy for Google, Practo, Justdial and other industry-specific review platforms, plus ethical review-generation campaigns to build a stronger, more representative rating over time."
             },
             {
               "title": "Thought Leadership Placement",
@@ -103,7 +103,7 @@ const service = {
             },
             {
               "title": "Online Review Management",
-              "body": "Enterprise-level monitoring and response strategy across Google, Yelp, Trustpilot, G2, Capterra, and industry-specific platforms, with response templates, escalation protocols for false or malicious reviews, and campaigns to increase the volume of genuine positive reviews."
+              "body": "Enterprise-level monitoring and response strategy across Google, Justdial, Trustpilot, G2, Capterra and industry-specific platforms, with response templates, escalation protocols for false or malicious reviews, and campaigns to increase the volume of genuine positive reviews."
             },
             {
               "title": "Search Engine Reputation Management (SERM) for Companies",
@@ -251,11 +251,11 @@ const service = {
             },
             {
               "title": "Data Breach Response & Regulatory Notification Support",
-              "body": "End-to-end breach response — containment, investigation, and management of legally required notifications to regulators and affected individuals under frameworks like GDPR, HIPAA, and state breach-notification laws — coordinated with legal counsel."
+              "body": "End-to-end breach response — containment, investigation, and management of legally required notifications to regulators and affected individuals under India’s DPDP Act and CERT-In reporting directions — and GDPR or HIPAA where they apply — coordinated with legal counsel."
             },
             {
               "title": "Compliance Consulting",
-              "body": "Gap assessment and remediation support to meet specific regulatory and framework requirements — GDPR, HIPAA, PCI-DSS, SOC 2, ISO 27001, CCPA — including documentation, control implementation, and audit preparation."
+              "body": "Gap assessment and remediation support to meet specific regulatory and framework requirements — India’s DPDP Act, ISO 27001, PCI-DSS, SOC 2, GDPR, HIPAA, CCPA — including documentation, control implementation, and audit preparation."
             },
             {
               "title": "Employee Security Awareness Training & Phishing Simulations",
@@ -371,27 +371,27 @@ const service = {
   ],
   "engagement": {
     "heading": "How engagements are structured",
-    "lead": "How these services are typically packaged depends on the client's risk profile, public exposure, and how ongoing the need is:",
+    "lead": "Pick the shape that fits your risk profile, your public exposure and how ongoing the need is:",
     "models": [
       {
         "title": "Project-based",
-        "body": "A defined-scope engagement (an audit, a penetration test, a cleanup) with a clear start and end."
+        "body": "A defined-scope engagement — an audit, a penetration test, a cleanup — with a clear start and end."
       },
       {
         "title": "Monthly retainer",
-        "body": "Ongoing monitoring, management, or advisory work billed on a recurring basis; most reputation and SOC-style services fall here."
+        "body": "Ongoing monitoring, management or advisory, billed monthly. Most reputation and SOC-style work runs this way."
       },
       {
         "title": "On-call incident response retainer",
-        "body": "A standing agreement guaranteeing priority response time (often contractual, e.g., a 1-hour or 4-hour SLA) if a breach or reputational crisis occurs, without paying for full-time coverage in the meantime."
+        "body": "A standing agreement with a priority response time written into the contract — for example a 1-hour or 4-hour SLA — so a breach or reputation crisis gets an immediate response, without paying for full-time cover in between."
       },
       {
         "title": "Tiered packages",
-        "body": "Individual and company services are commonly bundled into tiers (e.g., Essential / Professional / Enterprise) scaled by monitoring frequency, response time, and scope of coverage."
+        "body": "Individual and company services bundled into tiers by monitoring frequency, response time and scope of coverage."
       },
       {
         "title": "Fractional / advisory",
-        "body": "Ongoing strategic guidance (vCISO, personal brand advisory) without operational day-to-day work."
+        "body": "Ongoing strategic guidance — vCISO or personal brand advisory — without day-to-day operational work."
       }
     ],
     "note": "Most clients start with an audit or assessment in the relevant domain — reputation, security, or both — before committing to an ongoing engagement model."

@@ -6,7 +6,7 @@ const service = {
   "name": "Education, Creative & Entertainment",
   "meta": {
     "title": "Education, Creative & Entertainment Growth Engine — Enrollment Automation",
-    "description": "Trial-class follow-up, AI voice agents, quote calculators and sponsor outreach automation for schools, coaching centres, academies, studios, creators and OTT."
+    "description": "Trial-class follow-up, AI voice agents, quote calculators and sponsor outreach for coaching centres, schools, academies, studios and creators."
   },
   "hero": {
     "headline": "Enrollments and sponsors aren’t lost to competitors. They’re lost to slow follow-up.",
@@ -60,56 +60,6 @@ const service = {
   },
   "segments": [
     {
-      "title": "K-12 Private Schools & Preschools",
-      "who": "Private CBSE, ICSE, and IB schools, Montessori preschools, and early learning centres competing for annual admissions in metro and Tier-2 cities.",
-      "leak": "Parents searching \"best school near me\" visit 4–6 school websites. Three send a brochure and wait for a callback. One books a campus tour in the same session. That one gets the admission.",
-      "wedge": "A WhatsApp Admission FAQ & Tour Booking Bot that answers curriculum, fee, and admission criteria questions instantly — and books the campus tour before the parent leaves the conversation.",
-      "install": [
-        {
-          "group": "Acquisition Funnel",
-          "items": [
-            "Meta Ads targeting local parents by age bracket, location radius, and parenting interests.",
-            "Landing page with a 2-minute school overview video, fee structure summary, and \"Book a Tour\" CTA.",
-            "WhatsApp bot triggered on ad click: admission year → curriculum questions answered → tour booked."
-          ]
-        },
-        {
-          "group": "Tour-to-Enrollment Conversion",
-          "items": [
-            "Pre-tour WhatsApp: campus map, parking details, who to meet, and what to bring.",
-            "Post-tour Day 1: personalised thank-you from the principal with application link.",
-            "Post-tour Day 3: admission deadline reminder and document checklist.",
-            "Post-tour Day 7: \"Limited seats remaining\" urgency message."
-          ]
-        },
-        {
-          "group": "Social Media Optimisation",
-          "items": [
-            "Primary channels: Facebook, Instagram.",
-            "Bio: \"Nurturing curious minds in [City]. Admissions open for [Academic Year]. Book a tour ↓\"",
-            "Content hooks: Student science fair and project highlights, teacher profile introduction videos, classroom tour walk-throughs, co-curricular achievement showcases, and parent testimonial reels."
-          ]
-        },
-        {
-          "group": "Marketing Automation",
-          "items": [
-            "WhatsApp: Tour confirmation and pre-visit details, post-tour application link, deadline alerts.",
-            "SMS: Admission deadline countdown: \"3 days left to complete your child's application for [School Name].\"",
-            "Email: Weekly school news newsletter, parent guides on curriculum and extracurricular options."
-          ]
-        },
-        {
-          "group": "Brand Visibility",
-          "items": [
-            "GBP optimised with campus photos, board affiliation, fee structure, and school hours.",
-            "Review collection program targeting existing parents via SMS.",
-            "Listed on SchoolMyKids, AskIITians directories, and local parenting community groups."
-          ]
-        }
-      ],
-      "outcome": "The parent who books a tour in the same WhatsApp session is the parent who enrolls — and the post-tour sequence closes the admission before they visit a competing school."
-    },
-    {
       "title": "Local Coaching Centers & Govt Job Teaching Institutes",
       "who": "UPSC/SSC coaching institutes, state PSC preparation centres, banking exam coaching academies, and JEE/NEET preparation institutes running long-term batch programs.",
       "leak": "Your free demo class offer generates inquiries. Half the students who attend the demo never enroll because there's no structured follow-up taking them from \"I attended\" to \"I'm registered and billed.\"",
@@ -161,6 +111,56 @@ const service = {
       "outcome": "Mock test completers receive a personalised batch recommendation that makes the enrollment decision feel inevitable — and the automated billing removes the friction of paying."
     },
     {
+      "title": "K-12 Private Schools & Preschools",
+      "who": "Private CBSE, ICSE, and IB schools, Montessori preschools, and early learning centres competing for annual admissions in metro and Tier-2 cities.",
+      "leak": "Parents searching \"best school near me\" visit 4–6 school websites. Three send a brochure and wait for a callback. One books a campus tour in the same session. That one gets the admission.",
+      "wedge": "A WhatsApp Admission FAQ & Tour Booking Bot that answers curriculum, fee, and admission criteria questions instantly — and books the campus tour before the parent leaves the conversation.",
+      "install": [
+        {
+          "group": "Acquisition Funnel",
+          "items": [
+            "Meta Ads targeting local parents by age bracket, location radius, and parenting interests.",
+            "Landing page with a 2-minute school overview video, fee structure summary, and \"Book a Tour\" CTA.",
+            "WhatsApp bot triggered on ad click: admission year → curriculum questions answered → tour booked."
+          ]
+        },
+        {
+          "group": "Tour-to-Enrollment Conversion",
+          "items": [
+            "Pre-tour WhatsApp: campus map, parking details, who to meet, and what to bring.",
+            "Post-tour Day 1: personalised thank-you from the principal with application link.",
+            "Post-tour Day 3: admission deadline reminder and document checklist.",
+            "Post-tour Day 7: \"Limited seats remaining\" urgency message."
+          ]
+        },
+        {
+          "group": "Social Media Optimisation",
+          "items": [
+            "Primary channels: Facebook, Instagram.",
+            "Bio: \"Nurturing curious minds in [City]. Admissions open for [Academic Year]. Book a tour ↓\"",
+            "Content hooks: Student science fair and project highlights, teacher profile introduction videos, classroom tour walk-throughs, co-curricular achievement showcases, and parent testimonial reels."
+          ]
+        },
+        {
+          "group": "Marketing Automation",
+          "items": [
+            "WhatsApp: Tour confirmation and pre-visit details, post-tour application link, deadline alerts.",
+            "SMS: Admission deadline countdown: \"3 days left to complete your child's application for [School Name].\"",
+            "Email: Weekly school news newsletter, parent guides on curriculum and extracurricular options."
+          ]
+        },
+        {
+          "group": "Brand Visibility",
+          "items": [
+            "GBP optimised with campus photos, board affiliation, fee structure, and school hours.",
+            "Review collection program targeting existing parents via SMS.",
+            "Listed on SchoolMyKids, AskIITians directories, and local parenting community groups."
+          ]
+        }
+      ],
+      "outcome": "The parent who books a tour in the same WhatsApp session is the parent who enrolls — and the post-tour sequence closes the admission before they visit a competing school."
+    },
+    {
       "title": "EdTech & Private Tutors",
       "who": "Online tutoring platforms, independent private tutors, and subject-specialist teachers offering 1-on-1 or small-group sessions for K-12 students via Zoom, Google Meet, or a proprietary LMS.",
       "leak": "A parent searching \"maths tutor for Class 10 near me\" fills three inquiry forms. The tutor who schedules a free trial class in the same conversation gets the student. The others send a fee structure PDF and wait.",
@@ -186,7 +186,7 @@ const service = {
         {
           "group": "Social Media Optimisation",
           "items": [
-            "Primary channels: Instagram, YouTube, TikTok.",
+            "Primary channels: Instagram Reels, YouTube.",
             "Bio: \"1-on-1 expert tutoring for K-12. Book your free 30-min trial class ↓\"",
             "Content hooks: Quick subject-hack reels (maths shortcuts, grammar rules, physics visualisations), study schedule templates, parent testimonial videos, and \"student went from C to A in 6 weeks\" progress stories."
           ]
@@ -236,7 +236,7 @@ const service = {
         {
           "group": "Social Media Optimisation",
           "items": [
-            "Primary channels: Instagram, YouTube, TikTok.",
+            "Primary channels: Instagram Reels, YouTube.",
             "Bio: \"Discover your creative potential. Register for a free trial session and download student tracks below ↓\"",
             "Content hooks: Student recital clips and practice progress time-lapses, choreography breakdown reels, instrument unboxing and setup guides, and trainer bio introduction videos."
           ]
@@ -433,7 +433,7 @@ const service = {
         {
           "group": "Social Media Optimisation",
           "items": [
-            "Primary channels: Instagram, TikTok, YouTube.",
+            "Primary channels: Instagram Reels, YouTube.",
             "Bio: \"Stream your favourite shows and movies. Start your free trial below ↓\"",
             "Content hooks: Trailer clip releases, show behind-the-scenes content, release countdown reels, and genre-specific recommendation lists."
           ]
@@ -551,7 +551,7 @@ const service = {
     }
   ],
   "closing": {
-    "heading": "Ready to Stop Losing Enrollments and Sponsors to Slow Follow-Up?",
+    "heading": "Fill your next batch before the admission window closes.",
     "body": [
       "We'll map exactly where your pipeline is stalling — from trial class sign-ups that never enrolled to sponsor outreach that went cold — and show you the system that fixes it before you commit."
     ]
@@ -560,7 +560,8 @@ const service = {
     "the-events-entertainment-growth-engine",
     "id-card-making-software",
     "hr-management-software"
-  ]
+  ],
+  "dpdp": true
 };
 
 export default service;

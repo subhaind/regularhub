@@ -1,15 +1,8 @@
 import { useId } from "react";
 import { Honeypot, FormStatus } from "@/components/common/FormParts";
 import { CONTACT_EMAIL, useLeadForm } from "@/lib/leadForm";
+import { intentLabels } from "@/data/services/catalog";
 import s from "./ServicePage.module.scss";
-
-const intentLabels = {
-  "growth-audit": "Free growth audit",
-  demo: "Live demo",
-  trial: "14-day free trial",
-  assessment: "Confidential assessment",
-  consultation: "Consultation",
-};
 
 // The visitor is already on the page that sells the thing, so ask for the minimum
 // (name + email), keep everything else optional, and file the lead against the

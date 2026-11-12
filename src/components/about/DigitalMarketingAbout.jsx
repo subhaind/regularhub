@@ -45,16 +45,18 @@ const DigitalMarketingAbout = () => {
               <div className="sec-title-wrapper">
                 <h2 className="sec-sub-title title-anim">Who We Are</h2>
                 <h3 className="sec-title title-anim">
-                  Strategic Growth Advisors with over 7 years of industry expertise
+                  One team for your growth, your operations and your security
                 </h3>
               </div>
               <div className="sec-text-wrapper">
                 <div className="sec-text text-anim">
                   <p>
-                    We’re a team of strategic growth advisors with over 7 years of industry expertise.
-                    We work globally with businesses of all sizes, believing that progress happens when you
-                    refuse to play things safe. We combine strategic insights with innovative solutions
-                    to deliver growth-focused results that help our clients thrive.
+                    Regularhub Private Limited is a Kolkata company that builds and runs three things
+                    for growing Indian businesses: growth engines that answer, qualify and follow up
+                    every enquiry; operations software for billing, inventory, people and front-of-house;
+                    and the reputation and security work that protects both. Every engagement starts
+                    with an audit, a live demo or an assessment on your own business, so you see the
+                    fix before you pay.
                   </p>
                   <div className="btn_wrapper">
                     <Link

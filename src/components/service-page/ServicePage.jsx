@@ -5,8 +5,10 @@ import {
   SITE_URL,
   ctaHref,
   categories,
+  dpdp,
   getOffering,
   serviceHref,
+  whyUs,
 } from "@/data/services/catalog";
 import SegmentExplorer from "./SegmentExplorer";
 import { AnchorLink, CtaPair, JsonLd, SectionHead } from "./shared";
@@ -22,6 +24,9 @@ const ServicePage = ({ service }) => {
   const url = `${SITE_URL}${serviceHref(slug)}/`;
   const isGrowth = service.category === "growth";
   const isAdvisory = service.category === "advisory";
+  // Page-specific questions first, then the questions every buyer in this line asks (price, DPDP…).
+  const faqs = [...service.faqs, ...(category.faqs || [])];
+  const dpdpItems = service.dpdp ? [...dpdp.items, dpdp.extras[slug]].filter(Boolean) : [];
 
   const jump = [
     { id: "problem", label: "The problem" },
@@ -29,7 +34,7 @@ const ServicePage = ({ service }) => {
     service.segments && { id: "segments", label: "Your business type" },
     service.useCases && { id: "use-cases", label: "Use cases" },
     service.results && { id: "results", label: "Results" },
-    service.faqs.length > 0 && { id: "faq", label: "FAQ" },
+    faqs.length > 0 && { id: "faq", label: "FAQ" },
   ].filter(Boolean);
 
   const capabilityGroups = capabilities
@@ -59,10 +64,10 @@ const ServicePage = ({ service }) => {
         { "@type": "ListItem", position: 2, name: service.name, item: url },
       ],
     },
-    service.faqs.length > 0 && {
+    faqs.length > 0 && {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      mainEntity: service.faqs.map((f) => ({
+      mainEntity: faqs.map((f) => ({
         "@type": "Question",
         name: f.question,
         acceptedAnswer: { "@type": "Answer", text: f.answer },
@@ -155,6 +160,29 @@ const ServicePage = ({ service }) => {
               </div>
             </section>
 
+            {/* ── Free first step (low-commitment offer right after the problem lands) ── */}
+            {service.offer && (
+              <section className={s.band} aria-labelledby="offer-title">
+                <div className={s.container}>
+                  <div className={s.bandInner}>
+                    <div>
+                      <h2 id="offer-title">{service.offer.title}</h2>
+                      <p>{service.offer.body}</p>
+                      {service.offer?.stat && (
+                        <p className={s.bandStat}>
+                          {service.offer.stat.text}
+                          <cite>Source: {service.offer.stat.source}</cite>
+                        </p>
+                      )}
+                    </div>
+                    <Link href={ctaHref(slug, service.offer.intent)} className={s.btnInk}>
+                      {service.offer.cta} <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </Link>
+                  </div>
+                </div>
+              </section>
+            )}
+
             {/* ── System / capabilities ── */}
             {capabilities && (
               <section id="system" className={s.sectionAlt} aria-labelledby="system-title">
@@ -232,7 +260,7 @@ const ServicePage = ({ service }) => {
                     id="segments-title"
                     eyebrow="Built for your business"
                     title="Pick your business type. See the exact leak and the exact fix."
-                    lead={`${service.segments.length} sub-verticals, each with its own revenue leak, starting wedge and install plan.`}
+                    lead={`${service.segments.length} sub-verticals, each with its own revenue leak, starting point and install plan.`}
                   />
                   <SegmentExplorer
                     slug={slug}
@@ -297,6 +325,12 @@ const ServicePage = ({ service }) => {
                   <div>
                     <h2>{category.midCta.heading}</h2>
                     <p>{category.midCta.body}</p>
+                    {category.midCta?.stat && (
+                      <p className={s.bandStat}>
+                        {category.midCta.stat.text}
+                        <cite>Source: {category.midCta.stat.source}</cite>
+                      </p>
+                    )}
                   </div>
                   <AnchorLink id="enquire" className={s.btnInk}>
                     {category.primaryCta.label} <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
@@ -369,6 +403,35 @@ const ServicePage = ({ service }) => {
               </section>
             )}
 
+            {/* ── Why us + data protection: the trust layer before the process and price questions ── */}
+            <section className={s.section} aria-labelledby="why-title">
+              <div className={s.container}>
+                <SectionHead id="why-title" eyebrow={whyUs.eyebrow} title={whyUs.title} />
+                <div className={s.grid2}>
+                  {whyUs.items.map((item) => (
+                    <div key={item.title} className={s.card}>
+                      <h3 className={s.cardTitle}>{item.title}</h3>
+                      <p className={s.cardBody}>{item.body}</p>
+                    </div>
+                  ))}
+                </div>
+                {dpdpItems.length > 0 && (
+                  <div id="dpdp" style={{ marginTop: 72, scrollMarginTop: 110 }}>
+                    <SectionHead eyebrow={dpdp.eyebrow} title={dpdp.title} lead={dpdp.lead} />
+                    <div className={dpdpItems.length === 3 ? s.grid3 : s.grid2}>
+                      {dpdpItems.map((item) => (
+                        <div key={item.title} className={s.card}>
+                          <h3 className={s.cardTitle}>{item.title}</h3>
+                          <p className={s.cardBody}>{item.body}</p>
+                        </div>
+                      ))}
+                    </div>
+                    <p className={s.proofFoot} style={{ marginTop: 20 }}>{dpdp.note}</p>
+                  </div>
+                )}
+              </div>
+            </section>
+
             {/* ── How we deliver ── */}
             <section className={s.sectionAlt} aria-labelledby="process-title">
               <div className={s.container}>
@@ -394,17 +457,31 @@ const ServicePage = ({ service }) => {
                     </div>
                   </div>
                 )}
+                {category.included && (
+                  <div style={{ marginTop: 56 }}>
+                    <h3 className={s.groupTitle}>What every engagement includes</h3>
+                    <p className={s.cardBody} style={{ marginBottom: 20 }}>{category.includedLead}</p>
+                    <ul className={s.chips}>
+                      {category.included.map((item) => (
+                        <li key={item} className={s.chip}>
+                          <i className="fa-solid fa-check" aria-hidden="true"></i>
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
             </section>
 
             {/* ── Objections ── */}
-            {service.faqs.length > 0 && (
+            {faqs.length > 0 && (
               <section id="faq" className={s.section} aria-labelledby="faq-title">
                 <div className={s.container}>
                   <div className={s.split}>
                     <SectionHead id="faq-title" eyebrow="FAQ" title="Questions buyers ask before they commit." />
                     <div className={s.faqList}>
-                      {service.faqs.map((f, i) => (
+                      {faqs.map((f, i) => (
                         <details key={f.question} className={s.faqItem} open={i === 0}>
                           <summary>{f.question}</summary>
                           <p className={s.faqAnswer}>{f.answer}</p>

@@ -6,7 +6,7 @@ const service = {
   "name": "Order, Kitchen & Billing Management",
   "meta": {
     "title": "Order, Kitchen & Billing Management — Dine-In, Takeaway & Delivery",
-    "description": "Unify dine-in, takeaway and aggregator orders into one KDS and billing system, with 0% commission WhatsApp ordering. Live in under 48 hours. 14-day free trial."
+    "description": "Dine-in, takeaway and aggregator orders in one KDS and billing system, plus 0% commission WhatsApp ordering. Live in under 48 hours. Free trial."
   },
   "hero": {
     "headline": "Three channels. One kitchen. One system.",
@@ -27,7 +27,7 @@ const service = {
     ]
   },
   "problem": {
-    "heading": "The Multi-Channel Problem Every F&B Business Faces",
+    "heading": "Three order channels shouting at one kitchen means something gets missed.",
     "body": [
       "A busy Friday evening: Table 7 is waiting for their starter, the takeaway counter has 3 pending orders, and 2 Zomato orders just came in. The kitchen has three different flows coming from three different places — a waiter shouting, a ticket from the counter, and an alert on a separate aggregator tablet. Something gets missed. Someone's food is cold. One order is made twice.",
       "The problem isn't volume. It's fragmentation. Every order channel needs to be a unified input into one kitchen, one billing system, and one management dashboard."
@@ -165,9 +165,9 @@ const service = {
     }
   ],
   "closing": {
-    "heading": "Ready to Unify Your Order Operations Across Every Channel?",
+    "heading": "Put every order channel into one kitchen and one bill.",
     "body": [
-      "Go live across all three channels in under 48 hours. Full setup and training support included."
+      "Go live across all three channels in under 48 hours. No lock-in."
     ]
   },
   "related": [

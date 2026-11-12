@@ -6,7 +6,7 @@ const service = {
   "name": "Laundry Management Software",
   "meta": {
     "title": "Laundry Management Software — Garment Tracking, Billing & Delivery",
-    "description": "Barcode garment tagging, order tracking, WhatsApp status updates, billing, pickup and delivery management for laundries and dry cleaners. Live in under 24 hours."
+    "description": "Barcode garment tagging, order tracking, WhatsApp status updates, billing and pickup-delivery management for laundries and dry cleaners."
   },
   "hero": {
     "headline": "Every garment tracked. Every customer updated. No more “where’s my order?” calls.",
@@ -27,7 +27,7 @@ const service = {
     ]
   },
   "problem": {
-    "heading": "The Problem Running a Laundry Creates",
+    "heading": "Mixed-up garments and unknown order status cost you customers quietly.",
     "body": [
       "Garments get mixed up. Order statuses are unknown until someone physically checks. Customer calls asking \"is my shirt ready?\" interrupt operations. A customer disputes the bill because there's no itemised record. Delivery pickups aren't tracked. Staff performance is invisible. And the business owner has no clear picture of daily revenue without manually counting.",
       "One system. Every order. Every garment. Full visibility."
@@ -130,9 +130,9 @@ const service = {
     }
   ],
   "closing": {
-    "heading": "Ready to Run Your Laundry Operation Without the Chaos?",
+    "heading": "Track every garment from the counter to the customer’s door.",
     "body": [
-      "Go live in under 24 hours. Training and setup support included."
+      "Go live in under 24 hours. No lock-in."
     ]
   },
   "related": [

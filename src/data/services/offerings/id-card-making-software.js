@@ -131,8 +131,10 @@ const service = {
     }
   ],
   "closing": {
-    "heading": "Ready to Professionalise Your ID Card Operations?",
-    "body": []
+    "heading": "Issue your next ID card in minutes, not print-shop days.",
+    "body": [
+      "See your own card design in a live demo, then try it free for 14 days with setup support."
+    ]
   },
   "related": [
     "hr-management-software",

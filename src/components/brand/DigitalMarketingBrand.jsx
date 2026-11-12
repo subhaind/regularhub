@@ -63,7 +63,7 @@ const DigitalMarketingBrand = () => {
           <div className="row">
             <div className="col-xxl-12">
               <h2 className="brand__title-3 title-anim">
-                Strategic Growth Advisors - Trusted by Leading Businesses
+                Trusted by growing businesses
               </h2>
               <div className="brand__list-3">
                 <div className="brand__item-2 fade_bottom">

@@ -6,7 +6,7 @@ const service = {
   "name": "Retail Billing Software",
   "meta": {
     "title": "Retail Billing Software — Barcode POS, Inventory & GST Invoicing",
-    "description": "Fast barcode billing, real-time inventory, GST-compliant invoicing, loyalty CRM, multi-store control and offline mode for retail. 14-day free trial, no credit card."
+    "description": "Fast barcode billing, real-time inventory, GST invoicing, loyalty CRM, multi-store control and offline mode for retail. 14-day free trial, no credit card."
   },
   "hero": {
     "headline": "Bill in under 10 seconds. Close the day in minutes.",
@@ -27,7 +27,7 @@ const service = {
     ]
   },
   "problem": {
-    "heading": "The Problem Every Retailer Knows",
+    "heading": "Your counter queue is costing you sales you never see.",
     "body": [
       "Manual billing slows your counter during peak hours. Stock discrepancies show up weeks after the goods were lost. GST filing means hunting through receipts at month-end. Your best-selling SKU runs out because no one noticed the low-stock alert didn't exist.",
       "These aren't staff problems. They're system problems. And a system problem has a system solution."
@@ -48,7 +48,7 @@ const service = {
     "intro": "",
     "items": [
       {
-        "title": "Blazing-Fast Billing Counter",
+        "title": "Peak-Hour Billing Counter",
         "body": "Process a sale in under 10 seconds. Barcode scanner integration means no manual SKU entry. The touchscreen POS interface is designed for peak-hour speed — minimal taps from scan to receipt printed. Support for multiple payment modes in a single transaction: cash + UPI + card split billing handled automatically.",
         "example": "A grocery store with 200 daily customers processes every bill in under 20 seconds — cashier queue reduced by 40%, customer throughput doubled during morning and evening peaks."
       },
@@ -195,9 +195,9 @@ const service = {
     }
   ],
   "closing": {
-    "heading": "Ready to Upgrade Your Billing Counter?",
+    "heading": "Clear your peak-hour queue — start with a 30-minute demo on your own products.",
     "body": [
-      "No credit card required. Full-feature access for 14 days. Setup support included."
+      "No credit card required. Full-feature access for 14 days. No lock-in."
     ]
   },
   "related": [

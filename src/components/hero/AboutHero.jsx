@@ -18,27 +18,26 @@ const AboutHero = () => {
             <div className="col-xxl-12">
               <div className="hero__about-content">
                 <h1 className="hero-title animation__word_come" ref={wordAnim}>
-                  We’re a full service creative and Growth agency, working
-                  globally with leargest brands.
+                  We build and run the systems growing Indian businesses depend on.
                 </h1>
                 <div className="hero__about-info">
                   <div className="hero__about-btn">
                     <div className="btn_wrapper">
                       <Link
-                        href="/service"
+                        href="/services"
                         className="wc-btn-primary btn-hover btn-item"
                       >
-                        <span></span> Trends & <br />
-                        technology
+                        <span></span> See our <br />
+                        services
                         <i className="fa-solid fa-arrow-right"></i>
                       </Link>
                     </div>
                   </div>
                   <div className="hero__about-text title-anim">
                     <p>
-                      {
-                        "Think of the world's most iconica and successful brands easily findable, impactful. Interactional and exceptional designs. Our story takes beginning in 2019"
-                      }
+                      Growth engines, operations software and brand security from one
+                      Kolkata team, so the funnel, the billing counter and the safeguards
+                      behind them never fall between two vendors.
                     </p>
                   </div>
                   <div className="hero__about-award">

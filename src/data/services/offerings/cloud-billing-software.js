@@ -6,7 +6,7 @@ const service = {
   "name": "Cloud Billing Software",
   "meta": {
     "title": "Cloud Billing Software — GST Invoicing & Receivables From Any Device",
-    "description": "Cloud-based GST invoicing, recurring billing, receivables tracking, GSTR reports and role-based access for service firms, distributors and SMEs. 14-day free trial."
+    "description": "Cloud GST invoicing, recurring billing, receivables and GSTR reports with role-based CA access for service firms and SMEs. 14-day free trial."
   },
   "hero": {
     "headline": "Raise a GST-compliant invoice from anywhere — in under 60 seconds.",
@@ -27,7 +27,7 @@ const service = {
     ]
   },
   "problem": {
-    "heading": "The Problem with Desktop-Bound Billing",
+    "heading": "When billing lives on one office computer, everything waits for it.",
     "body": [
       "A client calls asking for an invoice while you're on-site. Your accountant needs the sales data for the week and it's locked on one computer in the office. Your CA wants the GST summary and you have to go to the office, extract it, and email it. A customer's payment history is in a file only your billing staff can access.",
       "Billing that lives on one machine creates bottlenecks, delays, and risk. A cloud-native system eliminates all three."
@@ -122,7 +122,7 @@ const service = {
     }
   ],
   "closing": {
-    "heading": "Ready to Bill Without Boundaries?",
+    "heading": "Raise your next invoice from wherever you are.",
     "body": [
       "14-day free trial. No credit card. Access from any device from Day 1."
     ]

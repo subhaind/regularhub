@@ -3,10 +3,13 @@ import Link from "next/link";
 import RootLayout from "@/components/common/layout/RootLayout";
 import {
   SITE_URL,
+  beachheads,
   categories,
   categoryOrder,
+  ctaHref,
   getOffering,
   offeringsByCategory,
+  partnerProgram,
   positioning,
   serviceHref,
 } from "@/data/services/catalog";
@@ -78,6 +81,29 @@ const ServicesHub = () => {
               </div>
             </header>
 
+            <section className={s.sectionAlt} aria-labelledby="built-first-title">
+              <div className={s.container}>
+                <SectionHead
+                  id="built-first-title"
+                  eyebrow="Built first for"
+                  title="Clinics, coaching institutes and property brokers."
+                  lead="The three businesses our systems are built around first. Each one is featured first on its page, with its own starting point and install plan."
+                />
+                <div className={s.grid3}>
+                  {beachheads.map((b) => (
+                    <Link key={b.label} href={serviceHref(b.slug)} className={s.relatedCard}>
+                      <span className={s.relatedMeta}>{getOffering(b.slug).name}</span>
+                      <h3 className={s.cardTitle}>{b.label}</h3>
+                      <p className={s.cardBody}>{b.body}</p>
+                      <span className={s.textLink}>
+                        See the system <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </section>
+
             <section className={s.section} aria-label="Service lines">
               <div className={s.container}>
                 {categoryOrder.map((key) => {
@@ -143,6 +169,30 @@ const ServicesHub = () => {
                       ))}
                     </tbody>
                   </table>
+                </div>
+              </div>
+            </section>
+
+            <section id="partners" className={s.section} aria-labelledby="partner-title" style={{ scrollMarginTop: 110 }}>
+              <div className={s.container}>
+                <SectionHead
+                  id="partner-title"
+                  eyebrow={partnerProgram.eyebrow}
+                  title={partnerProgram.title}
+                  lead={partnerProgram.lead}
+                />
+                <div className={s.grid3}>
+                  {partnerProgram.items.map((item) => (
+                    <div key={item.title} className={s.card}>
+                      <h3 className={s.cardTitle}>{item.title}</h3>
+                      <p className={s.cardBody}>{item.body}</p>
+                    </div>
+                  ))}
+                </div>
+                <div className={s.btnRow} style={{ marginTop: 32 }}>
+                  <Link href={ctaHref(partnerProgram.cta.slug, partnerProgram.cta.intent)} className={s.btnPrimary}>
+                    {partnerProgram.cta.label} <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                  </Link>
                 </div>
               </div>
             </section>

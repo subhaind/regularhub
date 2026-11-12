@@ -6,7 +6,7 @@ const service = {
   "name": "Food, Hospitality & Travel",
   "meta": {
     "title": "Food, Hospitality & Travel Growth Engine — Direct Bookings, 0% Commission",
-    "description": "Direct ordering and booking funnels, WhatsApp concierge bots and retention automation that cut aggregator dependency for restaurants, hotels, kitchens and travel brands."
+    "description": "Direct ordering, booking and WhatsApp concierge systems that cut aggregator commission for restaurants, hotels, cloud kitchens and travel brands."
   },
   "hero": {
     "headline": "Stop paying 18–30% commission on guests you already earned.",
@@ -502,7 +502,7 @@ const service = {
     }
   ],
   "closing": {
-    "heading": "Ready to Stop Paying Commission on Your Own Guests?",
+    "heading": "Win your repeat guests back from the aggregators.",
     "body": [
       "We'll map exactly where your bookings and orders are leaking to third parties — and show you the specific recovery system before you commit to anything."
     ]
@@ -511,7 +511,8 @@ const service = {
     "restaurant-management-software",
     "order-kitchen-billing-management",
     "hotel-room-management-software"
-  ]
+  ],
+  "dpdp": true
 };
 
 export default service;

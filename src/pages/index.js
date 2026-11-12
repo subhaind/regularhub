@@ -7,7 +7,6 @@ import DigitalMarketingProtfolio from "@/components/portfolio/DigitalMarketingPr
 import DigitalMarketingTestimonial from "@/components/testimonial/DigitalMarketingTestimonial";
 import DigitalMarketingWorkflow from "@/components/workflow/DigitalMarketingWorkflow";
 import DigitalMarketingPrice from "@/components/price/DigitalMarketingPrice";
-import DigitalMarketingBlog from "@/components/blog/DigitalMarketingBlog";
 
 export default function Home() {
   return (
@@ -22,9 +21,7 @@ export default function Home() {
           <DigitalMarketingProtfolio />
           <DigitalMarketingTestimonial />
           <DigitalMarketingWorkflow />
-          <DigitalMarketingPrice />
-          <DigitalMarketingBlog />
-        </RootLayout>
+          <DigitalMarketingPrice />        </RootLayout>
       </main>
     </div>
   );

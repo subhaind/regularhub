@@ -6,11 +6,11 @@ const service = {
   "name": "Local Services & Real Estate",
   "meta": {
     "title": "Local Services & Real Estate Growth Engine — Never Miss a Lead",
-    "description": "Missed-call text-back, AI lead qualification, viewing and inspection booking bots, and automated reviews for trades, remodelers, real estate agents and dealers."
+    "description": "Missed-call text-back, AI lead qualification, viewing and inspection booking bots and automated reviews for trades, contractors, agents and dealers."
   },
   "hero": {
     "headline": "In local services, the job goes to whoever picks up first.",
-    "subhead": "Missed-call text-back, sub-60-second AI qualification and automated review loops for trades, remodelers, agents, brokers and dealers — so every inquiry stays in your pipeline, not the next number on the list.",
+    "subhead": "Missed-call text-back, sub-60-second AI qualification and automated review loops for trades, renovation contractors, agents, brokers and dealers — so every inquiry stays in your pipeline, not the next number on the list.",
     "proof": [
       {
         "value": "90 sec",
@@ -55,117 +55,11 @@ const service = {
       },
       {
         "title": "Brand Visibility & Reputation Engine",
-        "body": "Google Business Profile, Houzz, MagicBricks, CarDekho, and local directories — built out with the completeness and review density that drives local ranking."
+        "body": "Google Business Profile, Justdial, Sulekha, MagicBricks, CarDekho and local directories — built out with the completeness and review density that drives local ranking."
       }
     ]
   },
   "segments": [
-    {
-      "title": "Standalone Local Services",
-      "who": "Independent tradespeople, home service operators, and small local service companies offering emergency repairs, routine maintenance, deep cleaning, and pest control to residential and commercial clients.",
-      "leak": "Your phone is busy on a job. Someone needing an emergency plumber calls and hits voicemail. They call the next number before you've even heard your voicemail alert.",
-      "wedge": "Missed-Call Text-Back AI — the moment a call is missed, an automated WhatsApp or SMS fires within 90 seconds: \"Hi, [Business Name] here. We missed your call. Book your slot online or reply here and we'll call you back shortly: [Link]\"",
-      "install": [
-        {
-          "group": "Acquisition Funnel",
-          "items": [
-            "Google Local Services Ads targeting emergency and routine service queries: \"plumber near me,\" \"electrician urgent [City],\" \"pest control [Area].\"",
-            "Maps optimised with service categories, emergency hours, and service area radius.",
-            "Verified badge setup on Google LSA for trust and ranking."
-          ]
-        },
-        {
-          "group": "Missed-Call Text-Back System",
-          "items": [
-            "WhatsApp auto-message fires within 90 seconds of any missed call.",
-            "Message includes: service options, booking link, and estimated response time.",
-            "Field dispatcher notified simultaneously to call back within 5 minutes."
-          ]
-        },
-        {
-          "group": "Job Scheduling Bot",
-          "items": [
-            "WhatsApp bot: service type → location → urgency level → available slot → confirmed booking → dispatcher assigned.",
-            "Pre-job reminder sent 2 hours before the technician arrives.",
-            "Post-job: review request 1 hour after job completion."
-          ]
-        },
-        {
-          "group": "Social Media Optimisation",
-          "items": [
-            "Primary channels: Facebook, Nextdoor.",
-            "Bio: \"Verified [service] in [City]. Text-back emergency support 24/7.\"",
-            "Content hooks: Deep cleaning transformation videos, DIY vs professional comparison posts, safety inspection walk-throughs, and \"how to know when to call a professional\" educational content."
-          ]
-        },
-        {
-          "group": "Marketing Automation",
-          "items": [
-            "WhatsApp: Job confirmation, technician tracking link, and completion summary.",
-            "SMS: Missed-call text-back, appointment reminder, and post-job review request.",
-            "Email: Seasonal home maintenance checklists with booking links."
-          ]
-        },
-        {
-          "group": "Brand Visibility",
-          "items": [
-            "GBP optimised for \"emergency [service] near me,\" service categories, and operating hours including after-hours availability.",
-            "Consistent review loops: SMS review request triggered 1 hour post-job.",
-            "Nextdoor Business Profile set up with verified location."
-          ]
-        }
-      ],
-      "outcome": "Every missed call becomes a WhatsApp conversation — and the dispatcher follows up within 5 minutes before the lead calls the next number."
-    },
-    {
-      "title": "Home Services & Construction",
-      "who": "Home renovation contractors, interior designers, kitchen and bathroom remodelling specialists, and residential construction firms working on project-based remodelling packages.",
-      "leak": "A homeowner sees your Instagram reel of a bathroom transformation. They're interested. They visit your profile, find a contact number, consider calling, decide not to bother — and move on. The inquiry never happens.",
-      "wedge": "A Visual Quote Calculator Widget on your landing page that estimates a remodelling project cost based on room type, size, and scope — turning passive interest into an active inquiry in under 2 minutes.",
-      "install": [
-        {
-          "group": "Acquisition Funnel",
-          "items": [
-            "Instagram and Pinterest visual ads showcasing bathroom refits, modular kitchens, and living room transformations.",
-            "Interactive cost calculator: room type → area in sqft → material grade → scope → estimated cost range displayed.",
-            "Lead form embedded at calculator result: name, WhatsApp, preferred visit date → routes to CRM."
-          ]
-        },
-        {
-          "group": "Lead Qualification & Conversion",
-          "items": [
-            "WhatsApp follow-up within 15 minutes of form submission: \"Hi [Name], thanks for your interest. Here's what similar projects looked like — [portfolio link]. When works for a quick visit?\"",
-            "Home visit scheduled, confirmed in CRM with project brief pre-filled.",
-            "Post-visit: detailed proposal sent within 48 hours with visual mood board."
-          ]
-        },
-        {
-          "group": "Social Media Optimisation",
-          "items": [
-            "Primary channels: Instagram, Pinterest.",
-            "Bio: \"Transforming kitchens & bathrooms in [City]. Get a free quote online ↓\"",
-            "Content hooks: Renovation time-lapses (before-during-after), modern design trend explainers, material choice guides, and client walkthrough videos post-completion."
-          ]
-        },
-        {
-          "group": "Marketing Automation",
-          "items": [
-            "Email: Design portfolio and 3 relevant case studies sent post-inquiry.",
-            "WhatsApp: Construction phase progress photos (foundation, tiling, fitting, final reveal).",
-            "SMS: Phase completion notifications and payment milestone reminders."
-          ]
-        },
-        {
-          "group": "Brand Visibility",
-          "items": [
-            "Houzz portfolio fully built out with project photos, materials listed, and client reviews.",
-            "GBP updated with project categories, service area, and completed project gallery.",
-            "Listed on Sulekha, UrbanClap/Urban Company, and local contractor directories."
-          ]
-        }
-      ],
-      "outcome": "A reel viewer becomes a lead in 2 minutes via the cost calculator — and the post-inquiry sequence gets them to a signed scope before they've spoken to a second contractor."
-    },
     {
       "title": "Independent Real Estate Agents & Brokerages",
       "who": "Individual real estate agents, boutique brokerages, and property consultants selling and renting residential properties — apartments, villas, and plotted developments — in urban and suburban markets.",
@@ -221,6 +115,112 @@ const service = {
         }
       ],
       "outcome": "Leads are qualified and viewings are booked in under 60 seconds from first inquiry — and the CRM pipeline means no opportunity goes cold between stages."
+    },
+    {
+      "title": "Standalone Local Services",
+      "who": "Independent tradespeople, home service operators, and small local service companies offering emergency repairs, routine maintenance, deep cleaning, and pest control to residential and commercial clients.",
+      "leak": "Your phone is busy on a job. Someone needing an emergency plumber calls and hits voicemail. They call the next number before you've even heard your voicemail alert.",
+      "wedge": "Missed-Call Text-Back AI — the moment a call is missed, an automated WhatsApp or SMS fires within 90 seconds: \"Hi, [Business Name] here. We missed your call. Book your slot online or reply here and we'll call you back shortly: [Link]\"",
+      "install": [
+        {
+          "group": "Acquisition Funnel",
+          "items": [
+            "Google Local Services Ads targeting emergency and routine service queries: \"plumber near me,\" \"electrician urgent [City],\" \"pest control [Area].\"",
+            "Maps optimised with service categories, emergency hours, and service area radius.",
+            "Verified badge setup on Google LSA for trust and ranking."
+          ]
+        },
+        {
+          "group": "Missed-Call Text-Back System",
+          "items": [
+            "WhatsApp auto-message fires within 90 seconds of any missed call.",
+            "Message includes: service options, booking link, and estimated response time.",
+            "Field dispatcher notified simultaneously to call back within 5 minutes."
+          ]
+        },
+        {
+          "group": "Job Scheduling Bot",
+          "items": [
+            "WhatsApp bot: service type → location → urgency level → available slot → confirmed booking → dispatcher assigned.",
+            "Pre-job reminder sent 2 hours before the technician arrives.",
+            "Post-job: review request 1 hour after job completion."
+          ]
+        },
+        {
+          "group": "Social Media Optimisation",
+          "items": [
+            "Primary channels: Facebook, Instagram, WhatsApp Channels.",
+            "Bio: \"Verified [service] in [City]. Text-back emergency support 24/7.\"",
+            "Content hooks: Deep cleaning transformation videos, DIY vs professional comparison posts, safety inspection walk-throughs, and \"how to know when to call a professional\" educational content."
+          ]
+        },
+        {
+          "group": "Marketing Automation",
+          "items": [
+            "WhatsApp: Job confirmation, technician tracking link, and completion summary.",
+            "SMS: Missed-call text-back, appointment reminder, and post-job review request.",
+            "Email: Seasonal home maintenance checklists with booking links."
+          ]
+        },
+        {
+          "group": "Brand Visibility",
+          "items": [
+            "GBP optimised for \"emergency [service] near me,\" service categories, and operating hours including after-hours availability.",
+            "Consistent review loops: SMS review request triggered 1 hour post-job.",
+            "Justdial and Sulekha listings set up with verified location and service area."
+          ]
+        }
+      ],
+      "outcome": "Every missed call becomes a WhatsApp conversation — and the dispatcher follows up within 5 minutes before the lead calls the next number."
+    },
+    {
+      "title": "Home Services & Construction",
+      "who": "Home renovation contractors, interior designers, kitchen and bathroom remodelling specialists, and residential construction firms working on project-based remodelling packages.",
+      "leak": "A homeowner sees your Instagram reel of a bathroom transformation. They're interested. They visit your profile, find a contact number, consider calling, decide not to bother — and move on. The inquiry never happens.",
+      "wedge": "A Visual Quote Calculator Widget on your landing page that estimates a remodelling project cost based on room type, size, and scope — turning passive interest into an active inquiry in under 2 minutes.",
+      "install": [
+        {
+          "group": "Acquisition Funnel",
+          "items": [
+            "Instagram and Pinterest visual ads showcasing bathroom refits, modular kitchens, and living room transformations.",
+            "Interactive cost calculator: room type → area in sqft → material grade → scope → estimated cost range displayed.",
+            "Lead form embedded at calculator result: name, WhatsApp, preferred visit date → routes to CRM."
+          ]
+        },
+        {
+          "group": "Lead Qualification & Conversion",
+          "items": [
+            "WhatsApp follow-up within 15 minutes of form submission: \"Hi [Name], thanks for your interest. Here's what similar projects looked like — [portfolio link]. When works for a quick visit?\"",
+            "Home visit scheduled, confirmed in CRM with project brief pre-filled.",
+            "Post-visit: detailed proposal sent within 48 hours with visual mood board."
+          ]
+        },
+        {
+          "group": "Social Media Optimisation",
+          "items": [
+            "Primary channels: Instagram, Pinterest.",
+            "Bio: \"Transforming kitchens & bathrooms in [City]. Get a free quote online ↓\"",
+            "Content hooks: Renovation time-lapses (before-during-after), modern design trend explainers, material choice guides, and client walkthrough videos post-completion."
+          ]
+        },
+        {
+          "group": "Marketing Automation",
+          "items": [
+            "Email: Design portfolio and 3 relevant case studies sent post-inquiry.",
+            "WhatsApp: Construction phase progress photos (foundation, tiling, fitting, final reveal).",
+            "SMS: Phase completion notifications and payment milestone reminders."
+          ]
+        },
+        {
+          "group": "Brand Visibility",
+          "items": [
+            "Project portfolio on your website and Google Business Profile, built out with photos, materials listed and client reviews.",
+            "GBP updated with project categories, service area, and completed project gallery.",
+            "Listed on Sulekha, Justdial, Urban Company and local contractor directories."
+          ]
+        }
+      ],
+      "outcome": "A reel viewer becomes a lead in 2 minutes via the cost calculator — and the post-inquiry sequence gets them to a signed scope before they've spoken to a second contractor."
     },
     {
       "title": "Used & Premium Car/Bike Dealers",
@@ -365,7 +365,7 @@ const service = {
     }
   ],
   "closing": {
-    "heading": "Ready to Stop Losing Jobs to the First Ring?",
+    "heading": "Be the first to reply — every time the phone rings.",
     "body": [
       "We'll map exactly where your local leads are stalling — missed calls, slow replies, or unqualified viewings — and show you the fix before you commit to anything."
     ]
@@ -374,7 +374,19 @@ const service = {
     "cloud-billing-software",
     "the-retail-e-commerce-growth-engine",
     "brand-reputation-cybersecurity"
-  ]
+  ],
+  "offer": {
+    "eyebrow": "Free first step",
+    "title": "Get a free review-gap teardown.",
+    "body": "We compare your Google rating, review count, review replies and response time with the top-ranked competitor near you — and show you, in writing, where customers are choosing them over you. No cost, no obligation.",
+    "cta": "Request my free teardown",
+    "intent": "review-teardown",
+    "stat": {
+      "text": "74% of consumers look for reviews written in the last three months, and 80% are more likely to choose a business that replies to all of its reviews.",
+      "source": "BrightLocal Local Consumer Review Survey 2026 (1,002 US adults)"
+    }
+  },
+  "dpdp": true
 };
 
 export default service;

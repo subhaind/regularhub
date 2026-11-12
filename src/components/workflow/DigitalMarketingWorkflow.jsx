@@ -120,7 +120,7 @@ const DigitalMarketingWorkflow = () => {
                 <div className="col-xxl-12">
                   <div className="choose-title-wrapper">
                 <h2 className="choose-title title-anim">
-                  why <br /> choose strategic growth advisors
+                  why <br /> choose Regularhub
                 </h2>
                   </div>
                 </div>
@@ -135,27 +135,27 @@ const DigitalMarketingWorkflow = () => {
                   <div className="sec-title-wrapper">
                     <h2 className="sec-sub-title">
                       why <br />
-                      choose strategic growth advisors
+                      choose Regularhub
                     </h2>
                     <h3 className="sec-title">
-                      Strategic Planning, Market Analysis, & Growth Solutions
+                      You see the fix before you pay
                     </h3>
                     <p>
-                      Attention, we take out our round glasses and our sweater
-                      with elbow patches to go back to the origins of the user
-                      experience: the first mention of the user and its
-                      importance was born in the
+                      Every engagement starts on your own business: a free growth audit,
+                      a live demo on your own products, or a confidential assessment. You
+                      get a written, itemised quote before any work starts, and there’s
+                      no lock-in.
                     </p>
                   </div>
                   <ul className="research__tools">
                     <li>
-                      <a href="#">Google</a>
+                      <Link href="/services#cat-growth">Growth</Link>
                     </li>
                     <li>
-                      <a href="#">pinterest</a>
+                      <Link href="/services#cat-software">Software</Link>
                     </li>
                     <li>
-                      <a href="#">Instagram</a>
+                      <Link href="/services#cat-advisory">Security</Link>
                     </li>
                   </ul>
                 </div>
@@ -163,39 +163,39 @@ const DigitalMarketingWorkflow = () => {
                   <div className="research__list">
                     <div className="research__item">
                       <div className="research__number">
-                        <span>60%</span>
+                        <span>01</span>
                       </div>
                       <div className="research__info">
-                        <h4 className="research__title">Strategy</h4>
+                        <h4 className="research__title">Audit, demo or assessment</h4>
                         <p>
-                          Your marketing strategy optimizing performances
-                          doesn’t have to be a guessing game.
+                          On your own enquiries, products or exposure, not a canned
+                          pitch.
                         </p>
                       </div>
                     </div>
 
                     <div className="research__item">
                       <div className="research__number">
-                        <span>95%</span>
+                        <span>02</span>
                       </div>
                       <div className="research__info">
-                        <h4 className="research__title">Audience</h4>
+                        <h4 className="research__title">Build</h4>
                         <p>
-                          Your marketing strategy optimizing performances
-                          doesn’t have to be a guessing game.
+                          The system is built around your workflow: WhatsApp-first,
+                          GST-ready, on the hardware you already own.
                         </p>
                       </div>
                     </div>
 
                     <div className="research__item">
                       <div className="research__number">
-                        <span>70%</span>
+                        <span>03</span>
                       </div>
                       <div className="research__info">
-                        <h4 className="research__title">Keyword</h4>
+                        <h4 className="research__title">Run &amp; improve</h4>
                         <p>
-                          Your marketing strategy optimizing performances
-                          doesn’t have to be a guessing game.
+                          We operate and optimise it after launch, with live dashboards,
+                          instead of handing over a login and a manual.
                         </p>
                       </div>
                     </div>
@@ -212,7 +212,7 @@ const DigitalMarketingWorkflow = () => {
                   <div className="sec-title-wrapper">
                     <h2 className="sec-sub-title">
                       Why <br />
-                      Choose Strategic Growth Advisors
+                      Choose Regularhub
                     </h2>
                   </div>
                 </div>
@@ -235,17 +235,17 @@ const DigitalMarketingWorkflow = () => {
                       </p>
                     </div>
                     <div className="counter__item-3">
-                      <h2 className="counter__number count3">7+</h2>
+                      <h2 className="counter__number count3">18</h2>
                       <p>
-                        Years <br />
-                        Expertise
+                        Services <br />
+                        We Run
                       </p>
                     </div>
                     <div className="counter__item-3">
-                      <h2 className="counter__number count4">50+</h2>
+                      <h2 className="counter__number count4">100+</h2>
                       <p>
-                        Growth <br />
-                        Strategies
+                        Business Types <br />
+                        We Build For
                       </p>
                     </div>
                   </div>
@@ -271,10 +271,10 @@ const DigitalMarketingWorkflow = () => {
                 <div className="col-xxl-12">
                   <div className="cta__content-3">
                     <p className="cta__sub-title-2">
-                      Ready to accelerate your business growth?
+                      Not sure where to start?
                     </p>
                     <h2 className="cta__title-2">
-                      Let&apos;s strategize your path to success together!
+                      Book a free growth audit, a live demo or a confidential assessment.
                     </h2>
                     <div className="btn_wrapper">
                       <Link

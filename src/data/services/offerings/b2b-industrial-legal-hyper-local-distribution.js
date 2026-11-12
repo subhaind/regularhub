@@ -102,7 +102,7 @@ const service = {
           "group": "Brand Visibility",
           "items": [
             "Website rebuilt or upgraded with rapid catalog search, spec sheet downloads, and certification verification.",
-            "Listed on ThomasNet, IndiaMART, TradeIndia, and relevant industry-specific B2B directories.",
+            "Listed on IndiaMART, TradeIndia and relevant industry-specific B2B directories — plus ThomasNet for export buyers.",
             "GBP updated with industrial categories, service area, and facility photos."
           ]
         }
@@ -542,7 +542,7 @@ const service = {
     }
   ],
   "closing": {
-    "heading": "Ready to Turn Inquiries Into a Tracked, Closed Pipeline?",
+    "heading": "Find out where your inquiries go cold — before the next one does.",
     "body": [
       "We'll map exactly where your B2B or local leads are stalling — whether that's a dead LinkedIn outreach sequence, an RFQ that never got quoted, or a WhatsApp query answered six hours too late — and show you the fix before you commit."
     ]
@@ -551,7 +551,8 @@ const service = {
     "cloud-billing-software",
     "barcode-label-design-software",
     "brand-reputation-cybersecurity"
-  ]
+  ],
+  "dpdp": true
 };
 
 export default service;

@@ -10,10 +10,10 @@ const FaqCTA = () => {
             <div className="col-xxl-12">
               <div className="sec-title-wrapper">
                 <h2 className="sec-title title-anim">
-                  Still you have question?
+                  Still have a question?
                 </h2>
                 <p className="sub-title-anim">
-                  Well, we are packed, so no open vacancies now
+                  Send it to us. We reply within one business day.
                 </p>
                 <div className="btn_wrapper">
                   <Link

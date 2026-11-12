@@ -6,7 +6,7 @@ const service = {
   "name": "Events, Entertainment & Media",
   "meta": {
     "title": "Events, Entertainment & Media Growth Engine — Early Ticket & Sponsor Revenue",
-    "description": "Early-bird ticketing funnels, planner budget calculators, sponsor outreach sequences and OTT trial nurture for venues, planners, creators and podcast networks."
+    "description": "Early-bird ticketing funnels, planner budget calculators, sponsor outreach and trial-to-paid nurture for venues, planners, creators and podcasts."
   },
   "hero": {
     "headline": "Build revenue from Week 1 — not in the last 72 hours.",
@@ -202,7 +202,7 @@ const service = {
         {
           "group": "Social Media Optimisation",
           "items": [
-            "Primary channels: Instagram, TikTok, YouTube.",
+            "Primary channels: Instagram Reels, YouTube.",
             "Bio: \"Stream your favourite shows. Start your free trial below ↓\"",
             "Content hooks: Trailer release reels, show countdown content, behind-the-scenes interviews, and genre discovery carousels."
           ]
@@ -361,7 +361,7 @@ const service = {
     }
   ],
   "closing": {
-    "heading": "Ready to Build Revenue Before the Deadline Arrives?",
+    "heading": "Start selling in Week 1, not the final weekend.",
     "body": [
       "We'll map exactly where your event, media, or entertainment pipeline is leaking revenue — from early ticket sales to sponsor pipeline to trial conversion — and show you the system before you commit to anything.",
       "No generic deck. A specific diagnosis of your specific business, with the solution mapped before you sign."
@@ -371,7 +371,8 @@ const service = {
     "the-education-creative-entertainment-growth-engine",
     "id-card-making-software",
     "the-food-hospitality-travel-growth-engine"
-  ]
+  ],
+  "dpdp": true
 };
 
 export default service;

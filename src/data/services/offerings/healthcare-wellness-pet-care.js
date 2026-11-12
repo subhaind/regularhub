@@ -6,7 +6,7 @@ const service = {
   "name": "Healthcare, Wellness & Pet Care",
   "meta": {
     "title": "Healthcare & Wellness Growth Engine — AI Patient Acquisition",
-    "description": "AI triage, 24/7 WhatsApp booking, automated follow-up and review loops for hospitals, clinics, wellness studios and vet practices. Live in 10–14 working days."
+    "description": "AI triage, 24/7 WhatsApp booking, follow-up and review loops for hospitals, dental and specialist clinics, wellness studios and vets. Live in 10–14 days."
   },
   "hero": {
     "headline": "Patients book whoever answers first. Make that you — at 11pm and at 7am.",
@@ -39,7 +39,7 @@ const service = {
     "items": [
       {
         "title": "Acquisition Funnel",
-        "body": "High-intent traffic — Google Search, Maps, Meta, Instagram — routed into a conversion-optimised landing page built around the specific trigger that makes your buyer act: a symptom checker, a cost calculator, a smile quiz, a free trial pass. Not a generic contact form."
+        "body": "High-intent traffic — Google Search, Maps, Meta, Instagram — routed into a conversion-optimised landing page built around the specific trigger that makes your buyer act: a specialist finder, a cost calculator, a smile quiz, a free trial pass. Not a generic contact form."
       },
       {
         "title": "AI Triage & Booking Bot (WhatsApp / Instagram DM / Website)",
@@ -61,16 +61,65 @@ const service = {
   },
   "segments": [
     {
+      "title": "Dental, Ortho & Aesthetic Clinics",
+      "who": "Dental clinics offering cosmetic dentistry, Invisalign, implants, veneers, and whitening. Aesthetic and dermat clinics offering laser treatments, skin rejuvenation, and anti-ageing procedures.",
+      "leak": "You had a great initial consultation. The patient was interested. You quoted the price. And then — nothing. No follow-up system, no trust-building between consult and decision, and the lead goes cold within a week.",
+      "wedge": "A Competitor Review-Gap Audit revealing exactly what your top local competitors are winning on — and an Instagram/Meta ad campaign showcasing your before/after results to close that gap fast.",
+      "install": [
+        {
+          "group": "Acquisition Funnel",
+          "items": [
+            "Meta/Instagram Ads showcasing smile transformations, implant placements, and Invisalign time-lapses.",
+            "Smile Assessment Quiz: patients upload a front-teeth photo for AI smile analysis and receive a personalised recommendation.",
+            "WhatsApp consultation booking with financing pre-approval options embedded."
+          ]
+        },
+        {
+          "group": "AI Follow-Up Bot",
+          "items": [
+            "Automated WhatsApp treatment-plan follow-up at Day 3, Day 7, and Day 14 post-consultation.",
+            "Re-engagement trigger for leads who opened the quote but haven't responded.",
+            "Financing eligibility checker bot for patients who cited cost as a barrier."
+          ]
+        },
+        {
+          "group": "Social Media Optimisation",
+          "items": [
+            "Primary channels: Instagram, YouTube Shorts, Pinterest.",
+            "Bio: \"Creating confident smiles in [City]. Invisalign Platinum Provider. Take our 30-sec Smile Quiz ↓\"",
+            "Content hooks: Before/after smile transition reels, Invisalign tray hygiene tips, live patient reactions on delivery day, and \"what your smile is telling people\" educational carousels."
+          ]
+        },
+        {
+          "group": "Marketing Automation",
+          "items": [
+            "WhatsApp: Post-consultation plan summary PDF, Day 3/7/14 follow-up messages, appointment reminders.",
+            "SMS: 6-month dental check-up recall cycle triggered automatically by appointment date.",
+            "Email: Educational drip on orthodontic health benefits — 4-part series sent over 2 weeks post-consult."
+          ]
+        },
+        {
+          "group": "Brand Visibility",
+          "items": [
+            "Google Maps reviews optimised for \"Invisalign,\" \"dental implants,\" \"dentist near me,\" and \"cosmetic dentist [City].\"",
+            "Localised landing page for each high-ticket procedure with patient photos and pricing brackets.",
+            "Review request QR code placed at the reception desk."
+          ]
+        }
+      ],
+      "outcome": "Consultation-to-treatment conversion improves because the follow-up never drops — and competitors' review gaps are systematically closed."
+    },
+    {
       "title": "Hospitals & Multi-Specialty Clinics",
       "who": "Private and semi-private hospitals offering elective procedures — bariatric surgery, joint replacement, IVF, cardiac interventions, and oncology. Also multi-specialty chains running health checkup packages.",
       "leak": "Your Google Ads are running. People are landing on your website. But the \"Book Consultation\" button leads to a form, the form leads to a callback promise, the callback happens the next morning, and the patient has already booked elsewhere.",
-      "wedge": "A Symptom Checker & Cost Calculator widget embedded on the landing page — giving the visitor an instant, personalised estimate that makes them stop scrolling and start booking.",
+      "wedge": "A Specialist Finder & Cost Calculator widget embedded on the landing page — giving the visitor an instant, personalised estimate that makes them stop scrolling and start booking.",
       "install": [
         {
           "group": "Acquisition Funnel",
           "items": [
             "Google Search Ads targeting high-intent surgical queries: \"bariatric surgery cost Mumbai,\" \"best knee replacement hospital,\" \"IVF success rate clinic near me.\"",
-            "Landing page with an interactive Symptom Checker + Treatment Cost Calculator collecting name, phone, and WhatsApp number.",
+            "Landing page with an interactive Specialist Finder (routes the visitor to the right department) + Treatment Cost Calculator collecting name, phone, and WhatsApp number.",
             "Pixel and Conversions API setup for full-funnel attribution."
           ]
         },
@@ -157,55 +206,6 @@ const service = {
       "outcome": "No patient inquiry goes unanswered, day or night. Every missed call becomes a booked slot."
     },
     {
-      "title": "Dental, Ortho & Aesthetic Clinics",
-      "who": "Dental clinics offering cosmetic dentistry, Invisalign, implants, veneers, and whitening. Aesthetic and dermat clinics offering laser treatments, skin rejuvenation, and anti-ageing procedures.",
-      "leak": "You had a great initial consultation. The patient was interested. You quoted the price. And then — nothing. No follow-up system, no trust-building between consult and decision, and the lead goes cold within a week.",
-      "wedge": "A Competitor Review-Gap Audit revealing exactly what your top local competitors are winning on — and an Instagram/Meta ad campaign showcasing your before/after results to close that gap fast.",
-      "install": [
-        {
-          "group": "Acquisition Funnel",
-          "items": [
-            "Meta/Instagram Ads showcasing smile transformations, implant placements, and Invisalign time-lapses.",
-            "Smile Assessment Quiz: patients upload a front-teeth photo for AI smile analysis and receive a personalised recommendation.",
-            "WhatsApp consultation booking with financing pre-approval options embedded."
-          ]
-        },
-        {
-          "group": "AI Follow-Up Bot",
-          "items": [
-            "Automated WhatsApp treatment-plan follow-up at Day 3, Day 7, and Day 14 post-consultation.",
-            "Re-engagement trigger for leads who opened the quote but haven't responded.",
-            "Financing eligibility checker bot for patients who cited cost as a barrier."
-          ]
-        },
-        {
-          "group": "Social Media Optimisation",
-          "items": [
-            "Primary channels: Instagram, TikTok, Pinterest.",
-            "Bio: \"Creating confident smiles in [City]. Invisalign Platinum Provider. Take our 30-sec Smile Quiz ↓\"",
-            "Content hooks: Before/after smile transition reels, Invisalign tray hygiene tips, live patient reactions on delivery day, and \"what your smile is telling people\" educational carousels."
-          ]
-        },
-        {
-          "group": "Marketing Automation",
-          "items": [
-            "WhatsApp: Post-consultation plan summary PDF, Day 3/7/14 follow-up messages, appointment reminders.",
-            "SMS: 6-month dental check-up recall cycle triggered automatically by appointment date.",
-            "Email: Educational drip on orthodontic health benefits — 4-part series sent over 2 weeks post-consult."
-          ]
-        },
-        {
-          "group": "Brand Visibility",
-          "items": [
-            "Google Maps reviews optimised for \"Invisalign,\" \"dental implants,\" \"dentist near me,\" and \"cosmetic dentist [City].\"",
-            "Localised landing page for each high-ticket procedure with patient photos and pricing brackets.",
-            "Review request QR code placed at the reception desk."
-          ]
-        }
-      ],
-      "outcome": "Consultation-to-treatment conversion improves because the follow-up never drops — and competitors' review gaps are systematically closed."
-    },
-    {
       "title": "Senior Care & Assisted Living Facilities",
       "who": "Assisted living residences, memory care units, nursing homes, and rehabilitation facilities marketing monthly residential care packages to families of seniors.",
       "leak": "Families searching \"assisted living near me\" are making an emotionally loaded, high-trust decision. They won't book on the first touch. But most facilities send them to a static brochure and wait for a callback that rarely comes.",
@@ -246,7 +246,7 @@ const service = {
         {
           "group": "Brand Visibility",
           "items": [
-            "Verified and optimised listings on Yelp, Google Maps, and local senior care directories.",
+            "Verified and optimised listings on Google Maps, Justdial and local senior care directories.",
             "Professional facility video overview featured prominently on the Google Business Profile.",
             "Review generation targeting families post-admission with frictionless SMS request."
           ]
@@ -473,7 +473,7 @@ const service = {
         {
           "group": "Social Media Optimisation",
           "items": [
-            "Primary channels: Instagram, TikTok.",
+            "Primary channels: Instagram, YouTube Shorts.",
             "Bio: \"Beautiful hair & relaxing spa treatments. DM 'BOOK' to reserve your stylist instantly 24/7 ↓\"",
             "Content hooks: Client makeover reveal reels, product application walkthroughs, stylist introduction series, and \"self-care Sunday\" inspiration content."
           ]
@@ -571,7 +571,7 @@ const service = {
         {
           "group": "Social Media Optimisation",
           "items": [
-            "Primary channels: Instagram, YouTube, TikTok.",
+            "Primary channels: Instagram Reels, YouTube.",
             "Bio: \"[Gym Name] | Elevating fitness in [City]. Get your Free 7-Day Pass now ↓\"",
             "Content hooks: Member transformation stories (30/60/90 day series), exercise form explainer reels, trainer introduction videos, and facility walk-throughs."
           ]
@@ -620,7 +620,7 @@ const service = {
         {
           "group": "Social Media Optimisation",
           "items": [
-            "Primary channels: Instagram, YouTube Shorts, TikTok.",
+            "Primary channels: Instagram, YouTube Shorts.",
             "Bio: \"Science-backed nutrition, tailored to you. Take the quiz to build your custom stack ↓\"",
             "Content hooks: Ingredient deep-dive reels, common deficiency explainers, creator product reviews, \"what I take and why\" founder content."
           ]
@@ -739,10 +739,14 @@ const service = {
     {
       "question": "Does this work for small single-doctor clinics, not just hospitals?",
       "answer": "Yes. The system scales from a solo GP practice to a 200-bed multi-specialty hospital — the funnel, bot, and automation are sized to the business."
+    },
+    {
+      "question": "Does the AI give medical advice or diagnose patients?",
+      "answer": "No. The bot never diagnoses and never recommends treatment. It answers your practice’s questions, collects the details your team asks for, books slots and routes anything clinical to your doctors."
     }
   ],
   "closing": {
-    "heading": "Ready to Stop Losing Patients to Response Time?",
+    "heading": "See exactly where patients slip away — before they book elsewhere.",
     "body": [
       "We'll map exactly where your patient pipeline is leaking revenue — across acquisition, booking, follow-up, and retention — and show you the complete system before you commit to anything.",
       "No hard sell. No generic deck. A specific diagnosis of your specific practice."
@@ -752,7 +756,19 @@ const service = {
     "gym-management-software",
     "the-local-services-real-estate-growth-engine",
     "brand-reputation-cybersecurity"
-  ]
+  ],
+  "offer": {
+    "eyebrow": "Free first step",
+    "title": "Get a free review-gap teardown.",
+    "body": "We compare your Google rating, review count, review replies and response time with the top-ranked competitor near you — and show you, in writing, where patients are choosing them over you. No cost, no obligation.",
+    "cta": "Request my free teardown",
+    "intent": "review-teardown",
+    "stat": {
+      "text": "74% of consumers look for reviews written in the last three months, and 80% are more likely to choose a business that replies to all of its reviews.",
+      "source": "BrightLocal Local Consumer Review Survey 2026 (1,002 US adults)"
+    }
+  },
+  "dpdp": true
 };
 
 export default service;

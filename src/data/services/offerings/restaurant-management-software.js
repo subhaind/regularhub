@@ -6,7 +6,7 @@ const service = {
   "name": "Restaurant Management Software",
   "meta": {
     "title": "Restaurant Management Software — POS, KDS, Recipe Costing & Inventory",
-    "description": "Table management, captain ordering app, kitchen display, POS, recipe costing, inventory and Zomato/Swiggy integration for restaurants and cafés. 14-day free trial."
+    "description": "Table management, captain app, KDS, POS, recipe costing, inventory and Zomato/Swiggy integration for restaurants and cafés. 14-day free trial."
   },
   "hero": {
     "headline": "Turn tables 15–20 minutes faster — and know which dishes actually make money.",
@@ -27,7 +27,7 @@ const service = {
     ]
   },
   "problem": {
-    "heading": "The Problem Running a Restaurant Creates",
+    "heading": "Disconnected systems leak money at every seam — and you can’t see where.",
     "body": [
       "Restaurants operate across multiple simultaneous streams — dine-in, takeaway, delivery, bar — each with their own order flow, billing logic, and service timeline. Managing these on disconnected systems (a billing machine here, a WhatsApp kitchen order there, a manual aggregator system elsewhere) creates delays, errors, and revenue leakage at every seam.",
       "The result: tables turned slower than they could be, food costs you can't pinpoint, staff scheduling by guesswork, and a GST filing that takes a week to reconcile.",
@@ -208,9 +208,9 @@ const service = {
     }
   ],
   "closing": {
-    "heading": "Ready to Run a Tighter, More Profitable Restaurant?",
+    "heading": "See your own menu running on it — in a 30-minute demo.",
     "body": [
-      "No credit card required. Setup and menu data import support included. Go live in under 48 hours."
+      "No credit card required, no lock-in. Go live in under 48 hours."
     ]
   },
   "related": [

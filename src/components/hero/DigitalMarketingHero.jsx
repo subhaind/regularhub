@@ -75,18 +75,18 @@ const DigitalMarketingHero = () => {
             <div className="col-xxl-12">
               <div className="hero__inner-3">
                 <div className="sec-title-wrapper">
-                  <h2 className="sec-sub-title">Strategic</h2>
-                  <h3 className="sec-title title-left" ref={titleLeft}>
+                  <h1 className="sec-sub-title">Regularhub</h1>
+                  <h2 className="sec-title title-left" ref={titleLeft}>
                     Growth
-                  </h3>
-                  <h3 className="sec-title title-right" ref={titleRight}>
-                    Advisors
-                  </h3>
+                  </h2>
+                  <h2 className="sec-title title-right" ref={titleRight}>
+                    Engineered
+                  </h2>
                 </div>
                 <div className="hero__text-3">
                   <p className="hero__text-animation" ref={heroTextAnim}>
-                    Strategic Growth Advisors company with over 7 years in this industry.
-                    We provide expert consulting and growth solutions to help businesses thrive.
+                    Growth engines, operations software and brand security for Indian businesses,
+                    built and run by one team, so nothing falls between two vendors.
                   </p>
                 </div>
                 <div className="scroll-down">

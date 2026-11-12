@@ -92,16 +92,14 @@ export default function Footer3() {
                   <div className="footer__widget-3">
                     <h2 className="footer__widget-title">Contact Us</h2>
                     <ul className="footer__contact">
-                      <li>Valentin, Street Road 24, New York, USA - 67452</li>
+                      <li>65/1, Rabindrasarani, Kolkata, India</li>
                       <li>
-                        <a href="tel:02574328301" className="phone">
-                          (+02) 574 - 328 - 301{" "}
+                        <a href="tel:+918250686154" className="phone">
+                          +91 82506 86154
                         </a>
                       </li>
                       <li>
-                        <a href="mailto:info@buildyexample.com">
-                          info@buildyexample.com
-                        </a>
+                        <a href="mailto:hello@regularhub.in">hello@regularhub.in</a>
                       </li>
                     </ul>
                   </div>

@@ -122,8 +122,10 @@ const service = {
     }
   ],
   "closing": {
-    "heading": "Ready to Run a Gym That Retains Members Automatically?",
-    "body": []
+    "heading": "Stop chasing renewals by hand.",
+    "body": [
+      "Book a live demo on your own membership plans, then run it free for 14 days. No lock-in."
+    ]
   },
   "related": [
     "healthcare-wellness-pet-care",

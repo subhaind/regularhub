@@ -40,3 +40,4 @@ __pycache__/
 
 # local admin dev store
 .data/
+.env*

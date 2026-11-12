@@ -6,7 +6,7 @@ const service = {
   "name": "Barcode Label Design Software",
   "meta": {
     "title": "Barcode Label Design Software — Product, Asset & Compliance Labels",
-    "description": "Design and print barcode and QR labels in-house with database-driven bulk printing, variable data and compliance templates for pharma, food and retail. 14-day free trial."
+    "description": "Design and bulk-print barcode and QR labels in-house: variable data, database printing and compliance templates for pharma, food and retail. Free trial."
   },
   "hero": {
     "headline": "Bring label printing in-house. Design in 30 minutes. Print 100,000 in one job.",
@@ -157,7 +157,7 @@ const service = {
     }
   ],
   "closing": {
-    "heading": "Ready to Bring Your Label Printing In-House?",
+    "heading": "Bring label printing in-house — and stop waiting on print vendors.",
     "body": [
       "No designer needed. No external print vendor required. Start printing professional labels today."
     ]

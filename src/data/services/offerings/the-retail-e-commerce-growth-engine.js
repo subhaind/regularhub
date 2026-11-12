@@ -6,7 +6,7 @@ const service = {
   "name": "Retail & E-Commerce",
   "meta": {
     "title": "Retail & E-Commerce Growth Engine — Checkout Recovery & Conversion",
-    "description": "WhatsApp cart recovery, test-drive and showroom booking bots, subscription retention and post-purchase automation for D2C brands, luxury retail and dealerships."
+    "description": "WhatsApp cart recovery, test-drive and showroom booking bots, subscription retention and post-purchase automation for D2C brands and dealerships."
   },
   "hero": {
     "headline": "Retail isn’t an awareness problem. It’s a conversion problem.",
@@ -85,7 +85,7 @@ const service = {
         {
           "group": "Social Media Optimisation",
           "items": [
-            "Primary channels: Instagram, TikTok, Facebook.",
+            "Primary channels: Instagram, YouTube Shorts, Facebook.",
             "Bio: \"Curating premium goods for your daily lifestyle. 10% off your first order ↓\"",
             "Content hooks: Product aesthetic showreels, packaging process behind-the-scenes, creator UGC reposts, and \"why we made this\" founder story content."
           ]
@@ -134,7 +134,7 @@ const service = {
         {
           "group": "Social Media Optimisation",
           "items": [
-            "Primary channels: Instagram, TikTok, Pinterest.",
+            "Primary channels: Instagram, YouTube Shorts, Pinterest.",
             "Bio: \"Delivering monthly boxes of curated goods. Customise your first box here ↓\"",
             "Content hooks: Unboxing reaction videos, monthly theme reveal content, box customisation tutorial, and subscriber community features."
           ]
@@ -151,7 +151,7 @@ const service = {
           "group": "Brand Visibility",
           "items": [
             "Easy pause/resume subscription controls — visible and accessible in the member portal.",
-            "Review integration with Trustpilot and third-party consumer rating platforms.",
+            "Review integration with Google reviews and third-party consumer rating platforms.",
             "Unboxing creator partnership program for organic reach amplification."
           ]
         }
@@ -399,7 +399,7 @@ const service = {
     }
   ],
   "closing": {
-    "heading": "Ready to Stop Losing Revenue at the Last Step?",
+    "heading": "Find the step where your checkout leaks — and close it.",
     "body": [
       "We'll map exactly where your funnel is converting and where it's leaking — and show you the specific fix before you commit to anything."
     ]
@@ -408,7 +408,8 @@ const service = {
     "retail-billing-software",
     "barcode-label-design-software",
     "brand-reputation-cybersecurity"
-  ]
+  ],
+  "dpdp": true
 };
 
 export default service;

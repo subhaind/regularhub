@@ -962,6 +962,20 @@
   }
 }
 
+// A third-party figure with its source, shown under a band's body copy.
+.bandStat {
+  font-size: 0.9rem;
+  opacity: 0.85;
+
+  cite {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.78rem;
+    font-style: normal;
+    opacity: 0.8;
+  }
+}
+
 .btnInk {
   composes: btn;
   background: var(--sp-ink);

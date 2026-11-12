@@ -121,8 +121,10 @@ const service = {
     }
   ],
   "closing": {
-    "heading": "Ready to Run Your Property Like a Professional Operation?",
-    "body": []
+    "heading": "See your property running on one system — in a 30-minute demo.",
+    "body": [
+      "See your own rooms, rates and channels in a live demo — then try it free for 14 days with setup support."
+    ]
   },
   "related": [
     "the-food-hospitality-travel-growth-engine",

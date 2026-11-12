@@ -6,6 +6,52 @@ import Link from "next/link";
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollSmoother);
 
+// Homepage service cards. Titles, bullets and links mirror the service pages they point to.
+const homeServices = [
+  {
+    title: ["Growth", "Engines"],
+    href: "/services#cat-growth",
+    body: "Done-for-you client acquisition systems, tuned to how your industry converts, then operated and optimised after launch.",
+    points: ["Acquisition funnels", "AI qualification & booking bots", "WhatsApp, email & SMS automation", "Reviews & local visibility"],
+    image: "/assets/imgs/service/3/1.png",
+  },
+  {
+    title: ["Clinics &", "Healthcare"],
+    href: "/services/healthcare-wellness-pet-care",
+    body: "Patients book whoever answers first. Dental, ortho and aesthetic clinics answer every enquiry, day or night, and close the review gap.",
+    points: ["AI triage & booking bot", "Reputation engine", "Follow-up on every consult", "Routes anything clinical to your doctors"],
+    image: "/assets/imgs/service/3/2.png",
+  },
+  {
+    title: ["Coaching &", "Education"],
+    href: "/services/the-education-creative-entertainment-growth-engine",
+    body: "Enrolments are lost to slow follow-up, not to competitors. Coaching centres and institutes reply first and follow up every lead.",
+    points: ["AI booking & voice agents", "Demo-class booking", "Parent follow-up on WhatsApp", "Consent-first onboarding for minors"],
+    image: "/assets/imgs/service/3/3.png",
+  },
+  {
+    title: ["Real Estate &", "Local Services"],
+    href: "/services/the-local-services-real-estate-growth-engine",
+    body: "The job goes to whoever picks up first. Agents, brokers and local trades keep every call and enquiry in the pipeline.",
+    points: ["Missed-call text-back", "AI response & qualification", "Viewing & inspection booking", "Automated review requests"],
+    image: "/assets/imgs/service/3/4.png",
+  },
+  {
+    title: ["Operations", "Software"],
+    href: "/services#cat-software",
+    body: "Billing, inventory, people and front-of-house on one system per business. GST-ready, on the hardware you already own.",
+    points: ["Retail & cloud billing", "Restaurant & kitchen", "Hotel, gym & laundry", "HR & payroll"],
+    image: "/assets/imgs/service/3/2.png",
+  },
+  {
+    title: ["Brand &", "Security"],
+    href: "/services/brand-reputation-cybersecurity",
+    body: "Reputation and security are one risk, so we run them as one practice, for individuals and organisations.",
+    points: ["Reputation audits & monitoring", "Search reputation management", "Crisis response", "Cybersecurity assessments"],
+    image: "/assets/imgs/service/3/5.jpg",
+  },
+];
+
 const DigitalMarketingService = () => {
   const serviceList = useRef();
   const smootherRef = useRef();
@@ -110,14 +156,14 @@ const DigitalMarketingService = () => {
           <div className="row">
             <div className="col-xxl-12">
               <div className="sec-title-wrapper pt-130 text-anim">
-                <h2 className="sec-sub-title title-anim">Our Growth Solutions</h2>
+                <h2 className="sec-sub-title title-anim">What we build and run</h2>
                 <h3 className="sec-title title-anim">
-                  Strategic Growth Advisors Services
+                  Three practices, one team
                 </h3>
                 <p>
-                  Strategic Growth Advisors company with over 7 years in this industry.
-                  We provide expert strategic consulting and growth solutions to help
-                  businesses thrive and achieve their full potential.
+                  Growth engines that win the enquiry, software that runs the business behind it,
+                  and the reputation and security work that protects both. Start with the practice
+                  you need, or the industry we already build for.
                 </p>
               </div>
             </div>
@@ -126,238 +172,37 @@ const DigitalMarketingService = () => {
           <div className="row">
             <div className="col-xx-12">
               <div className="service__list-3" ref={serviceList}>
-                {/* Service Item 1: Strategic Planning & Consulting */}
-                <div className="service__item-3 service_animation">
-                  <h3>
-                    <Link href="/services/the-b2b-industrial-hyper-local-growth-engine" className="service__title-3">
-                      Strategic Planning<br />& Consulting
-                    </Link>
-                  </h3>
-                  <div className="service__content-3">
-                    <p>
-                      Expert strategic planning and consulting services to help
-                      businesses define their vision, set achievable goals, and
-                      create roadmaps for sustainable growth.
-                    </p>
-                    <ul className="">
-                      <li>+ Vision Development</li>
-                      <li>+ Goal Setting Framework</li>
-                      <li>+ Roadmap Creation</li>
-                      <li>+ KPI Definition</li>
-                    </ul>
-                  </div>
-                  <div className="service__btn-3">
-                    <div className="btn_wrapper">
-                      <Link
-                        href="/services/b2b-industrial-legal-hyper-local-distribution"
-                        className="wc-btn-black btn-hover btn-item"
-                      >
-                        <span></span> Details
-                        <i className="fa-solid fa-arrow-right"></i>
+                {homeServices.map((item) => (
+                  <div key={item.href} className="service__item-3 service_animation">
+                    <h3>
+                      <Link href={item.href} className="service__title-3">
+                        {item.title[0]}
+                        <br />
+                        {item.title[1]}
                       </Link>
+                    </h3>
+                    <div className="service__content-3">
+                      <p>{item.body}</p>
+                      <ul className="">
+                        {item.points.map((point) => (
+                          <li key={point}>+ {point}</li>
+                        ))}
+                      </ul>
                     </div>
-                  </div>
-                  <div
-                    className="service__hover-3"
-                    style={{
-                      backgroundImage: "url(/assets/imgs/service/3/1.png)",
-                    }}
-                  ></div>
-                </div>
-
-                {/* Service Item 2: Performance Improvement */}
-                <div className="service__item-3 service_animation">
-                  <h3>
-                    <Link href="/services/the-retail-e-commerce-growth-engine" className="service__title-3">
-                      Performance<br />Improvement
-                    </Link>
-                  </h3>
-                  <div className="service__content-3">
-                    <p>
-                      Performance improvement services focused on identifying
-                      inefficiencies, optimizing operations, and enhancing
-                      overall business effectiveness for measurable growth results.
-                    </p>
-                    <ul className="">
-                      <li>+ Process Optimization</li>
-                      <li>+ Efficiency Audits</li>
-                      <li>+ Performance Metrics</li>
-                      <li>+ Continuous Improvement</li>
-                    </ul>
-                  </div>
-                  <div className="service__btn-3">
-                    <div className="btn_wrapper">
-                      <Link
-                        href="/services/the-retail-e-commerce-growth-engine"
-                        className="wc-btn-black btn-hover btn-item"
-                      >
-                        <span></span> Details
-                        <i className="fa-solid fa-arrow-right"></i>
-                      </Link>
+                    <div className="service__btn-3">
+                      <div className="btn_wrapper">
+                        <Link href={item.href} className="wc-btn-black btn-hover btn-item">
+                          <span></span> Details
+                          <i className="fa-solid fa-arrow-right"></i>
+                        </Link>
+                      </div>
                     </div>
+                    <div
+                      className="service__hover-3"
+                      style={{ backgroundImage: `url(${item.image})` }}
+                    ></div>
                   </div>
-                  <div
-                    className="service__hover-3"
-                    style={{
-                      backgroundImage: "url(/assets/imgs/service/3/2.png)",
-                    }}
-                  ></div>
-                </div>
-
-                {/* Service Item 3: Market Entry & Expansion */}
-                <div className="service__item-3 service_animation">
-                  <h3>
-                    <Link href="/services/the-local-services-real-estate-growth-engine" className="service__title-3">
-                      Market Entry<br />& Expansion
-                    </Link>
-                  </h3>
-                  <div className="service__content-3">
-                    <p>
-                      Market entry and expansion strategies to help businesses
-                      successfully enter new markets, expand their reach, and
-                      capture new growth opportunities domestically and internationally.
-                    </p>
-                    <ul className="">
-                      <li>+ Market Research</li>
-                      <li>+ Entry Strategy</li>
-                      <li>+ Localization Planning</li>
-                      <li>+ Partnership Development</li>
-                    </ul>
-                  </div>
-                  <div className="service__btn-3">
-                    <div className="btn_wrapper">
-                      <Link
-                        href="/services/the-local-services-real-estate-growth-engine"
-                        className="wc-btn-black btn-hover btn-item"
-                      >
-                        <span></span> Details
-                        <i className="fa-solid fa-arrow-right"></i>
-                      </Link>
-                    </div>
-                  </div>
-                  <div
-                    className="service__hover-3"
-                    style={{
-                      backgroundImage: "url(/assets/imgs/service/3/3.png)",
-                    }}
-                  ></div>
-                </div>
-
-                {/* Service Item 4: Growth Strategy Development */}
-                <div className="service__item-3 service_animation">
-                  <h3>
-                    <Link href="/services/ultimate-industry-product-solutions-matrix" className="service__title-3">
-                      Growth Strategy<br />Development
-                    </Link>
-                  </h3>
-                  <div className="service__content-3">
-                    <p>
-                      Custom growth strategy development tailored to each business&apos;s
-                      unique position, resources, and market conditions to achieve
-                      sustainable, profitable growth over the short and long term.
-                    </p>
-                    <ul className="">
-                      <li>+ Growth Planning</li>
-                      <li>+ Resource Optimization</li>
-                      <li>+ Scalability Planning</li>
-                      <li>+ Risk Management</li>
-                    </ul>
-                  </div>
-                  <div className="service__btn-3">
-                    <div className="btn_wrapper">
-                      <Link
-                        href="/services/ultimate-industry-product-solutions-matrix"
-                        className="wc-btn-black btn-hover btn-item"
-                      >
-                        <span></span> Details
-                        <i className="fa-solid fa-arrow-right"></i>
-                      </Link>
-                    </div>
-                  </div>
-                  <div
-                    className="service__hover-3"
-                    style={{
-                      backgroundImage: "url(/assets/imgs/service/3/4.png)",
-                    }}
-                  ></div>
-                </div>
-
-                {/* Service Item 5: Email Marketing */}
-                <div className="service__item-3 service_animation">
-                  <h3>
-                    <Link href="/service-details" className="service__title-3">
-                      Email<br />Marketing
-                    </Link>
-                  </h3>
-                  <div className="service__content-3">
-                    <p>
-                      We help brands stand out through awesome, elegant visual
-                      design. Our design philosophy focuses on creating memorable
-                      brand identities that resonate with target audiences.
-                    </p>
-                    <ul className="">
-                      <li>+ Logo Design</li>
-                      <li>+ Advertisement</li>
-                      <li>+ Promotion</li>
-                    </ul>
-                  </div>
-                  <div className="service__btn-3">
-                    <div className="btn_wrapper">
-                      <Link
-                        href="/service-details"
-                        className="wc-btn-black btn-hover btn-item"
-                      >
-                        <span></span> Details
-                        <i className="fa-solid fa-arrow-right"></i>
-                      </Link>
-                    </div>
-                  </div>
-                  <div
-                    className="service__hover-3"
-                    style={{
-                      backgroundImage: "url(/assets/imgs/service/3/2.png)",
-                    }}
-                  ></div>
-                </div>
-
-                {/* Service Item 6: Technology Solutions */}
-                <div className="service__item-3 service_animation">
-                  <h3>
-                    <Link href="/services/cloud-billing-software" className="service__title-3">
-                      Technology<br />Solutions
-                    </Link>
-                  </h3>
-                  <div className="service__content-3">
-                    <p>
-                      Comprehensive technology solutions including cloud infrastructure,
-                      billing software, and digital transformation services to help
-                      businesses leverage technology for growth and efficiency.
-                    </p>
-                    <ul className="">
-                      <li>+ Cloud Migration</li>
-                      <li>+ Billing Automation</li>
-                      <li>+ Digital Transformation</li>
-                      <li>+ Technology Consulting</li>
-                    </ul>
-                  </div>
-                  <div className="service__btn-3">
-                    <div className="btn_wrapper">
-                      <Link
-                        href="/services/cloud-billing-software"
-                        className="wc-btn-black btn-hover btn-item"
-                      >
-                        <span></span> Details
-                        <i className="fa-solid fa-arrow-right"></i>
-                      </Link>
-                    </div>
-                  </div>
-                  <div
-                    className="service__hover-3"
-                    style={{
-                      backgroundImage: "url(/assets/imgs/service/3/5.jpg)",
-                    }}
-                  ></div>
-                </div>
+                ))}
               </div>
             </div>
           </div>

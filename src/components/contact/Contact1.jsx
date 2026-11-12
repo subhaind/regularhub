@@ -1,6 +1,6 @@
 import animationCharCome from "@/lib/utils/animationCharCome";
 import animationWordCome from "@/lib/utils/animationWordCome";
-import { getOffering } from "@/data/services/catalog";
+import { getOffering, intentLabels } from "@/data/services/catalog";
 import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
 import { CONTACT_EMAIL, useLeadForm } from "@/lib/leadForm";
@@ -9,14 +9,6 @@ import { FormStatus, Honeypot } from "@/components/common/FormParts";
 
 // Every service-page CTA links here with ?service=&intent=(&segment=) so the
 // enquiry arrives labelled with what the visitor asked for.
-const intentLabels = {
-  "growth-audit": "Free growth audit",
-  demo: "Live demo",
-  trial: "14-day free trial",
-  assessment: "Confidential assessment",
-  consultation: "Consultation",
-};
-
 const buildSubject = ({ service, intent, segment }) => {
   const offering = service ? getOffering(String(service)) : null;
   const action = intentLabels[intent] || (offering ? "Enquiry" : "");
@@ -88,7 +80,7 @@ const Contact1 = () => {
                 </h3>
                 <ul>
                   <li>
-                    <a href="tel:+(91)8250686154">+(91) 8250 - 686 - 145</a>
+                    <a href="tel:+918250686154">+91 82506 86154</a>
                   </li>
                   <li>
                     <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>

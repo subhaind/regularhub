@@ -137,25 +137,19 @@ export default function Footer1() {
                 sizes="180px"
               />
               <p>
-                our dream project isn&apos;t just a goal; it&apos;s the future foundation of your business. We combine strategic insight, agile execution, and relentless commitment to reignite stalled initiatives, expand market reach, and drive compounding success every step of the way.
+                Growth engines, operations software and brand security for growing Indian
+                businesses, built and run by one team in Kolkata.
               </p>
             </div>
+            {/* Social links hidden until the real profile URLs are added (they pointed to "#").
             <div className="footer__social-3">
               <ul>
-                <li>
-                  <a href="#">facebook</a>
-                </li>
-                <li>
-                  <a href="#">Twitter</a>
-                </li>
-                <li>
-                  <a href="#">Linkedin</a>
-                </li>
-                <li>
-                  <a href="#">Instagram</a>
-                </li>
+                <li><a href="#">facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Linkedin</a></li>
+                <li><a href="#">Instagram</a></li>
               </ul>
-            </div>
+            </div> */}
             <div className="footer__contact-3">
               <Link className="end" href="/contact">
                 Let’s talk
@@ -170,7 +164,7 @@ export default function Footer1() {
               <div className="col-xxl-4 col-xl-4 col-lg-4">
                 <div className="footer__copyright-3">
                   <p>
-                    © 2019 - 2026 | Alrights reserved by{" "}
+                    © 2019 - 2026 | All rights reserved by{" "}
                     <a href="https://regularhub.in/" target="_blank">
                       RegularHub
                     </a>
