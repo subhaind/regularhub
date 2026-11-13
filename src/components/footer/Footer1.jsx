@@ -126,7 +126,9 @@ export default function Footer1() {
     <>
       <footer className="footer__area-3">
         <div className="footer__top-3">
-          <div className="footer__top-wrapper-3">
+          {/* --no-social: two-column layout while the social list below is hidden.
+              Remove the modifier when the social links come back. */}
+          <div className="footer__top-wrapper-3 footer__top-wrapper-3--no-social">
             <div className="footer__logo-3 pt-120">
               <Image
                 className="footer-logo"
@@ -137,8 +139,8 @@ export default function Footer1() {
                 sizes="180px"
               />
               <p>
-                Growth engines, operations software and brand security for growing Indian
-                businesses, built and run by one team in Kolkata.
+                Growth engines, operations software and brand security for growing
+                businesses worldwide, built and run by one team in Kolkata.
               </p>
             </div>
             {/* Social links hidden until the real profile URLs are added (they pointed to "#").

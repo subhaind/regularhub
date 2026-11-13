@@ -743,6 +743,55 @@ form button[type="submit"]:disabled {
   }
 }
 
+/* Footer top row with the social column hidden (Footer1.jsx). The theme grid is
+   logo | social | "Let's talk" (30% 10% auto); with only two children, "Let's talk"
+   landed in the narrow social column and overflowed it. Two columns instead, with
+   "Let's talk" given the logo column's top padding (pt-120) so the two line up. */
+.footer__top-wrapper-3.footer__top-wrapper-3--no-social {
+  grid-template-columns: 30% minmax(0, 1fr);
+  column-gap: 40px;
+  padding-bottom: 80px;
+}
+
+.footer__top-wrapper-3--no-social .footer__contact-3 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 120px;
+}
+
+@media (max-width: 1399px) {
+  .footer__top-wrapper-3.footer__top-wrapper-3--no-social {
+    grid-template-columns: 35% minmax(0, 1fr);
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .footer__top-wrapper-3--no-social .footer__contact-3 {
+    padding-top: 90px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer__top-wrapper-3--no-social .footer__contact-3 {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer__top-wrapper-3.footer__top-wrapper-3--no-social {
+    grid-template-columns: 1fr;
+    padding-bottom: 0;
+  }
+
+  .footer__top-wrapper-3--no-social .footer__contact-3 {
+    justify-content: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
 /* Menu close button — the full-screen menu had no visible way to dismiss it. */
 .offcanvas__close-btn {
   position: absolute;
